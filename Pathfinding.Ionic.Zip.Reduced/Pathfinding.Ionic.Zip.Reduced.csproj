@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DA8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pathfinding.Ionic</RootNamespace>
+    <AssemblyName>Pathfinding.Ionic.Zip.Reduced</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BZip2\BitWriter.cs" />
+    <Compile Include="BZip2\BZip2.cs" />
+    <Compile Include="BZip2\BZip2Compressor.cs" />
+    <Compile Include="BZip2\BZip2InputStream.cs" />
+    <Compile Include="BZip2\BZip2OutputStream.cs" />
+    <Compile Include="BZip2\ParallelBZip2OutputStream.cs" />
+    <Compile Include="BZip2\Rand.cs" />
+    <Compile Include="BZip2\WorkItem.cs" />
+    <Compile Include="ComparisonOperator.cs" />
+    <Compile Include="CompoundCriterion.cs" />
+    <Compile Include="Crc\CRC32.cs" />
+    <Compile Include="Crc\CrcCalculatorStream.cs" />
+    <Compile Include="EnumUtil.cs" />
+    <Compile Include="FileSelector.cs" />
+    <Compile Include="LogicalConjunction.cs" />
+    <Compile Include="NameCriterion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectionCriterion.cs" />
+    <Compile Include="SizeCriterion.cs" />
+    <Compile Include="TimeCriterion.cs" />
+    <Compile Include="TypeCriterion.cs" />
+    <Compile Include="WhichTime.cs" />
+    <Compile Include="Zip\AddOrUpdateAction.cs" />
+    <Compile Include="Zip\AddProgressEventArgs.cs" />
+    <Compile Include="Zip\BadCrcException.cs" />
+    <Compile Include="Zip\BadPasswordException.cs" />
+    <Compile Include="Zip\BadReadException.cs" />
+    <Compile Include="Zip\BadStateException.cs" />
+    <Compile Include="Zip\CloseDelegate.cs" />
+    <Compile Include="Zip\ComHelper.cs" />
+    <Compile Include="Zip\CompressionMethod.cs" />
+    <Compile Include="Zip\CountingStream.cs" />
+    <Compile Include="Zip\CryptoMode.cs" />
+    <Compile Include="Zip\EncryptionAlgorithm.cs" />
+    <Compile Include="Zip\ExtractExistingFileAction.cs" />
+    <Compile Include="Zip\ExtractProgressEventArgs.cs" />
+    <Compile Include="Zip\OffsetStream.cs" />
+    <Compile Include="Zip\OpenDelegate.cs" />
+    <Compile Include="Zip\ReadOptions.cs" />
+    <Compile Include="Zip\ReadProgressEventArgs.cs" />
+    <Compile Include="Zip\SaveProgressEventArgs.cs" />
+    <Compile Include="Zip\SetCompressionCallback.cs" />
+    <Compile Include="Zip\SfxGenerationException.cs" />
+    <Compile Include="Zip\SharedUtilities.cs" />
+    <Compile Include="Zip\WriteDelegate.cs" />
+    <Compile Include="Zip\Zip64Option.cs" />
+    <Compile Include="Zip\ZipCipherStream.cs" />
+    <Compile Include="Zip\ZipConstants.cs" />
+    <Compile Include="Zip\ZipContainer.cs" />
+    <Compile Include="Zip\ZipCrypto.cs" />
+    <Compile Include="Zip\ZipEntry.cs" />
+    <Compile Include="Zip\ZipEntrySource.cs" />
+    <Compile Include="Zip\ZipEntryTimestamp.cs" />
+    <Compile Include="Zip\ZipErrorAction.cs" />
+    <Compile Include="Zip\ZipErrorEventArgs.cs" />
+    <Compile Include="Zip\ZipException.cs" />
+    <Compile Include="Zip\ZipFile.cs" />
+    <Compile Include="Zip\ZipInputStream.cs" />
+    <Compile Include="Zip\ZipOption.cs" />
+    <Compile Include="Zip\ZipOutput.cs" />
+    <Compile Include="Zip\ZipOutputStream.cs" />
+    <Compile Include="Zip\ZipProgressEventArgs.cs" />
+    <Compile Include="Zip\ZipProgressEventType.cs" />
+    <Compile Include="Zip\ZipSegmentedStream.cs" />
+    <Compile Include="Zlib\Adler.cs" />
+    <Compile Include="Zlib\BlockState.cs" />
+    <Compile Include="Zlib\CompressionLevel.cs" />
+    <Compile Include="Zlib\CompressionMode.cs" />
+    <Compile Include="Zlib\CompressionStrategy.cs" />
+    <Compile Include="Zlib\DeflateFlavor.cs" />
+    <Compile Include="Zlib\DeflateManager.cs" />
+    <Compile Include="Zlib\DeflateStream.cs" />
+    <Compile Include="Zlib\FlushType.cs" />
+    <Compile Include="Zlib\GZipStream.cs" />
+    <Compile Include="Zlib\InflateBlocks.cs" />
+    <Compile Include="Zlib\InflateCodes.cs" />
+    <Compile Include="Zlib\InflateManager.cs" />
+    <Compile Include="Zlib\InfTree.cs" />
+    <Compile Include="Zlib\InternalConstants.cs" />
+    <Compile Include="Zlib\InternalInflateConstants.cs" />
+    <Compile Include="Zlib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="Zlib\SharedUtils.cs" />
+    <Compile Include="Zlib\StaticTree.cs" />
+    <Compile Include="Zlib\Tree.cs" />
+    <Compile Include="Zlib\WorkItem.cs" />
+    <Compile Include="Zlib\ZlibBaseStream.cs" />
+    <Compile Include="Zlib\ZlibCodec.cs" />
+    <Compile Include="Zlib\ZlibConstants.cs" />
+    <Compile Include="Zlib\ZlibException.cs" />
+    <Compile Include="Zlib\ZlibStream.cs" />
+    <Compile Include="Zlib\ZlibStreamFlavor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

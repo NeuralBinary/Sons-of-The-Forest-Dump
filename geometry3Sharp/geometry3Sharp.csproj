@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>geometry3Sharp</RootNamespace>
+    <AssemblyName>geometry3Sharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="g3\AddTrianglesMeshChange.cs" />
+    <Compile Include="g3\Arc2d.cs" />
+    <Compile Include="g3\ArcLengthSoftTranslation.cs" />
+    <Compile Include="g3\Arrangement2d.cs" />
+    <Compile Include="g3\ArrayAlias.cs" />
+    <Compile Include="g3\AxisAlignedBox2d.cs" />
+    <Compile Include="g3\AxisAlignedBox2f.cs" />
+    <Compile Include="g3\AxisAlignedBox2i.cs" />
+    <Compile Include="g3\AxisAlignedBox3d.cs" />
+    <Compile Include="g3\AxisAlignedBox3f.cs" />
+    <Compile Include="g3\AxisAlignedBox3i.cs" />
+    <Compile Include="g3\BaseCurve2.cs" />
+    <Compile Include="g3\BezierCurve2.cs" />
+    <Compile Include="g3\BiArcFit2.cs" />
+    <Compile Include="g3\BiGrid3.cs" />
+    <Compile Include="g3\BinaryG3FormatReader.cs" />
+    <Compile Include="g3\BinaryG3Reader.cs" />
+    <Compile Include="g3\BinaryG3Writer.cs" />
+    <Compile Include="g3\Bitmap2.cs" />
+    <Compile Include="g3\Bitmap3.cs" />
+    <Compile Include="g3\BlockTimer.cs" />
+    <Compile Include="g3\BoundedImplicitFunction3d.cs" />
+    <Compile Include="g3\BoundsUtil.cs" />
+    <Compile Include="g3\Box2d.cs" />
+    <Compile Include="g3\Box2f.cs" />
+    <Compile Include="g3\Box3d.cs" />
+    <Compile Include="g3\Box3f.cs" />
+    <Compile Include="g3\BSplineBasis.cs" />
+    <Compile Include="g3\BufferUtil.cs" />
+    <Compile Include="g3\CachingDenseGridTrilinearImplicit.cs" />
+    <Compile Include="g3\CachingMeshSDF.cs" />
+    <Compile Include="g3\CachingMeshSDFImplicit.cs" />
+    <Compile Include="g3\CancelFunction.cs" />
+    <Compile Include="g3\CappedCylinderGenerator.cs" />
+    <Compile Include="g3\CholeskyDecomposition.cs" />
+    <Compile Include="g3\Circle2d.cs" />
+    <Compile Include="g3\Circle3d.cs" />
+    <Compile Include="g3\CircleProjectionTarget.cs" />
+    <Compile Include="g3\Colorb.cs" />
+    <Compile Include="g3\Colorf.cs" />
+    <Compile Include="g3\ColorHSV.cs" />
+    <Compile Include="g3\ColorMap.cs" />
+    <Compile Include="g3\ColorMixer.cs" />
+    <Compile Include="g3\CommandArgumentSet.cs" />
+    <Compile Include="g3\ComplexEndpoint2d.cs" />
+    <Compile Include="g3\ComplexSegment2d.cs" />
+    <Compile Include="g3\ConeGenerator.cs" />
+    <Compile Include="g3\ConstantIndexMap.cs" />
+    <Compile Include="g3\ConstantItr.cs" />
+    <Compile Include="g3\ContMinBox2.cs" />
+    <Compile Include="g3\ContMinCircle2.cs" />
+    <Compile Include="g3\ContOrientedBox3.cs" />
+    <Compile Include="g3\ConvexHull2.cs" />
+    <Compile Include="g3\Curve3Axis3RevolveGenerator.cs" />
+    <Compile Include="g3\Curve3Curve3RevolveGenerator.cs" />
+    <Compile Include="g3\CurveGenerator.cs" />
+    <Compile Include="g3\CurveResampler.cs" />
+    <Compile Include="g3\CurveSample.cs" />
+    <Compile Include="g3\CurveSample2d.cs" />
+    <Compile Include="g3\CurveSampler2.cs" />
+    <Compile Include="g3\CurveUtils.cs" />
+    <Compile Include="g3\CurveUtils2.cs" />
+    <Compile Include="g3\Cylinder3d.cs" />
+    <Compile Include="g3\CylinderProjectionTarget.cs" />
+    <Compile Include="g3\DCurve3.cs" />
+    <Compile Include="g3\DCurve3BoxTree.cs" />
+    <Compile Include="g3\DCurveProjectionTarget.cs" />
+    <Compile Include="g3\DeepCopy.cs" />
+    <Compile Include="g3\DenseGrid2f.cs" />
+    <Compile Include="g3\DenseGrid2i.cs" />
+    <Compile Include="g3\DenseGrid3f.cs" />
+    <Compile Include="g3\DenseGrid3i.cs" />
+    <Compile Include="g3\DenseGridTrilinearImplicit.cs" />
+    <Compile Include="g3\DenseMatrix.cs" />
+    <Compile Include="g3\DenseUVMesh.cs" />
+    <Compile Include="g3\DenseVector.cs" />
+    <Compile Include="g3\DGraph.cs" />
+    <Compile Include="g3\DGraph2.cs" />
+    <Compile Include="g3\DGraph2Resampler.cs" />
+    <Compile Include="g3\DGraph2Util.cs" />
+    <Compile Include="g3\DGraph3.cs" />
+    <Compile Include="g3\DGraph3Util.cs" />
+    <Compile Include="g3\DGraphN.cs" />
+    <Compile Include="g3\DiagonalMatrix.cs" />
+    <Compile Include="g3\DijkstraGraphDistance.cs" />
+    <Compile Include="g3\DIndexArray2i.cs" />
+    <Compile Include="g3\DIndexArray3i.cs" />
+    <Compile Include="g3\Distance.cs" />
+    <Compile Include="g3\DistanceFieldToSkeletalField.cs" />
+    <Compile Include="g3\DistLine2Line2.cs" />
+    <Compile Include="g3\DistLine2Segment2.cs" />
+    <Compile Include="g3\DistLine3Ray3.cs" />
+    <Compile Include="g3\DistLine3Segment3.cs" />
+    <Compile Include="g3\DistLine3Triangle3.cs" />
+    <Compile Include="g3\DistPoint2Box2.cs" />
+    <Compile Include="g3\DistPoint2Circle2.cs" />
+    <Compile Include="g3\DistPoint3Circle3.cs" />
+    <Compile Include="g3\DistPoint3Cylinder3.cs" />
+    <Compile Include="g3\DistPoint3Triangle3.cs" />
+    <Compile Include="g3\DistRay3Ray3.cs" />
+    <Compile Include="g3\DistRay3Segment3.cs" />
+    <Compile Include="g3\DistSegment2Segment2.cs" />
+    <Compile Include="g3\DistSegment3Triangle3.cs" />
+    <Compile Include="g3\DistTriangle3Triangle3.cs" />
+    <Compile Include="g3\DMesh3.cs" />
+    <Compile Include="g3\DMesh3Builder.cs" />
+    <Compile Include="g3\DMeshAABBTree3.cs" />
+    <Compile Include="g3\DMeshIntersectionTarget.cs" />
+    <Compile Include="g3\DPolyLine2f.cs" />
+    <Compile Include="g3\DSparseGrid3.cs" />
+    <Compile Include="g3\DSubmesh3.cs" />
+    <Compile Include="g3\DSubmesh3Set.cs" />
+    <Compile Include="g3\DVector.cs" />
+    <Compile Include="g3\DVectorArray2.cs" />
+    <Compile Include="g3\DVectorArray2d.cs" />
+    <Compile Include="g3\DVectorArray2f.cs" />
+    <Compile Include="g3\DVectorArray3.cs" />
+    <Compile Include="g3\DVectorArray3d.cs" />
+    <Compile Include="g3\DVectorArray3f.cs" />
+    <Compile Include="g3\DVectorArray3i.cs" />
+    <Compile Include="g3\DynamicPriorityQueue.cs" />
+    <Compile Include="g3\DynamicPriorityQueueNode.cs" />
+    <Compile Include="g3\EdgeConstraint.cs" />
+    <Compile Include="g3\EdgeLoop.cs" />
+    <Compile Include="g3\EdgeLoopRemesher.cs" />
+    <Compile Include="g3\EdgeRefineFlags.cs" />
+    <Compile Include="g3\EdgeSpan.cs" />
+    <Compile Include="g3\Ellipse2d.cs" />
+    <Compile Include="g3\EllipseArc2d.cs" />
+    <Compile Include="g3\FaceGroupOptimizer.cs" />
+    <Compile Include="g3\FaceGroupUtil.cs" />
+    <Compile Include="g3\FailMode.cs" />
+    <Compile Include="g3\FastPointWinding.cs" />
+    <Compile Include="g3\FastQuaternionSVD.cs" />
+    <Compile Include="g3\FastTriWinding.cs" />
+    <Compile Include="g3\FileSystemUtils.cs" />
+    <Compile Include="g3\Frame3f.cs" />
+    <Compile Include="g3\FrameGridIndexer3.cs" />
+    <Compile Include="g3\GaussPointsFit3.cs" />
+    <Compile Include="g3\GeneralPolygon2d.cs" />
+    <Compile Include="g3\GeneralPolygon2dBoxTree.cs" />
+    <Compile Include="g3\GenericMaterial.cs" />
+    <Compile Include="g3\gException.cs" />
+    <Compile Include="g3\gIndices.cs" />
+    <Compile Include="g3\gParallel.cs" />
+    <Compile Include="g3\GraphCells2d.cs" />
+    <Compile Include="g3\GraphSplitter2d.cs" />
+    <Compile Include="g3\GridBox3Generator.cs" />
+    <Compile Include="g3\GriddedRectGenerator.cs" />
+    <Compile Include="g3\GridLevelIndex.cs" />
+    <Compile Include="g3\GridLevelIndex2.cs" />
+    <Compile Include="g3\gSerialization.cs" />
+    <Compile Include="g3\HashBuilder.cs" />
+    <Compile Include="g3\HBitArray.cs" />
+    <Compile Include="g3\Hexagon2d.cs" />
+    <Compile Include="g3\IArcLengthParam.cs" />
+    <Compile Include="g3\IArcLengthParam2d.cs" />
+    <Compile Include="g3\IBinaryVoxelGrid.cs" />
+    <Compile Include="g3\ICancelSource.cs" />
+    <Compile Include="g3\IDeformableMesh.cs" />
+    <Compile Include="g3\IdentityIndexMap.cs" />
+    <Compile Include="g3\IDuplicatable.cs" />
+    <Compile Include="g3\IFixedGrid3.cs" />
+    <Compile Include="g3\IGrid3.cs" />
+    <Compile Include="g3\IGridElement3.cs" />
+    <Compile Include="g3\IGridWorldIndexer2.cs" />
+    <Compile Include="g3\IGridWorldIndexer3.cs" />
+    <Compile Include="g3\IIndexMap.cs" />
+    <Compile Include="g3\IIntersectionTarget.cs" />
+    <Compile Include="g3\IMatrix.cs" />
+    <Compile Include="g3\IMesh.cs" />
+    <Compile Include="g3\IMeshBuilder.cs" />
+    <Compile Include="g3\IMeshComponentManager.cs" />
+    <Compile Include="g3\IMeshReader.cs" />
+    <Compile Include="g3\IMeshWriter.cs" />
+    <Compile Include="g3\ImplicitAxisAlignedBox3d.cs" />
+    <Compile Include="g3\ImplicitBlend2d.cs" />
+    <Compile Include="g3\ImplicitBlend3d.cs" />
+    <Compile Include="g3\ImplicitBox3d.cs" />
+    <Compile Include="g3\ImplicitDifference2d.cs" />
+    <Compile Include="g3\ImplicitDifference3d.cs" />
+    <Compile Include="g3\ImplicitField2d.cs" />
+    <Compile Include="g3\ImplicitFieldSampler3d.cs" />
+    <Compile Include="g3\ImplicitFunction3d.cs" />
+    <Compile Include="g3\ImplicitHalfSpace3d.cs" />
+    <Compile Include="g3\ImplicitIntersection2d.cs" />
+    <Compile Include="g3\ImplicitIntersection3d.cs" />
+    <Compile Include="g3\ImplicitLine3d.cs" />
+    <Compile Include="g3\ImplicitNaryDifference3d.cs" />
+    <Compile Include="g3\ImplicitNaryIntersection3d.cs" />
+    <Compile Include="g3\ImplicitNAryOp2d.cs" />
+    <Compile Include="g3\ImplicitNaryUnion3d.cs" />
+    <Compile Include="g3\ImplicitOffset3d.cs" />
+    <Compile Include="g3\ImplicitOperator2d.cs" />
+    <Compile Include="g3\ImplicitPoint2d.cs" />
+    <Compile Include="g3\ImplicitShell3d.cs" />
+    <Compile Include="g3\ImplicitSmoothDifference3d.cs" />
+    <Compile Include="g3\ImplicitSmoothIntersection3d.cs" />
+    <Compile Include="g3\ImplicitSmoothUnion3d.cs" />
+    <Compile Include="g3\ImplicitSphere3d.cs" />
+    <Compile Include="g3\ImplicitUnion2d.cs" />
+    <Compile Include="g3\ImplicitUnion3d.cs" />
+    <Compile Include="g3\IMultiCurve2d.cs" />
+    <Compile Include="g3\IMultigridIndexer2.cs" />
+    <Compile Include="g3\IMultigridIndexer3.cs" />
+    <Compile Include="g3\Index2i.cs" />
+    <Compile Include="g3\Index3i.cs" />
+    <Compile Include="g3\Index4i.cs" />
+    <Compile Include="g3\IndexArray2i.cs" />
+    <Compile Include="g3\IndexArray3i.cs" />
+    <Compile Include="g3\IndexArray4i.cs" />
+    <Compile Include="g3\IndexFlagSet.cs" />
+    <Compile Include="g3\IndexHashSet.cs" />
+    <Compile Include="g3\IndexMap.cs" />
+    <Compile Include="g3\IndexPriorityQueue.cs" />
+    <Compile Include="g3\IndexRangeEnumerator.cs" />
+    <Compile Include="g3\IndexUtil.cs" />
+    <Compile Include="g3\InPlaceIterativeCurveSmooth.cs" />
+    <Compile Include="g3\Integrate1d.cs" />
+    <Compile Include="g3\IntersectionResult.cs" />
+    <Compile Include="g3\IntersectionType.cs" />
+    <Compile Include="g3\IntersectionUtil.cs" />
+    <Compile Include="g3\Intersector1.cs" />
+    <Compile Include="g3\Interval1d.cs" />
+    <Compile Include="g3\Interval1i.cs" />
+    <Compile Include="g3\IntrLine2Line2.cs" />
+    <Compile Include="g3\IntrLine2Segment2.cs" />
+    <Compile Include="g3\IntrLine2Triangle2.cs" />
+    <Compile Include="g3\IntrLine3AxisAlignedBox3.cs" />
+    <Compile Include="g3\IntrLine3Box3.cs" />
+    <Compile Include="g3\IntrRay3AxisAlignedBox3.cs" />
+    <Compile Include="g3\IntrRay3Box3.cs" />
+    <Compile Include="g3\IntrRay3Triangle3.cs" />
+    <Compile Include="g3\IntrSegment2Segment2.cs" />
+    <Compile Include="g3\IntrSegment2Triangle2.cs" />
+    <Compile Include="g3\IntrSegment3Box3.cs" />
+    <Compile Include="g3\IntrTriangle2Triangle2.cs" />
+    <Compile Include="g3\IntrTriangle3Triangle3.cs" />
+    <Compile Include="g3\IntSequence.cs" />
+    <Compile Include="g3\IntTagPair.cs" />
+    <Compile Include="g3\IntTagSet.cs" />
+    <Compile Include="g3\IOCode.cs" />
+    <Compile Include="g3\IOReadResult.cs" />
+    <Compile Include="g3\IOrientedProjectionTarget.cs" />
+    <Compile Include="g3\IOWriteResult.cs" />
+    <Compile Include="g3\IParametricCurve2d.cs" />
+    <Compile Include="g3\IParametricCurve3d.cs" />
+    <Compile Include="g3\IPointSet.cs" />
+    <Compile Include="g3\IProjectionTarget.cs" />
+    <Compile Include="g3\ISampledCurve3d.cs" />
+    <Compile Include="g3\ISpatial.cs" />
+    <Compile Include="g3\ITransform2.cs" />
+    <Compile Include="g3\IWrappedCurve3d.cs" />
+    <Compile Include="g3\LaplacianCurveDeformer.cs" />
+    <Compile Include="g3\LaplacianMeshDeformer.cs" />
+    <Compile Include="g3\LaplacianMeshSmoother.cs" />
+    <Compile Include="g3\Line2d.cs" />
+    <Compile Include="g3\Line2f.cs" />
+    <Compile Include="g3\Line3d.cs" />
+    <Compile Include="g3\Line3f.cs" />
+    <Compile Include="g3\LinearIntersection.cs" />
+    <Compile Include="g3\LineGenerator.cs" />
+    <Compile Include="g3\LocalProfiler.cs" />
+    <Compile Include="g3\LockingQueue.cs" />
+    <Compile Include="g3\MappedList.cs" />
+    <Compile Include="g3\MarchingCubes.cs" />
+    <Compile Include="g3\MarchingQuads.cs" />
+    <Compile Include="g3\MathUtil.cs" />
+    <Compile Include="g3\Matrix2d.cs" />
+    <Compile Include="g3\Matrix2f.cs" />
+    <Compile Include="g3\Matrix3d.cs" />
+    <Compile Include="g3\Matrix3f.cs" />
+    <Compile Include="g3\MatrixUtil.cs" />
+    <Compile Include="g3\matrix_entry.cs" />
+    <Compile Include="g3\MemoryPool.cs" />
+    <Compile Include="g3\MeshBoolean.cs" />
+    <Compile Include="g3\MeshBoundaryEdgeMidpoints.cs" />
+    <Compile Include="g3\MeshBoundaryLoops.cs" />
+    <Compile Include="g3\MeshBoundaryLoopsException.cs" />
+    <Compile Include="g3\MeshComponents.cs" />
+    <Compile Include="g3\MeshConnectedComponents.cs" />
+    <Compile Include="g3\MeshConstraints.cs" />
+    <Compile Include="g3\MeshConstraintUtil.cs" />
+    <Compile Include="g3\MeshDecomposition.cs" />
+    <Compile Include="g3\MeshEdgeMidpoints.cs" />
+    <Compile Include="g3\MeshEdgeSelection.cs" />
+    <Compile Include="g3\MeshEditor.cs" />
+    <Compile Include="g3\MeshExtrudeFaces.cs" />
+    <Compile Include="g3\MeshExtrudeLoop.cs" />
+    <Compile Include="g3\MeshExtrudeMesh.cs" />
+    <Compile Include="g3\MeshFaceSelection.cs" />
+    <Compile Include="g3\MeshFacesFromLoop.cs" />
+    <Compile Include="g3\MeshFormatReader.cs" />
+    <Compile Include="g3\MeshGenerator.cs" />
+    <Compile Include="g3\MeshHints.cs" />
+    <Compile Include="g3\MeshICP.cs" />
+    <Compile Include="g3\MeshIndexUtil.cs" />
+    <Compile Include="g3\MeshInsertPolygon.cs" />
+    <Compile Include="g3\MeshInsertUVPolyCurve.cs" />
+    <Compile Include="g3\MeshIOUtil.cs" />
+    <Compile Include="g3\MeshIsoCurves.cs" />
+    <Compile Include="g3\MeshIterativeSmooth.cs" />
+    <Compile Include="g3\MeshIterators.cs" />
+    <Compile Include="g3\MeshLocalParam.cs" />
+    <Compile Include="g3\MeshLoopClosure.cs" />
+    <Compile Include="g3\MeshLoopSmooth.cs" />
+    <Compile Include="g3\MeshMeasurements.cs" />
+    <Compile Include="g3\MeshMeshCut.cs" />
+    <Compile Include="g3\MeshNormals.cs" />
+    <Compile Include="g3\MeshOps.cs" />
+    <Compile Include="g3\MeshPlaneCut.cs" />
+    <Compile Include="g3\MeshProjectionTarget.cs" />
+    <Compile Include="g3\MeshQueries.cs" />
+    <Compile Include="g3\MeshRefinerBase.cs" />
+    <Compile Include="g3\MeshRegionBoundaryLoops.cs" />
+    <Compile Include="g3\MeshResult.cs" />
+    <Compile Include="g3\MeshSignedDistanceGrid.cs" />
+    <Compile Include="g3\MeshTransforms.cs" />
+    <Compile Include="g3\MeshTriInfoCache.cs" />
+    <Compile Include="g3\MeshTrimLoop.cs" />
+    <Compile Include="g3\MeshUtil.cs" />
+    <Compile Include="g3\MeshValidation.cs" />
+    <Compile Include="g3\MeshVertexSelection.cs" />
+    <Compile Include="g3\MeshWeights.cs" />
+    <Compile Include="g3\ModifyVerticesMeshChange.cs" />
+    <Compile Include="g3\MultigridIndexer2.cs" />
+    <Compile Include="g3\MultigridIndexer3.cs" />
+    <Compile Include="g3\NewVertexInfo.cs" />
+    <Compile Include="g3\NormalHistogram.cs" />
+    <Compile Include="g3\NTMesh3.cs" />
+    <Compile Include="g3\NURBSCurve2.cs" />
+    <Compile Include="g3\OBJFormatReader.cs" />
+    <Compile Include="g3\OBJMaterial.cs" />
+    <Compile Include="g3\OBJReader.cs" />
+    <Compile Include="g3\OBJWriter.cs" />
+    <Compile Include="g3\OFFFormatReader.cs" />
+    <Compile Include="g3\OFFReader.cs" />
+    <Compile Include="g3\OFFWriter.cs" />
+    <Compile Include="g3\OpenCylinderGenerator.cs" />
+    <Compile Include="g3\OrthogonalPlaneFit3.cs" />
+    <Compile Include="g3\PackedSparseMatrix.cs" />
+    <Compile Include="g3\ParallelStream.cs" />
+    <Compile Include="g3\ParametricCurveSequence2.cs" />
+    <Compile Include="g3\ParsingMessagesHandler.cs" />
+    <Compile Include="g3\PlanarComplex.cs" />
+    <Compile Include="g3\PlanarHoleFiller.cs" />
+    <Compile Include="g3\PlanarSolid2d.cs" />
+    <Compile Include="g3\PlanarSpansFiller.cs" />
+    <Compile Include="g3\Plane3d.cs" />
+    <Compile Include="g3\Plane3f.cs" />
+    <Compile Include="g3\PlaneIntersectionTarget.cs" />
+    <Compile Include="g3\PlaneProjectionTarget.cs" />
+    <Compile Include="g3\PointAABBTree3.cs" />
+    <Compile Include="g3\PointHashGrid2d.cs" />
+    <Compile Include="g3\PointHashGrid3d.cs" />
+    <Compile Include="g3\PointSplatsGenerator.cs" />
+    <Compile Include="g3\Polygon2d.cs" />
+    <Compile Include="g3\Polygon2dBoxTree.cs" />
+    <Compile Include="g3\Polygon2DCurve.cs" />
+    <Compile Include="g3\PolygonFont2d.cs" />
+    <Compile Include="g3\PolyLine2d.cs" />
+    <Compile Include="g3\PolyLine2DCurve.cs" />
+    <Compile Include="g3\PolyLine3d.cs" />
+    <Compile Include="g3\PolySimplification2.cs" />
+    <Compile Include="g3\PrimalQuery2d.cs" />
+    <Compile Include="g3\ProgressCancel.cs" />
+    <Compile Include="g3\PuncturedDiscGenerator.cs" />
+    <Compile Include="g3\QuadraticFit2.cs" />
+    <Compile Include="g3\QuadricError.cs" />
+    <Compile Include="g3\Quaterniond.cs" />
+    <Compile Include="g3\Quaternionf.cs" />
+    <Compile Include="g3\Query2.cs" />
+    <Compile Include="g3\Query2d.cs" />
+    <Compile Include="g3\Query2Int64.cs" />
+    <Compile Include="g3\QueryBase.cs" />
+    <Compile Include="g3\QueryNumberType.cs" />
+    <Compile Include="g3\QueryTuple2d.cs" />
+    <Compile Include="g3\Radial3DArrowGenerator.cs" />
+    <Compile Include="g3\Ray3d.cs" />
+    <Compile Include="g3\Ray3f.cs" />
+    <Compile Include="g3\RayIntersection.cs" />
+    <Compile Include="g3\ReadOptions.cs" />
+    <Compile Include="g3\Reducer.cs" />
+    <Compile Include="g3\RefCountVector.cs" />
+    <Compile Include="g3\RegionOperator.cs" />
+    <Compile Include="g3\RegionRemesher.cs" />
+    <Compile Include="g3\RemapItr.cs" />
+    <Compile Include="g3\Remesher.cs" />
+    <Compile Include="g3\RemoveTrianglesMeshChange.cs" />
+    <Compile Include="g3\RoundRectGenerator.cs" />
+    <Compile Include="g3\SafeListBuilder.cs" />
+    <Compile Include="g3\SampledArcLengthParam.cs" />
+    <Compile Include="g3\SampledArcLengthParam2d.cs" />
+    <Compile Include="g3\ScalarMap.cs" />
+    <Compile Include="g3\ScaleGridIndexer2.cs" />
+    <Compile Include="g3\ScaleGridIndexer3.cs" />
+    <Compile Include="g3\SculptCurveDeformation.cs" />
+    <Compile Include="g3\SculptCurveMove.cs" />
+    <Compile Include="g3\SculptCurveSmooth.cs" />
+    <Compile Include="g3\Segment2d.cs" />
+    <Compile Include="g3\Segment2dBox.cs" />
+    <Compile Include="g3\Segment2f.cs" />
+    <Compile Include="g3\Segment3d.cs" />
+    <Compile Include="g3\Segment3f.cs" />
+    <Compile Include="g3\SegmentHashGrid2d.cs" />
+    <Compile Include="g3\SegmentSet2d.cs" />
+    <Compile Include="g3\SequentialProjectionTarget.cs" />
+    <Compile Include="g3\SetGroupBehavior.cs" />
+    <Compile Include="g3\SetVerticesMeshChange.cs" />
+    <Compile Include="g3\ShiftGridIndexer2.cs" />
+    <Compile Include="g3\ShiftGridIndexer3.cs" />
+    <Compile Include="g3\ShiftIndexMap.cs" />
+    <Compile Include="g3\SimpleHoleFiller.cs" />
+    <Compile Include="g3\SimpleMesh.cs" />
+    <Compile Include="g3\SimpleMeshBuilder.cs" />
+    <Compile Include="g3\SimpleQuadMesh.cs" />
+    <Compile Include="g3\SimpleStore.cs" />
+    <Compile Include="g3\SingularValueDecomposition.cs" />
+    <Compile Include="g3\SkeletalBlend3d.cs" />
+    <Compile Include="g3\SkeletalRicciBlend3d.cs" />
+    <Compile Include="g3\SkeletalRicciNaryBlend3d.cs" />
+    <Compile Include="g3\SmallListSet.cs" />
+    <Compile Include="g3\Snapping.cs" />
+    <Compile Include="g3\SparseList.cs" />
+    <Compile Include="g3\SparseObjectList.cs" />
+    <Compile Include="g3\SparseSymmetricCG.cs" />
+    <Compile Include="g3\SparseSymmetricCGMultipleRHS.cs" />
+    <Compile Include="g3\SpatialFunctions.cs" />
+    <Compile Include="g3\Sphere3Generator_NormalizedCube.cs" />
+    <Compile Include="g3\SphericalFibonacciPointSet.cs" />
+    <Compile Include="g3\StandardMeshReader.cs" />
+    <Compile Include="g3\StandardMeshWriter.cs" />
+    <Compile Include="g3\StandardSculptCurveDeformation.cs" />
+    <Compile Include="g3\STLFormatReader.cs" />
+    <Compile Include="g3\STLReader.cs" />
+    <Compile Include="g3\STLWriter.cs" />
+    <Compile Include="g3\StringTagSet.cs" />
+    <Compile Include="g3\SVGWriter.cs" />
+    <Compile Include="g3\SymmetricEigenSolver.cs" />
+    <Compile Include="g3\SymmetricMatrix3d.cs" />
+    <Compile Include="g3\SymmetricSparseMatrix.cs" />
+    <Compile Include="g3\TilingUtil.cs" />
+    <Compile Include="g3\TransformedIntersectionTarget.cs" />
+    <Compile Include="g3\TransformedMeshProjectionTarget.cs" />
+    <Compile Include="g3\TransformSequence.cs" />
+    <Compile Include="g3\TransformSequence2.cs" />
+    <Compile Include="g3\Triangle.cs" />
+    <Compile Include="g3\Triangle2d.cs" />
+    <Compile Include="g3\Triangle2f.cs" />
+    <Compile Include="g3\Triangle3d.cs" />
+    <Compile Include="g3\Triangle3f.cs" />
+    <Compile Include="g3\TriangleBinsGrid2d.cs" />
+    <Compile Include="g3\TriangulatedPolygonGenerator.cs" />
+    <Compile Include="g3\TrivialBox3Generator.cs" />
+    <Compile Include="g3\TrivialDiscGenerator.cs" />
+    <Compile Include="g3\TrivialRectGenerator.cs" />
+    <Compile Include="g3\TubeGenerator.cs" />
+    <Compile Include="g3\Units.cs" />
+    <Compile Include="g3\UnityUtils.cs" />
+    <Compile Include="g3\Util.cs" />
+    <Compile Include="g3\ValidationStatus.cs" />
+    <Compile Include="g3\Vector2d.cs" />
+    <Compile Include="g3\Vector2dTuple2.cs" />
+    <Compile Include="g3\Vector2dTuple3.cs" />
+    <Compile Include="g3\Vector2dTuple4.cs" />
+    <Compile Include="g3\Vector2f.cs" />
+    <Compile Include="g3\Vector2i.cs" />
+    <Compile Include="g3\Vector2l.cs" />
+    <Compile Include="g3\Vector3d.cs" />
+    <Compile Include="g3\Vector3dTuple2.cs" />
+    <Compile Include="g3\Vector3dTuple3.cs" />
+    <Compile Include="g3\Vector3f.cs" />
+    <Compile Include="g3\Vector3fTuple3.cs" />
+    <Compile Include="g3\Vector3i.cs" />
+    <Compile Include="g3\Vector4d.cs" />
+    <Compile Include="g3\Vector4f.cs" />
+    <Compile Include="g3\VectorArray2.cs" />
+    <Compile Include="g3\VectorArray2d.cs" />
+    <Compile Include="g3\VectorArray2f.cs" />
+    <Compile Include="g3\VectorArray3.cs" />
+    <Compile Include="g3\VectorArray3d.cs" />
+    <Compile Include="g3\VectorArray3f.cs" />
+    <Compile Include="g3\VectorArray3i.cs" />
+    <Compile Include="g3\VectorArray4.cs" />
+    <Compile Include="g3\VertexConstraint.cs" />
+    <Compile Include="g3\VerticalGeneralizedCylinderGenerator.cs" />
+    <Compile Include="g3\VoxelSurfaceGenerator.cs" />
+    <Compile Include="g3\WriteMesh.cs" />
+    <Compile Include="g3\WriteOptions.cs" />
+    <Compile Include="gs\AutoHoleFill.cs" />
+    <Compile Include="gs\EditMeshSpatial.cs" />
+    <Compile Include="gs\IFalloffFunction.cs" />
+    <Compile Include="gs\LinearFalloff.cs" />
+    <Compile Include="gs\MarchingCubesPro.cs" />
+    <Compile Include="gs\MergeCoincidentEdges.cs" />
+    <Compile Include="gs\MeshAssembly.cs" />
+    <Compile Include="gs\MeshAutoRepair.cs" />
+    <Compile Include="gs\MeshInsertProjectedPolygon.cs" />
+    <Compile Include="gs\MeshRepairOrientation.cs" />
+    <Compile Include="gs\MeshScalarSamplingGrid.cs" />
+    <Compile Include="gs\MeshSpatialSort.cs" />
+    <Compile Include="gs\MeshStitchLoops.cs" />
+    <Compile Include="gs\MeshTopology.cs" />
+    <Compile Include="gs\MeshWindingNumberGrid.cs" />
+    <Compile Include="gs\MinimalHoleFill.cs" />
+    <Compile Include="gs\PointSetHashtable.cs" />
+    <Compile Include="gs\RemesherPro.cs" />
+    <Compile Include="gs\RemoveDuplicateTriangles.cs" />
+    <Compile Include="gs\RemoveOccludedTriangles.cs" />
+    <Compile Include="gs\SmoothedHoleFill.cs" />
+    <Compile Include="gs\WyvillFalloff.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DEF}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

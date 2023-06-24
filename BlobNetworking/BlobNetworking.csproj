@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530D75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BlobNetworking</RootNamespace>
+    <AssemblyName>BlobNetworking</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sons\BlobNetworking\BlobReceive.cs" />
+    <Compile Include="Sons\BlobNetworking\BlobSend.cs" />
+    <Compile Include="Sons\BlobNetworking\BlobTransport.cs" />
+    <Compile Include="Sons\BlobNetworking\BlobTransportConfig.cs" />
+    <Compile Include="Sons\BlobNetworking\BlobTransportEndpoint.cs" />
+    <Compile Include="Sons\BlobNetworking\BlobTransportRemote.cs" />
+    <Compile Include="Sons\BlobNetworking\BlobTransportSteamNetworkInterface.cs" />
+    <Compile Include="Sons\BlobNetworking\BlobTransportUdpNetworkInterface.cs" />
+    <Compile Include="Sons\BlobNetworking\Block.cs" />
+    <Compile Include="Sons\BlobNetworking\BlockAck.cs" />
+    <Compile Include="Sons\BlobNetworking\BufferPool.cs" />
+    <Compile Include="Sons\BlobNetworking\Crc32.cs" />
+    <Compile Include="Sons\BlobNetworking\Hash.cs" />
+    <Compile Include="Sons\BlobNetworking\IBlobSyncNetworkInterface.cs" />
+    <Compile Include="Sons\BlobNetworking\KeepAlive.cs" />
+    <Compile Include="Sons\BlobNetworking\KeepAliveAck.cs" />
+    <Compile Include="Sons\BlobNetworking\Logger.cs" />
+    <Compile Include="Sons\BlobNetworking\SendRoundRobin.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsUnmanagedAttribute.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.rlabrecque.steamworks.net\com.rlabrecque.steamworks.net.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D7A}</Project>
+      <Name>com.rlabrecque.steamworks.net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Endnight.Utilities.Configurations\Endnight.Utilities.Configurations.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D84}</Project>
+      <Name>Endnight.Utilities.Configurations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DEF}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

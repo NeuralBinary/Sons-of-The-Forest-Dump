@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NWH.DWP2</RootNamespace>
+    <AssemblyName>NWH.DWP2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefaultWater\Displace.cs" />
+    <Compile Include="DefaultWater\GerstnerDisplace.cs" />
+    <Compile Include="DefaultWater\MeshContainer.cs" />
+    <Compile Include="DefaultWater\PlanarReflection.cs" />
+    <Compile Include="DefaultWater\SpecularLighting.cs" />
+    <Compile Include="DefaultWater\Water.cs" />
+    <Compile Include="DefaultWater\WaterBase.cs" />
+    <Compile Include="DefaultWater\WaterQuality.cs" />
+    <Compile Include="DefaultWater\WaterTile.cs" />
+    <Compile Include="DemoContent\CubeGridSpawner.cs" />
+    <Compile Include="DemoContent\GUIHandler.cs" />
+    <Compile Include="DemoContent\WaterObjectFromScript.cs" />
+    <Compile Include="MeshDecimation\Comparer.cs" />
+    <Compile Include="MeshDecimation\History.cs" />
+    <Compile Include="MeshDecimation\MeshDecimate.cs" />
+    <Compile Include="MeshDecimation\Tri.cs" />
+    <Compile Include="MeshDecimation\Vert.cs" />
+    <Compile Include="MiConvexHull\ConnectorList.cs" />
+    <Compile Include="MiConvexHull\Constants.cs" />
+    <Compile Include="MiConvexHull\ConvexFace.cs" />
+    <Compile Include="MiConvexHull\ConvexFaceInternal.cs" />
+    <Compile Include="MiConvexHull\ConvexHull.2.cs" />
+    <Compile Include="MiConvexHull\ConvexHull.cs" />
+    <Compile Include="MiConvexHull\ConvexHullAlgorithm.cs" />
+    <Compile Include="MiConvexHull\DefaultConvexFace.cs" />
+    <Compile Include="MiConvexHull\DefaultTriangulationCell.cs" />
+    <Compile Include="MiConvexHull\DefaultVertex.cs" />
+    <Compile Include="MiConvexHull\DeferredFace.cs" />
+    <Compile Include="MiConvexHull\DelaunayTriangulation.cs" />
+    <Compile Include="MiConvexHull\FaceConnector.cs" />
+    <Compile Include="MiConvexHull\FaceList.cs" />
+    <Compile Include="MiConvexHull\IndexBuffer.cs" />
+    <Compile Include="MiConvexHull\ITriangulation.cs" />
+    <Compile Include="MiConvexHull\IVertex.cs" />
+    <Compile Include="MiConvexHull\MathHelper.cs" />
+    <Compile Include="MiConvexHull\ObjectManager.cs" />
+    <Compile Include="MiConvexHull\SimpleList.cs" />
+    <Compile Include="MiConvexHull\Triangulation.cs" />
+    <Compile Include="MiConvexHull\TriangulationCell.cs" />
+    <Compile Include="MiConvexHull\Vertex.cs" />
+    <Compile Include="MiConvexHull\VoronoiEdge.cs" />
+    <Compile Include="MiConvexHull\VoronoiMesh.2.cs" />
+    <Compile Include="MiConvexHull\VoronoiMesh.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetRenderQueue.cs" />
+    <Compile Include="ShipController\AdvancedShipController.cs" />
+    <Compile Include="ShipController\Anchor.cs" />
+    <Compile Include="ShipController\Engine.cs" />
+    <Compile Include="ShipController\InputManagerShipInputProvider.cs" />
+    <Compile Include="ShipController\InputSystemShipInputProvider.cs" />
+    <Compile Include="ShipController\MobileShipInputProvider.cs" />
+    <Compile Include="ShipController\Rudder.cs" />
+    <Compile Include="ShipController\ShipInputActions.cs" />
+    <Compile Include="ShipController\ShipInputHandler.cs" />
+    <Compile Include="ShipController\ShipInputProvider.cs" />
+    <Compile Include="ShipController\ShipInputStates.cs" />
+    <Compile Include="ShipController\Sink.cs" />
+    <Compile Include="ShipController\Submarine.cs" />
+    <Compile Include="ShipController\Thruster.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="WaterData\CrestWaterDataProvider.cs" />
+    <Compile Include="WaterData\FlatWaterDataProvider.cs" />
+    <Compile Include="WaterData\RaycastWaterDataProvider.cs" />
+    <Compile Include="WaterData\WaterDataProvider.cs" />
+    <Compile Include="WaterObjects\CenterOfMass.cs" />
+    <Compile Include="WaterObjects\MassFromChildren.cs" />
+    <Compile Include="WaterObjects\MassFromVolume.cs" />
+    <Compile Include="WaterObjects\MeshUtility.cs" />
+    <Compile Include="WaterObjects\SerializedMesh.cs" />
+    <Compile Include="WaterObjects\WaterDataDebugGrid.cs" />
+    <Compile Include="WaterObjects\WaterObject.cs" />
+    <Compile Include="WaterObjects\WaterObjectManager.cs" />
+    <Compile Include="WaterObjects\WaterObjectMaterial.cs" />
+    <Compile Include="WaterObjects\WaterObjectWizard.cs" />
+    <Compile Include="WaterObjects\WaterParticleSystem.cs" />
+    <Compile Include="WaterObjects\WaterTriangleJob.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Crest\Crest.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D7C}</Project>
+      <Name>Crest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NWH.Common.CoM\NWH.Common.CoM.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D9C}</Project>
+      <Name>NWH.Common.CoM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NWH.Common.Input\NWH.Common.Input.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D9F}</Project>
+      <Name>NWH.Common.Input</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NWH.Common.Utility\NWH.Common.Utility.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DA2}</Project>
+      <Name>NWH.Common.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NWH.Common.Vehicle\NWH.Common.Vehicle.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DA3}</Project>
+      <Name>NWH.Common.Vehicle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DEF}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.InputSystem\Unity.InputSystem.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E05}</Project>
+      <Name>Unity.InputSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AudioModule\UnityEngine.AudioModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E15}</Project>
+      <Name>UnityEngine.AudioModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E20}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E22}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E2F}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

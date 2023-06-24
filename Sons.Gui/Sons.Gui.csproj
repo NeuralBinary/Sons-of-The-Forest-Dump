@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DCC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sons.Gui</RootNamespace>
+    <AssemblyName>Sons.Gui</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimateLinkTextGui.cs" />
+    <Compile Include="AnimateSidebarElement.cs" />
+    <Compile Include="Assemblies\Sons\Cinematics\FadeToBlack.cs" />
+    <Compile Include="AutoUpdateTextMesh.cs" />
+    <Compile Include="Carousel.cs" />
+    <Compile Include="CarouselDirection.cs" />
+    <Compile Include="CopyText.cs" />
+    <Compile Include="Credits\CreditsScreen.cs" />
+    <Compile Include="DaysSurvivedTextMesh.cs" />
+    <Compile Include="DeadScreen\DeadScreenMenu.cs" />
+    <Compile Include="DirectionalHorizontalLayout.cs" />
+    <Compile Include="DropdownEventManager.cs" />
+    <Compile Include="DynamicModalDialogController.cs" />
+    <Compile Include="DynamicModalDialogGui.cs" />
+    <Compile Include="EmptySlot.cs" />
+    <Compile Include="ForceGuiSelection.cs" />
+    <Compile Include="HintSystem\HintDatabase.cs" />
+    <Compile Include="HintSystem\HintDefinition.cs" />
+    <Compile Include="HintSystem\HintTextMesh.cs" />
+    <Compile Include="HintSystem\Token.cs" />
+    <Compile Include="IDirectionalLayout.cs" />
+    <Compile Include="ImageCarousel.cs" />
+    <Compile Include="InputTypeOrderProvider.cs" />
+    <Compile Include="Input\DynamicInputIcon.cs" />
+    <Compile Include="Input\IconAssetDatabase.cs" />
+    <Compile Include="Input\IconAssetSet.cs" />
+    <Compile Include="Input\IconInstance.cs" />
+    <Compile Include="Input\IHeldInputProgressReceiver.cs" />
+    <Compile Include="Input\InputBindingData.cs" />
+    <Compile Include="Input\InputBindingDefinition.cs" />
+    <Compile Include="Input\InputIconProgress.cs" />
+    <Compile Include="Input\InputMapType.cs" />
+    <Compile Include="Input\LinkToInput.cs" />
+    <Compile Include="Input\LinkUiElement.cs" />
+    <Compile Include="Input\MirrorUiRawImageTexture.cs" />
+    <Compile Include="Input\ProgressImageDef.cs" />
+    <Compile Include="Input\UiIconElement.cs" />
+    <Compile Include="Input\UiTextElement.cs" />
+    <Compile Include="IOrderProvider.cs" />
+    <Compile Include="ItemIdObject.cs" />
+    <Compile Include="KaraokeGui.cs" />
+    <Compile Include="KeepOnCamera.cs" />
+    <Compile Include="LinkTextGui.cs" />
+    <Compile Include="LoadMenu.cs" />
+    <Compile Include="LocalizedLinkText.cs" />
+    <Compile Include="LookAtCamera.cs" />
+    <Compile Include="ModalDialogManager.cs" />
+    <Compile Include="NewSlot.cs" />
+    <Compile Include="OnSelectUi.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="PauseMenu.cs" />
+    <Compile Include="ProceduralUI.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RawImageCarousel.cs" />
+    <Compile Include="ReleaseTimerGui.cs" />
+    <Compile Include="RobbyGuiPrompts.cs" />
+    <Compile Include="RobbyWorldUi.cs" />
+    <Compile Include="SavedSlot.cs" />
+    <Compile Include="SaveGameIdSetter.cs" />
+    <Compile Include="SaveGameTypeSetter.cs" />
+    <Compile Include="SaveLoadMenuBase.cs" />
+    <Compile Include="SaveMenu.cs" />
+    <Compile Include="SaveSlotBase.cs" />
+    <Compile Include="SceneLoadingIndicator.cs" />
+    <Compile Include="SetSelectable.cs" />
+    <Compile Include="ShaderGlobalColor.cs" />
+    <Compile Include="ShaderGlobalFloat.cs" />
+    <Compile Include="ShaderGlobalInt.cs" />
+    <Compile Include="ShaderGlobals.cs" />
+    <Compile Include="ShaderGlobalTexture.cs" />
+    <Compile Include="ShaderGlobalValue.cs" />
+    <Compile Include="ShaderGlobalVector4.cs" />
+    <Compile Include="ShapesDiscSync.cs" />
+    <Compile Include="SheenShaderGlobals.cs" />
+    <Compile Include="ShowInput.cs" />
+    <Compile Include="SliderEventManager.cs" />
+    <Compile Include="SnapScrollToSelected.cs" />
+    <Compile Include="SonsDropdownGamepadHelper.cs" />
+    <Compile Include="TextCarousel.cs" />
+    <Compile Include="UiElement.cs" />
+    <Compile Include="UiElementMono.cs" />
+    <Compile Include="UiManager.cs" />
+    <Compile Include="UiUtils.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="VersionGui.cs" />
+    <Compile Include="WorldToOverlayUi.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Endnight\Endnight.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D81}</Project>
+      <Name>Endnight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShapesRuntime\ShapesRuntime.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DAD}</Project>
+      <Name>ShapesRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Gameplay.GameSetup\Sons.Gameplay.GameSetup.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DC8}</Project>
+      <Name>Sons.Gameplay.GameSetup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Input\Sons.Input.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD0}</Project>
+      <Name>Sons.Input</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Loading\Sons.Loading.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD3}</Project>
+      <Name>Sons.Loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Save\Sons.Save.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DDD}</Project>
+      <Name>Sons.Save</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.UiElements\Sons.UiElements.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DE5}</Project>
+      <Name>Sons.UiElements</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.CrossSceneReference\Unity.CrossSceneReference.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E04}</Project>
+      <Name>Unity.CrossSceneReference</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.InputSystem\Unity.InputSystem.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E05}</Project>
+      <Name>Unity.InputSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Localization\Unity.Localization.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E06}</Project>
+      <Name>Unity.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.Core.Runtime\Unity.RenderPipelines.Core.Runtime.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E09}</Project>
+      <Name>Unity.RenderPipelines.Core.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0E}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E13}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UIModule\UnityEngine.UIModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E31}</Project>
+      <Name>UnityEngine.UIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E2F}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

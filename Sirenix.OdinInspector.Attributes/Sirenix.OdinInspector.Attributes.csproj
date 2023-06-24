@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sirenix.OdinInspector</RootNamespace>
+    <AssemblyName>Sirenix.OdinInspector.Attributes</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetListAttribute.cs" />
+    <Compile Include="AssetSelectorAttribute.cs" />
+    <Compile Include="AssetsOnlyAttribute.cs" />
+    <Compile Include="AttributeTargetFlags.cs" />
+    <Compile Include="BoxGroupAttribute.cs" />
+    <Compile Include="ButtonAttribute.cs" />
+    <Compile Include="ButtonGroupAttribute.cs" />
+    <Compile Include="ButtonSizes.cs" />
+    <Compile Include="ButtonStyle.cs" />
+    <Compile Include="ChildGameObjectsOnlyAttribute.cs" />
+    <Compile Include="ColorPaletteAttribute.cs" />
+    <Compile Include="CustomContextMenuAttribute.cs" />
+    <Compile Include="CustomValueDrawerAttribute.cs" />
+    <Compile Include="DelayedPropertyAttribute.cs" />
+    <Compile Include="DetailedInfoBoxAttribute.cs" />
+    <Compile Include="DictionaryDisplayOptions.cs" />
+    <Compile Include="DictionaryDrawerSettings.cs" />
+    <Compile Include="DisableContextMenuAttribute.cs" />
+    <Compile Include="DisableIfAttribute.cs" />
+    <Compile Include="DisableInAttribute.cs" />
+    <Compile Include="DisableInEditorModeAttribute.cs" />
+    <Compile Include="DisableInInlineEditorsAttribute.cs" />
+    <Compile Include="DisableInNonPrefabsAttribute.cs" />
+    <Compile Include="DisableInPlayModeAttribute.cs" />
+    <Compile Include="DisableInPrefabAssetsAttribute.cs" />
+    <Compile Include="DisableInPrefabInstancesAttribute.cs" />
+    <Compile Include="DisableInPrefabsAttribute.cs" />
+    <Compile Include="DisallowModificationsInAttribute.cs" />
+    <Compile Include="DisplayAsStringAttribute.cs" />
+    <Compile Include="DoNotDrawAsReferenceAttribute.cs" />
+    <Compile Include="DontApplyToListElementsAttribute.cs" />
+    <Compile Include="DontValidateAttribute.cs" />
+    <Compile Include="DrawWithUnityAttribute.cs" />
+    <Compile Include="EnableGUIAttribute.cs" />
+    <Compile Include="EnableIfAttribute.cs" />
+    <Compile Include="EnableInAttribute.cs" />
+    <Compile Include="EnumPagingAttribute.cs" />
+    <Compile Include="EnumToggleButtonsAttribute.cs" />
+    <Compile Include="FilePathAttribute.cs" />
+    <Compile Include="FolderPathAttribute.cs" />
+    <Compile Include="FoldoutGroupAttribute.cs" />
+    <Compile Include="GUIColorAttribute.cs" />
+    <Compile Include="HideDuplicateReferenceBoxAttribute.cs" />
+    <Compile Include="HideIfAttribute.cs" />
+    <Compile Include="HideIfGroupAttribute.cs" />
+    <Compile Include="HideInAttribute.cs" />
+    <Compile Include="HideInEditorModeAttribute.cs" />
+    <Compile Include="HideInInlineEditorsAttribute.cs" />
+    <Compile Include="HideInNonPrefabsAttribute.cs" />
+    <Compile Include="HideInPlayModeAttribute.cs" />
+    <Compile Include="HideInPrefabAssetsAttribute.cs" />
+    <Compile Include="HideInPrefabInstancesAttribute.cs" />
+    <Compile Include="HideInPrefabsAttribute.cs" />
+    <Compile Include="HideInTablesAttribute.cs" />
+    <Compile Include="HideLabelAttribute.cs" />
+    <Compile Include="HideMonoScriptAttribute.cs" />
+    <Compile Include="HideNetworkBehaviourFieldsAttribute.cs" />
+    <Compile Include="HideReferenceObjectPickerAttribute.cs" />
+    <Compile Include="HorizontalGroupAttribute.cs" />
+    <Compile Include="IncludeMyAttributesAttribute.cs" />
+    <Compile Include="IndentAttribute.cs" />
+    <Compile Include="InfoBoxAttribute.cs" />
+    <Compile Include="InfoMessageType.cs" />
+    <Compile Include="InlineButtonAttribute.cs" />
+    <Compile Include="InlineEditorAttribute.cs" />
+    <Compile Include="InlineEditorModes.cs" />
+    <Compile Include="InlineEditorObjectFieldModes.cs" />
+    <Compile Include="InlinePropertyAttribute.cs" />
+    <Compile Include="Internal\ISubGroupProviderAttribute.cs" />
+    <Compile Include="ISearchFilterable.cs" />
+    <Compile Include="ISelfValidator.cs" />
+    <Compile Include="IValueDropdownItem.cs" />
+    <Compile Include="LabelTextAttribute.cs" />
+    <Compile Include="LabelWidthAttribute.cs" />
+    <Compile Include="ListDrawerSettingsAttribute.cs" />
+    <Compile Include="MaxValueAttribute.cs" />
+    <Compile Include="MinMaxSliderAttribute.cs" />
+    <Compile Include="MinValueAttribute.cs" />
+    <Compile Include="MultiLinePropertyAttribute.cs" />
+    <Compile Include="ObjectFieldAlignment.cs" />
+    <Compile Include="OdinRegisterAttributeAttribute.cs" />
+    <Compile Include="OnCollectionChangedAttribute.cs" />
+    <Compile Include="OnInspectorDisposeAttribute.cs" />
+    <Compile Include="OnInspectorGUIAttribute.cs" />
+    <Compile Include="OnInspectorInitAttribute.cs" />
+    <Compile Include="OnStateUpdateAttribute.cs" />
+    <Compile Include="OnValueChangedAttribute.cs" />
+    <Compile Include="OptionalAttribute.cs" />
+    <Compile Include="PrefabKind.cs" />
+    <Compile Include="PreviewFieldAttribute.cs" />
+    <Compile Include="ProgressBarAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyGroupAttribute.cs" />
+    <Compile Include="PropertyOrderAttribute.cs" />
+    <Compile Include="PropertyRangeAttribute.cs" />
+    <Compile Include="PropertySpaceAttribute.cs" />
+    <Compile Include="PropertyTooltipAttribute.cs" />
+    <Compile Include="ReadOnlyAttribute.cs" />
+    <Compile Include="RequiredAttribute.cs" />
+    <Compile Include="RequiredInAttribute.cs" />
+    <Compile Include="RequiredInPrefabAssetsAttribute.cs" />
+    <Compile Include="RequiredInPrefabInstancesAttribute.cs" />
+    <Compile Include="ResponsiveButtonGroupAttribute.cs" />
+    <Compile Include="SceneObjectsOnlyAttribute.cs" />
+    <Compile Include="SdfIconType.cs" />
+    <Compile Include="SearchableAttribute.cs" />
+    <Compile Include="SearchFilterOptions.cs" />
+    <Compile Include="SelfFix.cs" />
+    <Compile Include="SelfMetaData.cs" />
+    <Compile Include="SelfValidationResult.cs" />
+    <Compile Include="SelfValidationResultItemExtensions.cs" />
+    <Compile Include="ShowDrawerChainAttribute.cs" />
+    <Compile Include="ShowIfAttribute.cs" />
+    <Compile Include="ShowIfGroupAttribute.cs" />
+    <Compile Include="ShowInAttribute.cs" />
+    <Compile Include="ShowInInlineEditorsAttribute.cs" />
+    <Compile Include="ShowInInspectorAttribute.cs" />
+    <Compile Include="ShowOdinSerializedPropertiesInInspectorAttribute.cs" />
+    <Compile Include="ShowPropertyResolverAttribute.cs" />
+    <Compile Include="SuffixLabelAttribute.cs" />
+    <Compile Include="SuppressInvalidAttributeErrorAttribute.cs" />
+    <Compile Include="TabGroupAttribute.cs" />
+    <Compile Include="TableColumnWidthAttribute.cs" />
+    <Compile Include="TableListAttribute.cs" />
+    <Compile Include="TableMatrixAttribute.cs" />
+    <Compile Include="TitleAlignments.cs" />
+    <Compile Include="TitleAttribute.cs" />
+    <Compile Include="TitleGroupAttribute.cs" />
+    <Compile Include="ToggleAttribute.cs" />
+    <Compile Include="ToggleGroupAttribute.cs" />
+    <Compile Include="ToggleLeftAttribute.cs" />
+    <Compile Include="TypeFilterAttribute.cs" />
+    <Compile Include="TypeInfoBoxAttribute.cs" />
+    <Compile Include="ValidateInputAttribute.cs" />
+    <Compile Include="ValidatorSeverity.cs" />
+    <Compile Include="ValueDropdownAttribute.cs" />
+    <Compile Include="ValueDropdownItem.2.cs" />
+    <Compile Include="ValueDropdownItem.cs" />
+    <Compile Include="ValueDropdownList.cs" />
+    <Compile Include="VerticalGroupAttribute.cs" />
+    <Compile Include="WrapAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TextRenderingModule\UnityEngine.TextRenderingModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E2D}</Project>
+      <Name>UnityEngine.TextRenderingModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

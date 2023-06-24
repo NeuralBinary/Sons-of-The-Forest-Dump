@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DA9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pathfinding.Poly2Tri</RootNamespace>
+    <AssemblyName>Pathfinding.Poly2Tri</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvancingFront.cs" />
+    <Compile Include="AdvancingFrontNode.cs" />
+    <Compile Include="ConstrainedPointSet.cs" />
+    <Compile Include="DelaunayTriangle.cs" />
+    <Compile Include="DTSweep.cs" />
+    <Compile Include="DTSweepBasin.cs" />
+    <Compile Include="DTSweepConstraint.cs" />
+    <Compile Include="DTSweepContext.cs" />
+    <Compile Include="DTSweepDebugContext.cs" />
+    <Compile Include="DTSweepEdgeEvent.cs" />
+    <Compile Include="DTSweepPointComparator.cs" />
+    <Compile Include="FixedArray3.cs" />
+    <Compile Include="FixedBitArray3.cs" />
+    <Compile Include="Orientation.cs" />
+    <Compile Include="P2T.cs" />
+    <Compile Include="PointGenerator.cs" />
+    <Compile Include="PointOnEdgeException.cs" />
+    <Compile Include="PointSet.cs" />
+    <Compile Include="Polygon.cs" />
+    <Compile Include="PolygonGenerator.cs" />
+    <Compile Include="PolygonPoint.cs" />
+    <Compile Include="PolygonSet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Triangulatable.cs" />
+    <Compile Include="TriangulationAlgorithm.cs" />
+    <Compile Include="TriangulationConstraint.cs" />
+    <Compile Include="TriangulationContext.cs" />
+    <Compile Include="TriangulationDebugContext.cs" />
+    <Compile Include="TriangulationMode.cs" />
+    <Compile Include="TriangulationPoint.cs" />
+    <Compile Include="TriangulationUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

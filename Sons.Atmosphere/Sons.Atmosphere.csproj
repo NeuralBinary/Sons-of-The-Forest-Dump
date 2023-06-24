@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sons.Atmosphere</RootNamespace>
+    <AssemblyName>Sons.Atmosphere</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RainShaderGlobals.cs" />
+    <Compile Include="ReflectionProbeTreeOcclusion.cs" />
+    <Compile Include="Sons\Atmosphere\AmbientAudioTimeOfDay.cs" />
+    <Compile Include="Sons\Atmosphere\AmbientLinkedLight.cs" />
+    <Compile Include="Sons\Atmosphere\AmbientManager.cs" />
+    <Compile Include="Sons\Atmosphere\BakedAmbient.cs" />
+    <Compile Include="Sons\Atmosphere\BerriesSeasonalChanceValidator.cs" />
+    <Compile Include="Sons\Atmosphere\CloudManager.cs" />
+    <Compile Include="Sons\Atmosphere\CloudModelDataProfile.cs" />
+    <Compile Include="Sons\Atmosphere\CloudState.cs" />
+    <Compile Include="Sons\Atmosphere\CloudSystemMonoBehaviour.cs" />
+    <Compile Include="Sons\Atmosphere\CrestOceanViewpointSetter.cs" />
+    <Compile Include="Sons\Atmosphere\DirectionalLightRotation.cs" />
+    <Compile Include="Sons\Atmosphere\FreezeWater.cs" />
+    <Compile Include="Sons\Atmosphere\ICloudReceiver.cs" />
+    <Compile Include="Sons\Atmosphere\IFreezeWaterReceiver.cs" />
+    <Compile Include="Sons\Atmosphere\ILightningTarget.cs" />
+    <Compile Include="Sons\Atmosphere\IRainAndSnowingReceiver.cs" />
+    <Compile Include="Sons\Atmosphere\IRainReceiver.cs" />
+    <Compile Include="Sons\Atmosphere\ISeasonsReceiver.cs" />
+    <Compile Include="Sons\Atmosphere\ISnowingReceiver.cs" />
+    <Compile Include="Sons\Atmosphere\ISunLightReceiver.cs" />
+    <Compile Include="Sons\Atmosphere\ITemperatureModifierReceiver.cs" />
+    <Compile Include="Sons\Atmosphere\ITemperatureReceiver.cs" />
+    <Compile Include="Sons\Atmosphere\IWindReceiver.cs" />
+    <Compile Include="Sons\Atmosphere\LensFlareFader.cs" />
+    <Compile Include="Sons\Atmosphere\ParticleDistanceFixer.cs" />
+    <Compile Include="Sons\Atmosphere\RainEffectController.cs" />
+    <Compile Include="Sons\Atmosphere\RainFogController.cs" />
+    <Compile Include="Sons\Atmosphere\SeasonalAssetSwapper.cs" />
+    <Compile Include="Sons\Atmosphere\SeasonalOceanWavesController.cs" />
+    <Compile Include="Sons\Atmosphere\SeasonProperties.cs" />
+    <Compile Include="Sons\Atmosphere\SeasonPropertyChanceValidator.cs" />
+    <Compile Include="Sons\Atmosphere\SeasonsManager.cs" />
+    <Compile Include="Sons\Atmosphere\SnowDepthAssetSwapper.cs" />
+    <Compile Include="Sons\Atmosphere\SnowHeightManager.cs" />
+    <Compile Include="Sons\Atmosphere\SnowProfile.cs" />
+    <Compile Include="Sons\Atmosphere\SunLightManager.cs" />
+    <Compile Include="Sons\Atmosphere\SunLinkedLight.cs" />
+    <Compile Include="Sons\Atmosphere\SunMoonShadowSwitcher.cs" />
+    <Compile Include="Sons\Atmosphere\TemperatureManager.cs" />
+    <Compile Include="Sons\Atmosphere\TemperatureModifierVolume.cs" />
+    <Compile Include="Sons\Atmosphere\TimeOfDayDebug.cs" />
+    <Compile Include="Sons\Atmosphere\UnderwaterShaderUpdater.cs" />
+    <Compile Include="Sons\Atmosphere\UnityCloudsWrapper.cs" />
+    <Compile Include="Sons\Atmosphere\VolumeLinkedDirection.cs" />
+    <Compile Include="Sons\Atmosphere\WaterHeightManager.cs" />
+    <Compile Include="Sons\Atmosphere\WaterHeightManagerInitializer.cs" />
+    <Compile Include="Sons\Atmosphere\WaterVolumeTrigger.cs" />
+    <Compile Include="Sons\Atmosphere\WindManager.cs" />
+    <Compile Include="Sons\Environment\ControlSunEditor.cs" />
+    <Compile Include="Sons\Environment\CrestOceanTimeOfDay.cs" />
+    <Compile Include="Sons\Environment\ForceSunPreset.cs" />
+    <Compile Include="Sons\Environment\ForceTimeOfDay.cs" />
+    <Compile Include="Sons\Environment\IEnvironmentWetnessAndRainReceiver.cs" />
+    <Compile Include="Sons\Environment\IEnvironmentWetnessReceiver.cs" />
+    <Compile Include="Sons\Environment\ITimeOfDayReceiver.cs" />
+    <Compile Include="Sons\Environment\NetworkTimeOfDay.cs" />
+    <Compile Include="Sons\Environment\OceanManager.cs" />
+    <Compile Include="Sons\Environment\PostEffectsTimeOfDay.cs" />
+    <Compile Include="Sons\Environment\ReflectionProbeTimeOfDay.cs" />
+    <Compile Include="Sons\Environment\ReflectionProbeTimeOfDayComplex.cs" />
+    <Compile Include="Sons\Environment\SimpleStars.cs" />
+    <Compile Include="Sons\Environment\SunTimeOfDayPreset.cs" />
+    <Compile Include="Sons\Environment\TimeOfDay.cs" />
+    <Compile Include="Sons\Environment\TimeOfDayActivator.cs" />
+    <Compile Include="Sons\Environment\TimeOfDayBehaviour.cs" />
+    <Compile Include="Sons\Environment\TimeOfDayFloatPair.cs" />
+    <Compile Include="Sons\Environment\TimeOfDayHolder.cs" />
+    <Compile Include="Sons\Environment\TimeOfDayQuaternionPair.cs" />
+    <Compile Include="Sons\Environment\TimeOfDayReceiver.cs" />
+    <Compile Include="Sons\Environment\TimeOfDayStringPair.cs" />
+    <Compile Include="Sons\Environment\TimeOfDayTrigger.cs" />
+    <Compile Include="Sons\Environment\TimeOfDayValuePair.cs" />
+    <Compile Include="Sons\Environment\TimeOfDayVector3Pair.cs" />
+    <Compile Include="TheForest\World\ICloudSystem.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AstarPathfindingProject\AstarPathfindingProject.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D73}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bolt.user\bolt.user.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D78}</Project>
+      <Name>bolt.user</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Crest\Crest.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D7C}</Project>
+      <Name>Crest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Endnight\Endnight.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D81}</Project>
+      <Name>Endnight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Expanse\Expanse.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D87}</Project>
+      <Name>Expanse</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MicroSplatChanges\MicroSplatChanges.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D91}</Project>
+      <Name>MicroSplatChanges</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Areas\Sons.Areas.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB4}</Project>
+      <Name>Sons.Areas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.FMOD\Sons.FMOD.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DC5}</Project>
+      <Name>Sons.FMOD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Gameplay.GameSetup\Sons.Gameplay.GameSetup.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DC8}</Project>
+      <Name>Sons.Gameplay.GameSetup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.ObsoleteMonos\Sons.ObsoleteMonos.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD7}</Project>
+      <Name>Sons.ObsoleteMonos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DEF}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.Core.Runtime\Unity.RenderPipelines.Core.Runtime.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E09}</Project>
+      <Name>Unity.RenderPipelines.Core.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.HighDefinition.Runtime\Unity.RenderPipelines.HighDefinition.Runtime.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0B}</Project>
+      <Name>Unity.RenderPipelines.HighDefinition.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0E}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E20}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E22}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.WindModule\UnityEngine.WindModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E3A}</Project>
+      <Name>UnityEngine.WindModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

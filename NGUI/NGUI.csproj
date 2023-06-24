@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530D99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NGUI</RootNamespace>
+    <AssemblyName>NGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnvelopContent.cs" />
+    <Compile Include="Interaction\LanguageSelection.cs" />
+    <Compile Include="Interaction\TypewriterEffect.cs" />
+    <Compile Include="Interaction\UIButton.cs" />
+    <Compile Include="Interaction\UIButtonActivate.cs" />
+    <Compile Include="Interaction\UIButtonActivateN.cs" />
+    <Compile Include="Interaction\UIButtonColor.cs" />
+    <Compile Include="Interaction\UIButtonKeys.cs" />
+    <Compile Include="Interaction\UIButtonMessage.cs" />
+    <Compile Include="Interaction\UIButtonOffset.cs" />
+    <Compile Include="Interaction\UIButtonRotation.cs" />
+    <Compile Include="Interaction\UIButtonScale.cs" />
+    <Compile Include="Interaction\UICenterOnChild.cs" />
+    <Compile Include="Interaction\UICenterOnClick.cs" />
+    <Compile Include="Interaction\UIDragCamera.cs" />
+    <Compile Include="Interaction\UIDragDropContainer.cs" />
+    <Compile Include="Interaction\UIDragDropItem.cs" />
+    <Compile Include="Interaction\UIDragDropRoot.cs" />
+    <Compile Include="Interaction\UIDraggableCamera.cs" />
+    <Compile Include="Interaction\UIDragObject.cs" />
+    <Compile Include="Interaction\UIDragResize.cs" />
+    <Compile Include="Interaction\UIDragScrollView.cs" />
+    <Compile Include="Interaction\UIEventTrigger.cs" />
+    <Compile Include="Interaction\UIForwardEvents.cs" />
+    <Compile Include="Interaction\UIGrid.cs" />
+    <Compile Include="Interaction\UIImageButton.cs" />
+    <Compile Include="Interaction\UIKeyBinding.cs" />
+    <Compile Include="Interaction\UIKeyNavigation.cs" />
+    <Compile Include="Interaction\UIPlayAnimation.cs" />
+    <Compile Include="Interaction\UIPlaySound.cs" />
+    <Compile Include="Interaction\UIPlayTween.cs" />
+    <Compile Include="Interaction\UIPopupList.cs" />
+    <Compile Include="Interaction\UIPopupListIcon.cs" />
+    <Compile Include="Interaction\UIProgressBar.cs" />
+    <Compile Include="Interaction\UISavedOption.cs" />
+    <Compile Include="Interaction\UIScrollBar.cs" />
+    <Compile Include="Interaction\UIScrollOnNavigation.cs" />
+    <Compile Include="Interaction\UIScrollView.cs" />
+    <Compile Include="Interaction\UIShowControlScheme.cs" />
+    <Compile Include="Interaction\UISlider.cs" />
+    <Compile Include="Interaction\UISoundVolume.cs" />
+    <Compile Include="Interaction\UITable.cs" />
+    <Compile Include="Interaction\UIToggle.cs" />
+    <Compile Include="Interaction\UIToggledComponents.cs" />
+    <Compile Include="Interaction\UIToggledObjects.cs" />
+    <Compile Include="Interaction\UIWidgetContainer.cs" />
+    <Compile Include="Interaction\UIWrapContent.cs" />
+    <Compile Include="Internal\ActiveAnimation.cs" />
+    <Compile Include="Internal\BetterList.cs" />
+    <Compile Include="Internal\BMFont.cs" />
+    <Compile Include="Internal\BMGlyph.cs" />
+    <Compile Include="Internal\BMSymbol.cs" />
+    <Compile Include="Internal\ByteReader.cs" />
+    <Compile Include="Internal\DataNode.cs" />
+    <Compile Include="Internal\Direction.cs" />
+    <Compile Include="Internal\DisableCondition.cs" />
+    <Compile Include="Internal\EnableCondition.cs" />
+    <Compile Include="Internal\EventDelegate.cs" />
+    <Compile Include="Internal\Localization.cs" />
+    <Compile Include="Internal\NGUIDebug.cs" />
+    <Compile Include="Internal\NGUIMath.cs" />
+    <Compile Include="Internal\NGUIText.cs" />
+    <Compile Include="Internal\NGUITools.cs" />
+    <Compile Include="Internal\PropertyBinding.cs" />
+    <Compile Include="Internal\PropertyReference.cs" />
+    <Compile Include="Internal\RealTime.cs" />
+    <Compile Include="Internal\SpringPanel.cs" />
+    <Compile Include="Internal\Trigger.cs" />
+    <Compile Include="Internal\UIBasicSprite.cs" />
+    <Compile Include="Internal\UIDrawCall.cs" />
+    <Compile Include="Internal\UIEventListener.cs" />
+    <Compile Include="Internal\UIGeometry.cs" />
+    <Compile Include="Internal\UIRect.cs" />
+    <Compile Include="Internal\UISnapshotPoint.cs" />
+    <Compile Include="Internal\UIWidget.cs" />
+    <Compile Include="LoadLevelOnClick.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tweening\AnimatedAlpha.cs" />
+    <Compile Include="Tweening\AnimatedColor.cs" />
+    <Compile Include="Tweening\AnimatedWidget.cs" />
+    <Compile Include="Tweening\SpringPosition.cs" />
+    <Compile Include="Tweening\TweenAlpha.cs" />
+    <Compile Include="Tweening\TweenColor.cs" />
+    <Compile Include="Tweening\TweenerAutoStart.cs" />
+    <Compile Include="Tweening\TweenFill.cs" />
+    <Compile Include="Tweening\TweenFOV.cs" />
+    <Compile Include="Tweening\TweenHeight.cs" />
+    <Compile Include="Tweening\TweenOrthoSize.cs" />
+    <Compile Include="Tweening\TweenPosition.cs" />
+    <Compile Include="Tweening\TweenRotation.cs" />
+    <Compile Include="Tweening\TweenScale.cs" />
+    <Compile Include="Tweening\TweenTransform.cs" />
+    <Compile Include="Tweening\TweenVolume.cs" />
+    <Compile Include="Tweening\TweenWidth.cs" />
+    <Compile Include="Tweening\UITweener.cs" />
+    <Compile Include="UI\UI2DSprite.cs" />
+    <Compile Include="UI\UI2DSpriteAnimation.cs" />
+    <Compile Include="UI\UIAnchor.cs" />
+    <Compile Include="UI\UIAtlas.cs" />
+    <Compile Include="UI\UICamera.cs" />
+    <Compile Include="UI\UIColorPicker.cs" />
+    <Compile Include="UI\UIFont.cs" />
+    <Compile Include="UI\UIInput.cs" />
+    <Compile Include="UI\UIInputOnGUI.cs" />
+    <Compile Include="UI\UILabel.cs" />
+    <Compile Include="UI\UILocalize.cs" />
+    <Compile Include="UI\UIOrthoCamera.cs" />
+    <Compile Include="UI\UIPanel.cs" />
+    <Compile Include="UI\UIRoot.cs" />
+    <Compile Include="UI\UISprite.cs" />
+    <Compile Include="UI\UISpriteAnimation.cs" />
+    <Compile Include="UI\UISpriteData.cs" />
+    <Compile Include="UI\UIStretch.cs" />
+    <Compile Include="UI\UITextList.cs" />
+    <Compile Include="UI\UITexture.cs" />
+    <Compile Include="UI\UITooltip.cs" />
+    <Compile Include="UI\UIViewport.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E13}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AudioModule\UnityEngine.AudioModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E15}</Project>
+      <Name>UnityEngine.AudioModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.IMGUIModule\UnityEngine.IMGUIModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E1B}</Project>
+      <Name>UnityEngine.IMGUIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.InputLegacyModule\UnityEngine.InputLegacyModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E1C}</Project>
+      <Name>UnityEngine.InputLegacyModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.Physics2DModule\UnityEngine.Physics2DModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E21}</Project>
+      <Name>UnityEngine.Physics2DModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E22}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TextRenderingModule\UnityEngine.TextRenderingModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E2D}</Project>
+      <Name>UnityEngine.TextRenderingModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E2F}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

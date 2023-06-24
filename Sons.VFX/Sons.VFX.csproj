@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DE7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sons.VFX</RootNamespace>
+    <AssemblyName>Sons.VFX</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assemblies\Sons\VFX\BeachWaveVFX.cs" />
+    <Compile Include="Assemblies\Sons\VFX\BlockMossDistribution.cs" />
+    <Compile Include="Assemblies\Sons\VFX\ChannelSelect.cs" />
+    <Compile Include="Assemblies\Sons\VFX\GameObjectDistributionPair.cs" />
+    <Compile Include="Assemblies\Sons\VFX\MapDistributionData.cs" />
+    <Compile Include="Assemblies\Sons\VFX\MossDistribution.cs" />
+    <Compile Include="Assemblies\Sons\VFX\SampleType.cs" />
+    <Compile Include="Assemblies\Sons\VFX\TreeDetailDistribution.cs" />
+    <Compile Include="BeachWaveVFXSettings.cs" />
+    <Compile Include="BeachWaveVFXSpawner.cs" />
+    <Compile Include="BeachWaveVFXSpawnPointData.cs" />
+    <Compile Include="BloodImpact.cs" />
+    <Compile Include="BurnableObjectsActivator.cs" />
+    <Compile Include="DestroyByDistance.cs" />
+    <Compile Include="EnableChildrenDelay.cs" />
+    <Compile Include="EnableTargetsChildren.cs" />
+    <Compile Include="GetSkyTexture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RigidActivateAfterDelay.cs" />
+    <Compile Include="RigidExtraSettings.cs" />
+    <Compile Include="RigidGroupActivator.cs" />
+    <Compile Include="RotateSelfRandom.cs" />
+    <Compile Include="Sons\ScratchPad\VFX\SpawnFXSandyTemp.cs" />
+    <Compile Include="Sons\VFX\BeachWaveVFXTimePass.cs" />
+    <Compile Include="Sons\VFX\CausticsCookieLight.cs" />
+    <Compile Include="Sons\VFX\CausticsCookieManager.cs" />
+    <Compile Include="Sons\VFX\CausticsCookieSize.cs" />
+    <Compile Include="Sons\VFX\CollisionTriggerActivator.cs" />
+    <Compile Include="Sons\VFX\DeathHitFlash.cs" />
+    <Compile Include="Sons\VFX\EnableChildren.cs" />
+    <Compile Include="Sons\VFX\FlipbookLightCookie.cs" />
+    <Compile Include="Sons\VFX\ImpactVFXController.cs" />
+    <Compile Include="Sons\VFX\InitTreeCutterComponents.cs" />
+    <Compile Include="Sons\VFX\ParticlesVFX.cs" />
+    <Compile Include="Sons\VFX\ParticleTypes.cs" />
+    <Compile Include="Sons\VFX\SnowWetnessOccluderManager.cs" />
+    <Compile Include="Sons\VFX\SnowWetnessOccluderVolume.cs" />
+    <Compile Include="Sons\VFX\SpawnAsRigidsInCluster.cs" />
+    <Compile Include="Sons\VFX\SpawnDefinition.cs" />
+    <Compile Include="Sons\VFX\TreeBroken.cs" />
+    <Compile Include="Sons\VFX\TreeCutterActivateFall.cs" />
+    <Compile Include="Sons\VFX\TreeExtrasLink.cs" />
+    <Compile Include="Sons\VFX\TriggerActivate.cs" />
+    <Compile Include="Sons\VFX\TriggerRigidbodyEffect.cs" />
+    <Compile Include="Sons\VFX\VFXAttrToTransform.cs" />
+    <Compile Include="Sons\VFX\VFXEventTrigger.cs" />
+    <Compile Include="SpiderWeb.cs" />
+    <Compile Include="StructuresGhostPass.cs" />
+    <Compile Include="TreeCutterAxeHitGuides.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="VertexMotionSpawner.cs" />
+    <Compile Include="VisibilityBuffer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Endnight\Endnight.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D81}</Project>
+      <Name>Endnight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PathologicalGames\PathologicalGames.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DAA}</Project>
+      <Name>PathologicalGames</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Interfaces\Sons.Interfaces.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD1}</Project>
+      <Name>Sons.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.Core.Runtime\Unity.RenderPipelines.Core.Runtime.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E09}</Project>
+      <Name>Unity.RenderPipelines.Core.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.HighDefinition.Runtime\Unity.RenderPipelines.HighDefinition.Runtime.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0B}</Project>
+      <Name>Unity.RenderPipelines.HighDefinition.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E20}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E22}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.VFXModule\UnityEngine.VFXModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E37}</Project>
+      <Name>UnityEngine.VFXModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VolumetricBloodFX\VolumetricBloodFX.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E3F}</Project>
+      <Name>VolumetricBloodFX</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

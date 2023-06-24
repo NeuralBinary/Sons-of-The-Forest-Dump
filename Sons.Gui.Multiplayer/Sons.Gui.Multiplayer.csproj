@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DCD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sons</RootNamespace>
+    <AssemblyName>Sons.Gui.Multiplayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gui\DedicatedGameFullDialogController.cs" />
+    <Compile Include="Gui\DedicatedGameInviteDialogController.cs" />
+    <Compile Include="Gui\LobbyFullDialogController.cs" />
+    <Compile Include="Gui\LobbyInviteDialogController.cs" />
+    <Compile Include="Gui\Multiplayer\CoopLobbyBrowser.cs" />
+    <Compile Include="Gui\Multiplayer\CoopLobbyDialogGui.cs" />
+    <Compile Include="Gui\Multiplayer\GameServerBrowserGui.cs" />
+    <Compile Include="Gui\Multiplayer\SelectFirstServerInfoOrLastSelected.cs" />
+    <Compile Include="Gui\Multiplayer\ServerInfoGuiItem.cs" />
+    <Compile Include="Gui\Multiplayer\ServerInfoGuiItemButton.cs" />
+    <Compile Include="Multiplayer\DEPRECATED_LobbyBrowserGuiManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bolt\bolt.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D76}</Project>
+      <Name>bolt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.rlabrecque.steamworks.net\com.rlabrecque.steamworks.net.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D7A}</Project>
+      <Name>com.rlabrecque.steamworks.net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Endnight.Localization\Endnight.Localization.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D82}</Project>
+      <Name>Endnight.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Endnight\Endnight.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D81}</Project>
+      <Name>Endnight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Multiplayer.Dedicated\Multiplayer.Dedicated.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D96}</Project>
+      <Name>Multiplayer.Dedicated</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.FMOD\Sons.FMOD.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DC5}</Project>
+      <Name>Sons.FMOD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Gameplay.GameSetup\Sons.Gameplay.GameSetup.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DC8}</Project>
+      <Name>Sons.Gameplay.GameSetup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Gui.Multiplayer.Notifications\Sons.Gui.Multiplayer.Notifications.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DCE}</Project>
+      <Name>Sons.Gui.Multiplayer.Notifications</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Gui\Sons.Gui.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DCC}</Project>
+      <Name>Sons.Gui</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Input\Sons.Input.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD0}</Project>
+      <Name>Sons.Input</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Loading\Sons.Loading.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD3}</Project>
+      <Name>Sons.Loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Multiplayer\Sons.Multiplayer.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD6}</Project>
+      <Name>Sons.Multiplayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons\Sons.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DBE}</Project>
+      <Name>Sons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DEF}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Localization\Unity.Localization.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E06}</Project>
+      <Name>Unity.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0E}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E2F}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

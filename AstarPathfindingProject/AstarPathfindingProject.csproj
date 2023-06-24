@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530D73}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pathfinding</RootNamespace>
+    <AssemblyName>AstarPathfindingProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABPath.cs" />
+    <Compile Include="ABPathEndingCondition.cs" />
+    <Compile Include="AdvancedSmooth.cs" />
+    <Compile Include="AIBase.cs" />
+    <Compile Include="AIDestinationSetter.cs" />
+    <Compile Include="AILerp.cs" />
+    <Compile Include="AIPath.cs" />
+    <Compile Include="AlternativePath.cs" />
+    <Compile Include="AnimationLink.cs" />
+    <Compile Include="AstarColor.cs" />
+    <Compile Include="AstarData.cs" />
+    <Compile Include="AstarDebugger.cs" />
+    <Compile Include="AstarMath.cs" />
+    <Compile Include="AstarPath.cs" />
+    <Compile Include="AstarProfiler.cs" />
+    <Compile Include="AstarSplines.cs" />
+    <Compile Include="AstarWorkItem.cs" />
+    <Compile Include="AutoRepathPolicy.cs" />
+    <Compile Include="BBTree.cs" />
+    <Compile Include="BinaryHeap.cs" />
+    <Compile Include="BlockManager.cs" />
+    <Compile Include="CloseToDestinationMode.cs" />
+    <Compile Include="ColliderType.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="ConstantPath.cs" />
+    <Compile Include="DefaultITraversalProvider.cs" />
+    <Compile Include="DynamicGridObstacle.cs" />
+    <Compile Include="EndingConditionDistance.cs" />
+    <Compile Include="EndingConditionProximity.cs" />
+    <Compile Include="EnumFlagAttribute.cs" />
+    <Compile Include="EuclideanEmbedding.cs" />
+    <Compile Include="Examples\AnimationLinkTraverser.cs" />
+    <Compile Include="Examples\Astar3DButton.cs" />
+    <Compile Include="Examples\AstarSmoothFollow2.cs" />
+    <Compile Include="Examples\BezierMover.cs" />
+    <Compile Include="Examples\DoorController.cs" />
+    <Compile Include="Examples\ExampleMover.cs" />
+    <Compile Include="Examples\GroupController.cs" />
+    <Compile Include="Examples\HexagonTrigger.cs" />
+    <Compile Include="Examples\LightweightRVO.cs" />
+    <Compile Include="Examples\LocalSpaceRichAI.cs" />
+    <Compile Include="Examples\ManualRVOAgent.cs" />
+    <Compile Include="Examples\MecanimBridge.cs" />
+    <Compile Include="Examples\MineBotAI.cs" />
+    <Compile Include="Examples\MineBotAnimation.cs" />
+    <Compile Include="Examples\ObjectPlacer.cs" />
+    <Compile Include="Examples\PathTypesDemo.cs" />
+    <Compile Include="Examples\ProceduralWorld.cs" />
+    <Compile Include="Examples\RVOAgentPlacer.cs" />
+    <Compile Include="Examples\RVOExampleAgent.cs" />
+    <Compile Include="Examples\SnapToNode.cs" />
+    <Compile Include="Examples\TurnBasedAI.cs" />
+    <Compile Include="Examples\TurnBasedDoor.cs" />
+    <Compile Include="Examples\TurnBasedManager.cs" />
+    <Compile Include="FleePath.cs" />
+    <Compile Include="FloodPath.cs" />
+    <Compile Include="FloodPathConstraint.cs" />
+    <Compile Include="FloodPathTracer.cs" />
+    <Compile Include="Funnel.cs" />
+    <Compile Include="FunnelModifier.cs" />
+    <Compile Include="GraphCollision.cs" />
+    <Compile Include="GraphDebugMode.cs" />
+    <Compile Include="GraphEditorBase.cs" />
+    <Compile Include="GraphHitInfo.cs" />
+    <Compile Include="GraphMask.cs" />
+    <Compile Include="GraphModifier.cs" />
+    <Compile Include="GraphNode.cs" />
+    <Compile Include="GraphUpdateObject.cs" />
+    <Compile Include="GraphUpdateProcessor.cs" />
+    <Compile Include="GraphUpdateScene.cs" />
+    <Compile Include="GraphUpdateShape.cs" />
+    <Compile Include="GraphUpdateStage.cs" />
+    <Compile Include="GraphUpdateThreading.cs" />
+    <Compile Include="GraphUpdateUtilities.cs" />
+    <Compile Include="GraphUtilities.cs" />
+    <Compile Include="GridGraph.cs" />
+    <Compile Include="GridHitInfo.cs" />
+    <Compile Include="GridNode.cs" />
+    <Compile Include="GridNodeBase.cs" />
+    <Compile Include="Heuristic.cs" />
+    <Compile Include="HeuristicOptimizationMode.cs" />
+    <Compile Include="HierarchicalGraph.cs" />
+    <Compile Include="IAstarAI.cs" />
+    <Compile Include="IGraphInternals.cs" />
+    <Compile Include="INavmesh.cs" />
+    <Compile Include="INavmeshHolder.cs" />
+    <Compile Include="InspectorGridHexagonNodeSize.cs" />
+    <Compile Include="InspectorGridMode.cs" />
+    <Compile Include="Int2.cs" />
+    <Compile Include="Int3.cs" />
+    <Compile Include="IntRect.cs" />
+    <Compile Include="IPathInternals.cs" />
+    <Compile Include="IPathModifier.cs" />
+    <Compile Include="IRaycastableGraph.cs" />
+    <Compile Include="ITransformedGraph.cs" />
+    <Compile Include="ITraversalProvider.cs" />
+    <Compile Include="IUpdatableGraph.cs" />
+    <Compile Include="IVersionedMonoBehaviourInternal.cs" />
+    <Compile Include="IWorkItemContext.cs" />
+    <Compile Include="LayerGridGraph.cs" />
+    <Compile Include="LayerGridGraphUpdate.cs" />
+    <Compile Include="Legacy\LegacyAIPath.cs" />
+    <Compile Include="Legacy\LegacyRichAI.cs" />
+    <Compile Include="Legacy\LegacyRVOController.cs" />
+    <Compile Include="LevelGridNode.cs" />
+    <Compile Include="LocalSpaceGraph.cs" />
+    <Compile Include="MeshNode.cs" />
+    <Compile Include="MonoModifier.cs" />
+    <Compile Include="MultiTargetPath.cs" />
+    <Compile Include="NavGraph.cs" />
+    <Compile Include="NavmeshAdd.cs" />
+    <Compile Include="NavmeshBase.cs" />
+    <Compile Include="NavmeshClamp.cs" />
+    <Compile Include="NavmeshClipper.cs" />
+    <Compile Include="NavmeshCut.cs" />
+    <Compile Include="NavMeshGraph.cs" />
+    <Compile Include="NavmeshTile.cs" />
+    <Compile Include="NavmeshUpdates.cs" />
+    <Compile Include="NNConstraint.cs" />
+    <Compile Include="NNInfo.cs" />
+    <Compile Include="NNInfoInternal.cs" />
+    <Compile Include="NodeLink.cs" />
+    <Compile Include="NodeLink2.cs" />
+    <Compile Include="NodeLink3.cs" />
+    <Compile Include="NodeLink3Node.cs" />
+    <Compile Include="NumNeighbours.cs" />
+    <Compile Include="ObjImporter.cs" />
+    <Compile Include="OnGraphDelegate.cs" />
+    <Compile Include="OnPathDelegate.cs" />
+    <Compile Include="OnScanDelegate.cs" />
+    <Compile Include="OnScanStatus.cs" />
+    <Compile Include="OrientationMode.cs" />
+    <Compile Include="Path.cs" />
+    <Compile Include="PathCompleteState.cs" />
+    <Compile Include="PathEndingCondition.cs" />
+    <Compile Include="PathHandler.cs" />
+    <Compile Include="PathLog.cs" />
+    <Compile Include="PathModifier.cs" />
+    <Compile Include="PathNNConstraint.cs" />
+    <Compile Include="PathNode.cs" />
+    <Compile Include="PathPool.cs" />
+    <Compile Include="PathProcessor.cs" />
+    <Compile Include="PathReturnQueue.cs" />
+    <Compile Include="PathState.cs" />
+    <Compile Include="PathUtilities.cs" />
+    <Compile Include="Patrol.cs" />
+    <Compile Include="PointGraph.cs" />
+    <Compile Include="PointKDTree.cs" />
+    <Compile Include="PointNode.cs" />
+    <Compile Include="Polygon.cs" />
+    <Compile Include="ProceduralGridMover.cs" />
+    <Compile Include="Profile.cs" />
+    <Compile Include="Progress.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadiusModifier.cs" />
+    <Compile Include="RandomPath.cs" />
+    <Compile Include="RaycastModifier.cs" />
+    <Compile Include="RayDirection.cs" />
+    <Compile Include="RecastBBTree.cs" />
+    <Compile Include="RecastBBTreeBox.cs" />
+    <Compile Include="RecastGraph.cs" />
+    <Compile Include="RecastMeshObj.cs" />
+    <Compile Include="RecastTileUpdate.cs" />
+    <Compile Include="RecastTileUpdateHandler.cs" />
+    <Compile Include="Recast\RecastMeshGatherer.cs" />
+    <Compile Include="RelevantGraphSurface.cs" />
+    <Compile Include="RichAI.cs" />
+    <Compile Include="RichFunnel.cs" />
+    <Compile Include="RichPath.cs" />
+    <Compile Include="RichPathPart.cs" />
+    <Compile Include="RichSpecial.cs" />
+    <Compile Include="RVO\IAgent.cs" />
+    <Compile Include="RVO\Line.cs" />
+    <Compile Include="RVO\MovementPlane.cs" />
+    <Compile Include="RVO\ObstacleVertex.cs" />
+    <Compile Include="RVO\RVOController.cs" />
+    <Compile Include="RVO\RVOLayer.cs" />
+    <Compile Include="RVO\RVONavmesh.cs" />
+    <Compile Include="RVO\RVOObstacle.cs" />
+    <Compile Include="RVO\RVOQuadtree.cs" />
+    <Compile Include="RVO\RVOSimulator.cs" />
+    <Compile Include="RVO\RVOSquareObstacle.cs" />
+    <Compile Include="RVO\Sampled\Agent.cs" />
+    <Compile Include="RVO\Simulator.cs" />
+    <Compile Include="Seeker.cs" />
+    <Compile Include="Serialization\AstarSerializer.cs" />
+    <Compile Include="Serialization\GraphMeta.cs" />
+    <Compile Include="Serialization\GraphSerializationContext.cs" />
+    <Compile Include="Serialization\JsonMemberAttribute.cs" />
+    <Compile Include="Serialization\JsonOptInAttribute.cs" />
+    <Compile Include="Serialization\SerializeSettings.cs" />
+    <Compile Include="Serialization\TinyJsonDeserializer.cs" />
+    <Compile Include="Serialization\TinyJsonSerializer.cs" />
+    <Compile Include="Side.cs" />
+    <Compile Include="SimpleSmoothModifier.cs" />
+    <Compile Include="SingleNodeBlocker.cs" />
+    <Compile Include="StartEndModifier.cs" />
+    <Compile Include="TargetMover.cs" />
+    <Compile Include="ThreadControlQueue.cs" />
+    <Compile Include="ThreadCount.cs" />
+    <Compile Include="TileHandlerHelper.cs" />
+    <Compile Include="TriangleMeshNode.cs" />
+    <Compile Include="UniqueComponentAttribute.cs" />
+    <Compile Include="UnityReferenceHelper.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="Util\ArrayPool.cs" />
+    <Compile Include="Util\Checksum.cs" />
+    <Compile Include="Util\Draw.cs" />
+    <Compile Include="Util\GraphGizmoHelper.cs" />
+    <Compile Include="Util\GraphTransform.cs" />
+    <Compile Include="Util\GridLookup.cs" />
+    <Compile Include="Util\Guid.cs" />
+    <Compile Include="Util\IAstarPooledObject.cs" />
+    <Compile Include="Util\IMovementPlane.cs" />
+    <Compile Include="Util\ITransform.cs" />
+    <Compile Include="Util\ListExtensions.cs" />
+    <Compile Include="Util\ListPool.cs" />
+    <Compile Include="Util\Memory.cs" />
+    <Compile Include="Util\MovementUtilities.cs" />
+    <Compile Include="Util\ObjectPool.cs" />
+    <Compile Include="Util\ObjectPoolSimple.cs" />
+    <Compile Include="Util\ParallelWorkQueue.cs" />
+    <Compile Include="Util\PathInterpolator.cs" />
+    <Compile Include="Util\PreserveAttribute.cs" />
+    <Compile Include="Util\RetainedGizmos.cs" />
+    <Compile Include="Util\StackPool.cs" />
+    <Compile Include="Util\TileHandler.cs" />
+    <Compile Include="VectorMath.cs" />
+    <Compile Include="VersionedMonoBehaviour.cs" />
+    <Compile Include="Voxels\CompactVoxelCell.cs" />
+    <Compile Include="Voxels\CompactVoxelSpan.cs" />
+    <Compile Include="Voxels\Int3PolygonClipper.cs" />
+    <Compile Include="Voxels\LinkedVoxelSpan.cs" />
+    <Compile Include="Voxels\RasterizationMesh.cs" />
+    <Compile Include="Voxels\Utility.cs" />
+    <Compile Include="Voxels\VoxelArea.cs" />
+    <Compile Include="Voxels\VoxelCell.cs" />
+    <Compile Include="Voxels\VoxelContour.cs" />
+    <Compile Include="Voxels\VoxelContourSet.cs" />
+    <Compile Include="Voxels\Voxelize.cs" />
+    <Compile Include="Voxels\VoxelMesh.cs" />
+    <Compile Include="Voxels\VoxelPolygonClipper.cs" />
+    <Compile Include="Voxels\VoxelSpan.cs" />
+    <Compile Include="WindowsStore\WindowsStoreCompatibility.cs" />
+    <Compile Include="WorkItemProcessor.cs" />
+    <Compile Include="XPath.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pathfinding.ClipperLib\Pathfinding.ClipperLib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DA7}</Project>
+      <Name>Pathfinding.ClipperLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pathfinding.Ionic.Zip.Reduced\Pathfinding.Ionic.Zip.Reduced.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DA8}</Project>
+      <Name>Pathfinding.Ionic.Zip.Reduced</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pathfinding.Poly2Tri\Pathfinding.Poly2Tri.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DA9}</Project>
+      <Name>Pathfinding.Poly2Tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DEF}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E13}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.IMGUIModule\UnityEngine.IMGUIModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E1B}</Project>
+      <Name>UnityEngine.IMGUIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.Physics2DModule\UnityEngine.Physics2DModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E21}</Project>
+      <Name>UnityEngine.Physics2DModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E22}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TerrainModule\UnityEngine.TerrainModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E29}</Project>
+      <Name>UnityEngine.TerrainModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TextRenderingModule\UnityEngine.TextRenderingModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E2D}</Project>
+      <Name>UnityEngine.TextRenderingModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E2F}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

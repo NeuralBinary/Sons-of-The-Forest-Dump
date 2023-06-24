@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DA5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Obi</RootNamespace>
+    <AssemblyName>Obi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aabb.cs" />
+    <Compile Include="AffineTransform.cs" />
+    <Compile Include="ApplyBatchedCollisionConstraintsBatchJob.cs" />
+    <Compile Include="ApplyCollisionConstraintsBatchJob.cs" />
+    <Compile Include="ApplyInertialForcesJob.cs" />
+    <Compile Include="ASDF.cs" />
+    <Compile Include="BatchData.cs" />
+    <Compile Include="BatchLUT.cs" />
+    <Compile Include="BIH.cs" />
+    <Compile Include="BIHNode.cs" />
+    <Compile Include="BoundsReductionJob.cs" />
+    <Compile Include="BuildSimplexAabbs.cs" />
+    <Compile Include="BurstAabb.cs" />
+    <Compile Include="BurstAerodynamicConstraints.cs" />
+    <Compile Include="BurstAerodynamicConstraintsBatch.cs" />
+    <Compile Include="BurstAffineTransform.cs" />
+    <Compile Include="BurstBackend.cs" />
+    <Compile Include="BurstBendConstraints.cs" />
+    <Compile Include="BurstBendConstraintsBatch.cs" />
+    <Compile Include="BurstBendTwistConstraints.cs" />
+    <Compile Include="BurstBendTwistConstraintsBatch.cs" />
+    <Compile Include="BurstBox.cs" />
+    <Compile Include="BurstCapsule.cs" />
+    <Compile Include="BurstCellSpan.cs" />
+    <Compile Include="BurstChainConstraints.cs" />
+    <Compile Include="BurstChainConstraintsBatch.cs" />
+    <Compile Include="BurstColliderCollisionConstraints.cs" />
+    <Compile Include="BurstColliderCollisionConstraintsBatch.cs" />
+    <Compile Include="BurstColliderFrictionConstraints.cs" />
+    <Compile Include="BurstColliderFrictionConstraintsBatch.cs" />
+    <Compile Include="BurstColliderShape.cs" />
+    <Compile Include="BurstColliderWorld.cs" />
+    <Compile Include="BurstCollisionMaterial.cs" />
+    <Compile Include="BurstConstraintsBatchImpl.cs" />
+    <Compile Include="BurstConstraintsImpl.cs" />
+    <Compile Include="BurstContact.cs" />
+    <Compile Include="BurstDensityConstraints.cs" />
+    <Compile Include="BurstDensityConstraintsBatch.cs" />
+    <Compile Include="BurstDFNode.cs" />
+    <Compile Include="BurstDistanceConstraints.cs" />
+    <Compile Include="BurstDistanceConstraintsBatch.cs" />
+    <Compile Include="BurstDistanceField.cs" />
+    <Compile Include="BurstEdgeMesh.cs" />
+    <Compile Include="BurstHeightField.cs" />
+    <Compile Include="BurstInertialFrame.cs" />
+    <Compile Include="BurstIntegration.cs" />
+    <Compile Include="BurstJobHandle.cs" />
+    <Compile Include="BurstLocalOptimization.cs" />
+    <Compile Include="BurstMath.cs" />
+    <Compile Include="BurstParticleCollisionConstraints.cs" />
+    <Compile Include="BurstParticleCollisionConstraintsBatch.cs" />
+    <Compile Include="BurstParticleFrictionConstraints.cs" />
+    <Compile Include="BurstParticleFrictionConstraintsBatch.cs" />
+    <Compile Include="BurstPinConstraints.cs" />
+    <Compile Include="BurstPinConstraintsBatch.cs" />
+    <Compile Include="BurstRigidbody.cs" />
+    <Compile Include="BurstShapeMatchingConstraints.cs" />
+    <Compile Include="BurstShapeMatchingConstraintsBatch.cs" />
+    <Compile Include="BurstSimplex.cs" />
+    <Compile Include="BurstSkinConstraints.cs" />
+    <Compile Include="BurstSkinConstraintsBatch.cs" />
+    <Compile Include="BurstSolverImpl.cs" />
+    <Compile Include="BurstSphere.cs" />
+    <Compile Include="BurstStitchConstraints.cs" />
+    <Compile Include="BurstStitchConstraintsBatch.cs" />
+    <Compile Include="BurstStretchShearConstraints.cs" />
+    <Compile Include="BurstStretchShearConstraintsBatch.cs" />
+    <Compile Include="BurstTetherConstraints.cs" />
+    <Compile Include="BurstTetherConstraintsBatch.cs" />
+    <Compile Include="BurstTriangleMesh.cs" />
+    <Compile Include="BurstVolumeConstraints.cs" />
+    <Compile Include="BurstVolumeConstraintsBatch.cs" />
+    <Compile Include="CellSpan.cs" />
+    <Compile Include="ChildrenOnly.cs" />
+    <Compile Include="ColliderRigidbody.cs" />
+    <Compile Include="ColliderShape.cs" />
+    <Compile Include="CollisionMaterial.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="ConstraintBatcher.cs" />
+    <Compile Include="ConstraintSorter.cs" />
+    <Compile Include="ContactProvider.cs" />
+    <Compile Include="CoroutineJob.cs" />
+    <Compile Include="DequeueIntoArrayJob.cs" />
+    <Compile Include="DFNode.cs" />
+    <Compile Include="DistanceFieldHeader.cs" />
+    <Compile Include="Edge.cs" />
+    <Compile Include="EdgeMeshHeader.cs" />
+    <Compile Include="EditorCoroutine.cs" />
+    <Compile Include="FindFluidParticlesJob.cs" />
+    <Compile Include="FluidInteraction.cs" />
+    <Compile Include="FluidInteractionProvider.cs" />
+    <Compile Include="GraphColoring.cs" />
+    <Compile Include="GridHash.cs" />
+    <Compile Include="HalfEdgeMesh.cs" />
+    <Compile Include="HeightFieldHeader.cs" />
+    <Compile Include="IAerodynamicConstraintsBatchImpl.cs" />
+    <Compile Include="IAerodynamicConstraintsUser.cs" />
+    <Compile Include="IBendConstraintsBatchImpl.cs" />
+    <Compile Include="IBendConstraintsUser.cs" />
+    <Compile Include="IBendTwistConstraintsBatchImpl.cs" />
+    <Compile Include="IBendTwistConstraintsUser.cs" />
+    <Compile Include="IBounded.cs" />
+    <Compile Include="IBurstCollider.cs" />
+    <Compile Include="IBurstConstraintsImpl.cs" />
+    <Compile Include="IChainConstraintsBatchImpl.cs" />
+    <Compile Include="IChainConstraintsUser.cs" />
+    <Compile Include="IColliderCollisionConstraintsBatchImpl.cs" />
+    <Compile Include="IColliderFrictionConstraintsBatchImpl.cs" />
+    <Compile Include="IColliderWorldImpl.cs" />
+    <Compile Include="IConstraint.cs" />
+    <Compile Include="IConstraintProvider.cs" />
+    <Compile Include="IConstraints.cs" />
+    <Compile Include="IConstraintsBatchImpl.cs" />
+    <Compile Include="IDensityConstraintsBatchImpl.cs" />
+    <Compile Include="IDistanceConstraintsBatchImpl.cs" />
+    <Compile Include="IDistanceConstraintsUser.cs" />
+    <Compile Include="Indent.cs" />
+    <Compile Include="InspectorButtonAttribute.cs" />
+    <Compile Include="InterpolationJob.cs" />
+    <Compile Include="IObiBackend.cs" />
+    <Compile Include="IObiConstraints.cs" />
+    <Compile Include="IObiConstraintsBatch.cs" />
+    <Compile Include="IObiJobHandle.cs" />
+    <Compile Include="IObiParticleCollection.cs" />
+    <Compile Include="IObiPathDataChannel.cs" />
+    <Compile Include="IOniConstraintsImpl.cs" />
+    <Compile Include="IParticleCollisionConstraintsBatchImpl.cs" />
+    <Compile Include="IParticleFrictionConstraintsBatchImpl.cs" />
+    <Compile Include="IPinConstraintsBatchImpl.cs" />
+    <Compile Include="IShapeMatchingConstraintsBatchImpl.cs" />
+    <Compile Include="IShapeMatchingConstraintsUser.cs" />
+    <Compile Include="ISkinConstraintsBatchImpl.cs" />
+    <Compile Include="ISolverImpl.cs" />
+    <Compile Include="IStitchConstraintsBatchImpl.cs" />
+    <Compile Include="IStretchShearConstraintsBatchImpl.cs" />
+    <Compile Include="IStretchShearConstraintsUser.cs" />
+    <Compile Include="IStructuralConstraintBatch.cs" />
+    <Compile Include="ITetherConstraintsBatchImpl.cs" />
+    <Compile Include="ITetherConstraintsUser.cs" />
+    <Compile Include="IVolumeConstraintsBatchImpl.cs" />
+    <Compile Include="IVolumeConstraintsUser.cs" />
+    <Compile Include="MeshVoxelizer.cs" />
+    <Compile Include="MinMaxAttribute.cs" />
+    <Compile Include="MovingEntity.cs" />
+    <Compile Include="MultiDelayed.cs" />
+    <Compile Include="MultiPropertyAttribute.cs" />
+    <Compile Include="MultiRange.cs" />
+    <Compile Include="NativeMultilevelGrid.cs" />
+    <Compile Include="NullBackend.cs" />
+    <Compile Include="NullSolverImpl.cs" />
+    <Compile Include="ObiActor.cs" />
+    <Compile Include="ObiActorBlueprint.cs" />
+    <Compile Include="ObiAerodynamicConstraintsBatch.cs" />
+    <Compile Include="ObiAerodynamicConstraintsData.cs" />
+    <Compile Include="ObiAmbientForceZone.cs" />
+    <Compile Include="ObiBendConstraintsBatch.cs" />
+    <Compile Include="ObiBendConstraintsData.cs" />
+    <Compile Include="ObiBendTwistConstraintsBatch.cs" />
+    <Compile Include="ObiBendTwistConstraintsData.cs" />
+    <Compile Include="ObiBoxShapeTracker.cs" />
+    <Compile Include="ObiBoxShapeTracker2D.cs" />
+    <Compile Include="ObiCapsuleShapeTracker.cs" />
+    <Compile Include="ObiCapsuleShapeTracker2D.cs" />
+    <Compile Include="ObiCatmullRomInterpolator.cs" />
+    <Compile Include="ObiCatmullRomInterpolator3D.cs" />
+    <Compile Include="ObiChainConstraintsBatch.cs" />
+    <Compile Include="ObiChainConstraintsData.cs" />
+    <Compile Include="ObiCharacterControllerShapeTracker.cs" />
+    <Compile Include="ObiCircleShapeTracker2D.cs" />
+    <Compile Include="ObiCloth.cs" />
+    <Compile Include="ObiClothBase.cs" />
+    <Compile Include="ObiClothBlueprint.cs" />
+    <Compile Include="ObiClothBlueprintBase.cs" />
+    <Compile Include="ObiClothProxy.cs" />
+    <Compile Include="ObiClothRenderer.cs" />
+    <Compile Include="ObiClothRendererBase.cs" />
+    <Compile Include="ObiClothRendererMeshFilter.cs" />
+    <Compile Include="ObiCollider.cs" />
+    <Compile Include="ObiCollider2D.cs" />
+    <Compile Include="ObiColliderBase.cs" />
+    <Compile Include="ObiColliderHandle.cs" />
+    <Compile Include="ObiColliderWorld.cs" />
+    <Compile Include="ObiCollisionMaterial.cs" />
+    <Compile Include="ObiCollisionMaterialHandle.cs" />
+    <Compile Include="ObiColorDataChannel.cs" />
+    <Compile Include="ObiColorInterpolator3D.cs" />
+    <Compile Include="ObiConstantInterpolator.cs" />
+    <Compile Include="ObiConstraints.cs" />
+    <Compile Include="ObiConstraintsBatch.cs" />
+    <Compile Include="ObiContactEventDispatcher.cs" />
+    <Compile Include="ObiContactGrabber.cs" />
+    <Compile Include="ObiDistanceConstraintsBatch.cs" />
+    <Compile Include="ObiDistanceConstraintsData.cs" />
+    <Compile Include="ObiDistanceField.cs" />
+    <Compile Include="ObiDistanceFieldContainer.cs" />
+    <Compile Include="ObiDistanceFieldHandle.cs" />
+    <Compile Include="ObiDistanceFieldRenderer.cs" />
+    <Compile Include="ObiDistanceFieldShapeTracker.cs" />
+    <Compile Include="ObiEdgeMeshContainer.cs" />
+    <Compile Include="ObiEdgeMeshHandle.cs" />
+    <Compile Include="ObiEdgeShapeTracker2D.cs" />
+    <Compile Include="ObiExternalForce.cs" />
+    <Compile Include="ObiFixedUpdater.cs" />
+    <Compile Include="ObiHeightFieldContainer.cs" />
+    <Compile Include="ObiHeightFieldHandle.cs" />
+    <Compile Include="ObiInstancedParticleRenderer.cs" />
+    <Compile Include="ObiInterpolator.cs" />
+    <Compile Include="ObiLateFixedUpdater.cs" />
+    <Compile Include="ObiLateUpdater.cs" />
+    <Compile Include="ObiList.cs" />
+    <Compile Include="ObiMassDataChannel.cs" />
+    <Compile Include="ObiMeshBasedActorBlueprint.cs" />
+    <Compile Include="ObiMeshShapeTracker.cs" />
+    <Compile Include="ObiNativeAabbList.cs" />
+    <Compile Include="ObiNativeAffineTransformList.cs" />
+    <Compile Include="ObiNativeBIHNodeList.cs" />
+    <Compile Include="ObiNativeCellSpanList.cs" />
+    <Compile Include="ObiNativeColliderShapeList.cs" />
+    <Compile Include="ObiNativeCollisionMaterialList.cs" />
+    <Compile Include="ObiNativeContactShapeList.cs" />
+    <Compile Include="ObiNativeDFNodeList.cs" />
+    <Compile Include="ObiNativeDistanceFieldHeaderList.cs" />
+    <Compile Include="ObiNativeEdgeList.cs" />
+    <Compile Include="ObiNativeEdgeMeshHeaderList.cs" />
+    <Compile Include="ObiNativeFloatList.cs" />
+    <Compile Include="ObiNativeHeightFieldHeaderList.cs" />
+    <Compile Include="ObiNativeInt4List.cs" />
+    <Compile Include="ObiNativeIntList.cs" />
+    <Compile Include="ObiNativeIntPtrList.cs" />
+    <Compile Include="ObiNativeList.cs" />
+    <Compile Include="ObiNativeQuaternionList.cs" />
+    <Compile Include="ObiNativeRigidbodyList.cs" />
+    <Compile Include="ObiNativeTriangleList.cs" />
+    <Compile Include="ObiNativeTriangleMeshHeaderList.cs" />
+    <Compile Include="ObiNativeVector2List.cs" />
+    <Compile Include="ObiNativeVector3List.cs" />
+    <Compile Include="ObiNativeVector4List.cs" />
+    <Compile Include="ObiNormalDataChannel.cs" />
+    <Compile Include="ObiParticleAttachment.cs" />
+    <Compile Include="ObiParticleDragger.cs" />
+    <Compile Include="ObiParticleGridDebugger.cs" />
+    <Compile Include="ObiParticleGroup.cs" />
+    <Compile Include="ObiParticlePicker.cs" />
+    <Compile Include="ObiParticleRenderer.cs" />
+    <Compile Include="ObiPath.cs" />
+    <Compile Include="ObiPathDataChannel.cs" />
+    <Compile Include="ObiPathDataChannelIdentity.cs" />
+    <Compile Include="ObiPathFrame.cs" />
+    <Compile Include="ObiPathSmoother.cs" />
+    <Compile Include="ObiPhaseDataChannel.cs" />
+    <Compile Include="ObiPinConstraintsBatch.cs" />
+    <Compile Include="ObiPinConstraintsData.cs" />
+    <Compile Include="ObiPointsDataChannel.cs" />
+    <Compile Include="ObiProfiler.cs" />
+    <Compile Include="ObiResourceHandle.cs" />
+    <Compile Include="ObiRigidbody.cs" />
+    <Compile Include="ObiRigidbody2D.cs" />
+    <Compile Include="ObiRigidbodyBase.cs" />
+    <Compile Include="ObiRigidbodyHandle.cs" />
+    <Compile Include="ObiRod.cs" />
+    <Compile Include="ObiRodBlueprint.cs" />
+    <Compile Include="ObiRope.cs" />
+    <Compile Include="ObiRopeAttach.cs" />
+    <Compile Include="ObiRopeBase.cs" />
+    <Compile Include="ObiRopeBlueprint.cs" />
+    <Compile Include="ObiRopeBlueprintBase.cs" />
+    <Compile Include="ObiRopeChainRenderer.cs" />
+    <Compile Include="ObiRopeCursor.cs" />
+    <Compile Include="ObiRopeExtrudedRenderer.cs" />
+    <Compile Include="ObiRopeLineRenderer.cs" />
+    <Compile Include="ObiRopeMeshRenderer.cs" />
+    <Compile Include="ObiRopePrefabPlugger.cs" />
+    <Compile Include="ObiRopeReel.cs" />
+    <Compile Include="ObiRopeSection.cs" />
+    <Compile Include="ObiRotationalMassDataChannel.cs" />
+    <Compile Include="ObiShapeMatchingConstraintsBatch.cs" />
+    <Compile Include="ObiShapeMatchingConstraintsData.cs" />
+    <Compile Include="ObiShapeTracker.cs" />
+    <Compile Include="ObiSkinConstraintsBatch.cs" />
+    <Compile Include="ObiSkinConstraintsData.cs" />
+    <Compile Include="ObiSkinnedCloth.cs" />
+    <Compile Include="ObiSkinnedClothBlueprint.cs" />
+    <Compile Include="ObiSkinnedClothRenderer.cs" />
+    <Compile Include="ObiSolver.cs" />
+    <Compile Include="ObiSphereShapeTracker.cs" />
+    <Compile Include="ObiSphericalForceZone.cs" />
+    <Compile Include="ObiStitcher.cs" />
+    <Compile Include="ObiStretchShearConstraintsBatch.cs" />
+    <Compile Include="ObiStretchShearConstraintsData.cs" />
+    <Compile Include="ObiStructuralElement.cs" />
+    <Compile Include="ObiTearableCloth.cs" />
+    <Compile Include="ObiTearableClothBlueprint.cs" />
+    <Compile Include="ObiTearableClothRenderer.cs" />
+    <Compile Include="ObiTerrainShapeTracker.cs" />
+    <Compile Include="ObiTetherConstraintsBatch.cs" />
+    <Compile Include="ObiTetherConstraintsData.cs" />
+    <Compile Include="ObiThicknessDataChannel.cs" />
+    <Compile Include="ObiTriangleMeshContainer.cs" />
+    <Compile Include="ObiTriangleMeshHandle.cs" />
+    <Compile Include="ObiTriangleSkinMap.cs" />
+    <Compile Include="ObiUpdater.cs" />
+    <Compile Include="ObiUtils.cs" />
+    <Compile Include="ObiVectorMath.cs" />
+    <Compile Include="ObiVolumeConstraintsBatch.cs" />
+    <Compile Include="ObiVolumeConstraintsData.cs" />
+    <Compile Include="ObiWingedPoint.cs" />
+    <Compile Include="Oni.cs" />
+    <Compile Include="OniAerodynamicConstraintsBatchImpl.cs" />
+    <Compile Include="OniAerodynamicConstraintsImpl.cs" />
+    <Compile Include="OniBackend.cs" />
+    <Compile Include="OniBendConstraintsBatchImpl.cs" />
+    <Compile Include="OniBendConstraintsImpl.cs" />
+    <Compile Include="OniBendTwistConstraintsBatchImpl.cs" />
+    <Compile Include="OniBendTwistConstraintsImpl.cs" />
+    <Compile Include="OniChainConstraintsBatchImpl.cs" />
+    <Compile Include="OniChainConstraintsImpl.cs" />
+    <Compile Include="OniColliderWorld.cs" />
+    <Compile Include="OniConstraintsBatchImpl.cs" />
+    <Compile Include="OniConstraintsImpl.cs" />
+    <Compile Include="OniDistanceConstraintsBatchImpl.cs" />
+    <Compile Include="OniDistanceConstraintsImpl.cs" />
+    <Compile Include="OniJobHandle.cs" />
+    <Compile Include="OniPinConstraintsBatchImpl.cs" />
+    <Compile Include="OniPinConstraintsImpl.cs" />
+    <Compile Include="OniShapeMatchingConstraintsBatchImpl.cs" />
+    <Compile Include="OniShapeMatchingConstraintsImpl.cs" />
+    <Compile Include="OniSkinConstraintsBatchImpl.cs" />
+    <Compile Include="OniSkinConstraintsImpl.cs" />
+    <Compile Include="OniSolverImpl.cs" />
+    <Compile Include="OniStitchConstraintsBatchImpl.cs" />
+    <Compile Include="OniStitchConstraintsImpl.cs" />
+    <Compile Include="OniStretchShearConstraintsBatchImpl.cs" />
+    <Compile Include="OniStretchShearConstraintsImpl.cs" />
+    <Compile Include="OniTetherConstraintsBatchImpl.cs" />
+    <Compile Include="OniTetherConstraintsImpl.cs" />
+    <Compile Include="OniVolumeConstraintsBatchImpl.cs" />
+    <Compile Include="OniVolumeConstraintsImpl.cs" />
+    <Compile Include="ParticleGrid.cs" />
+    <Compile Include="ParticleImpostorRendering.cs" />
+    <Compile Include="ParticlePair.cs" />
+    <Compile Include="ParticleToBoundsJob.cs" />
+    <Compile Include="PathControlPointEvent.cs" />
+    <Compile Include="Poly6Kernel.cs" />
+    <Compile Include="PredictPositionsJob.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerializeProperty.cs" />
+    <Compile Include="SetPhase.cs" />
+    <Compile Include="ShadowmapExposer.cs" />
+    <Compile Include="SimplexCounts.cs" />
+    <Compile Include="SpikyKernel.cs" />
+    <Compile Include="StructuralConstraint.cs" />
+    <Compile Include="Triangle.cs" />
+    <Compile Include="TriangleMeshHeader.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="UpdateInertiaTensorsJob.cs" />
+    <Compile Include="UpdateNormalsJob.cs" />
+    <Compile Include="UpdatePositionsJob.cs" />
+    <Compile Include="UpdatePrincipalAxisJob.cs" />
+    <Compile Include="UpdateVelocitiesJob.cs" />
+    <Compile Include="VInt4.cs" />
+    <Compile Include="VisibleIf.cs" />
+    <Compile Include="VoxelDistanceField.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DEF}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Burst\Unity.Burst.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E00}</Project>
+      <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Collections\Unity.Collections.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E02}</Project>
+      <Name>Unity.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Mathematics\Unity.Mathematics.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E07}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.IMGUIModule\UnityEngine.IMGUIModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E1B}</Project>
+      <Name>UnityEngine.IMGUIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.Physics2DModule\UnityEngine.Physics2DModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E21}</Project>
+      <Name>UnityEngine.Physics2DModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E22}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TerrainModule\UnityEngine.TerrainModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E29}</Project>
+      <Name>UnityEngine.TerrainModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TerrainPhysicsModule\UnityEngine.TerrainPhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E2A}</Project>
+      <Name>UnityEngine.TerrainPhysicsModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

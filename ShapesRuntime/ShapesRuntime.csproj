@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DAD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shapes</RootNamespace>
+    <AssemblyName>ShapesRuntime</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AngularUnit.cs" />
+    <Compile Include="AngularUnitExtensions.cs" />
+    <Compile Include="ArcEndCap.cs" />
+    <Compile Include="ArrayPool.cs" />
+    <Compile Include="ColorStack.cs" />
+    <Compile Include="Cone.cs" />
+    <Compile Include="Cuboid.cs" />
+    <Compile Include="DashExtensions.cs" />
+    <Compile Include="DashSnapping.cs" />
+    <Compile Include="DashSpace.cs" />
+    <Compile Include="DashStack.cs" />
+    <Compile Include="DashStyle.cs" />
+    <Compile Include="DashType.cs" />
+    <Compile Include="DashTypeExtensions.cs" />
+    <Compile Include="DestroyOnAssemblyReload.cs" />
+    <Compile Include="DetailLevel.cs" />
+    <Compile Include="Disc.cs" />
+    <Compile Include="DiscColors.cs" />
+    <Compile Include="DiscGeometry.cs" />
+    <Compile Include="DiscType.cs" />
+    <Compile Include="DiscTypeExtensions.cs" />
+    <Compile Include="DisposableMesh.cs" />
+    <Compile Include="Draw.cs" />
+    <Compile Include="DrawCommand.cs" />
+    <Compile Include="DrawStyle.cs" />
+    <Compile Include="FillSpace.cs" />
+    <Compile Include="FillType.cs" />
+    <Compile Include="GradientFill.cs" />
+    <Compile Include="GradientFillStack.cs" />
+    <Compile Include="HDRPCustomPassManager.cs" />
+    <Compile Include="IDashable.cs" />
+    <Compile Include="IDashableMpb.cs" />
+    <Compile Include="IFillable.cs" />
+    <Compile Include="IFillableMpb.cs" />
+    <Compile Include="IMDrawer.cs" />
+    <Compile Include="IMMaterialPool.cs" />
+    <Compile Include="ImmediateModeShapeDrawer.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="LineEndCap.cs" />
+    <Compile Include="LineGeometry.cs" />
+    <Compile Include="ListPool.cs" />
+    <Compile Include="MatrixStack.cs" />
+    <Compile Include="MeshUpdateMode.cs" />
+    <Compile Include="MetaMpb.cs" />
+    <Compile Include="MpbCone.cs" />
+    <Compile Include="MpbCuboid.cs" />
+    <Compile Include="MpbDisc.cs" />
+    <Compile Include="MpbLine2D.cs" />
+    <Compile Include="MpbLine3D.cs" />
+    <Compile Include="MpbPolygon.cs" />
+    <Compile Include="MpbPolyline2D.cs" />
+    <Compile Include="MpbQuad.cs" />
+    <Compile Include="MpbRect.cs" />
+    <Compile Include="MpbRegularPolygon.cs" />
+    <Compile Include="MpbSphere.cs" />
+    <Compile Include="MpbText.cs" />
+    <Compile Include="MpbTexture.cs" />
+    <Compile Include="MpbTorus.cs" />
+    <Compile Include="MpbTriangle.cs" />
+    <Compile Include="ObjectPool.cs" />
+    <Compile Include="OvldDefault.cs" />
+    <Compile Include="OvldGenCallTarget.cs" />
+    <Compile Include="PointPath.cs" />
+    <Compile Include="Polygon.cs" />
+    <Compile Include="PolygonPath.cs" />
+    <Compile Include="PolygonTriangulation.cs" />
+    <Compile Include="Polyline.cs" />
+    <Compile Include="PolylineGeometry.cs" />
+    <Compile Include="PolylineJoins.cs" />
+    <Compile Include="PolylineJoinsExtensions.cs" />
+    <Compile Include="PolylinePath.cs" />
+    <Compile Include="PolylinePoint.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quad.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="RectPivot.cs" />
+    <Compile Include="RectPivotExtensions.cs" />
+    <Compile Include="RegularPolygon.cs" />
+    <Compile Include="RegularPolygonGeometry.cs" />
+    <Compile Include="RenderPipeline.cs" />
+    <Compile Include="RenderState.cs" />
+    <Compile Include="ScaleMode.cs" />
+    <Compile Include="ShapeDrawCall.cs" />
+    <Compile Include="ShapeDrawState.cs" />
+    <Compile Include="ShapeGroup.cs" />
+    <Compile Include="ShapeRenderer.cs" />
+    <Compile Include="ShapeRendererFillable.cs" />
+    <Compile Include="ShapesAssets.cs" />
+    <Compile Include="ShapesBlendMode.cs" />
+    <Compile Include="ShapesColorFieldAttribute.cs" />
+    <Compile Include="ShapesConfig.cs" />
+    <Compile Include="ShapesExtensions.cs" />
+    <Compile Include="ShapesIO.cs" />
+    <Compile Include="ShapesMaterials.cs" />
+    <Compile Include="ShapesMaterialUtils.cs" />
+    <Compile Include="ShapesMath.cs" />
+    <Compile Include="ShapesMeshGen.cs" />
+    <Compile Include="ShapesMeshUtils.cs" />
+    <Compile Include="ShapesRenderPass.cs" />
+    <Compile Include="ShapesTextDrawer.cs" />
+    <Compile Include="Sphere.cs" />
+    <Compile Include="StateStack.cs" />
+    <Compile Include="StyleStack.cs" />
+    <Compile Include="TextAlign.cs" />
+    <Compile Include="TextAlignExtensions.cs" />
+    <Compile Include="TextStyle.cs" />
+    <Compile Include="TextureFillMode.cs" />
+    <Compile Include="TexturePlacement.cs" />
+    <Compile Include="TextureSizeMode.cs" />
+    <Compile Include="ThicknessSpace.cs" />
+    <Compile Include="Torus.cs" />
+    <Compile Include="Triangle.cs" />
+    <Compile Include="UnityInfo.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.HighDefinition.Runtime\Unity.RenderPipelines.HighDefinition.Runtime.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0B}</Project>
+      <Name>Unity.RenderPipelines.HighDefinition.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0E}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

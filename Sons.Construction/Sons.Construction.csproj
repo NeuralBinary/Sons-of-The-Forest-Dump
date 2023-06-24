@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sons.Construction</RootNamespace>
+    <AssemblyName>Sons.Construction</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Branching\BranchingActionPreviewTypes.cs" />
+    <Compile Include="Branching\BranchingActionTypes.cs" />
+    <Compile Include="Branching\BranchingController.cs" />
+    <Compile Include="Branching\BranchingElementData.cs" />
+    <Compile Include="Branching\BranchingElementDataAsset.cs" />
+    <Compile Include="Branching\BranchingElementDatabase.cs" />
+    <Compile Include="Branching\BranchingUIController.cs" />
+    <Compile Include="Branching\ElementTransformationBranchingAction.cs" />
+    <Compile Include="Branching\EquipItemBranchingAction.cs" />
+    <Compile Include="Branching\HeldItemBehaviours.cs" />
+    <Compile Include="Branching\IAimRayProvider.cs" />
+    <Compile Include="Branching\IBranchingAction.cs" />
+    <Compile Include="Branching\IItemSource.cs" />
+    <Compile Include="Branching\IItemSpecificBranchingAction.cs" />
+    <Compile Include="Branching\IItemTypeSpecificBranchingAction.cs" />
+    <Compile Include="Branching\ILoadItemReceiver.cs" />
+    <Compile Include="Branching\LocalPlayerAimRayProvider.cs" />
+    <Compile Include="Branching\LocalPlayerHeldItemSource.cs" />
+    <Compile Include="Construction\AllowStructureDamageValidator.cs" />
+    <Compile Include="Construction\AlternatingPlacementGuide.cs" />
+    <Compile Include="Construction\AltOnlyPlacementModeGroup.cs" />
+    <Compile Include="Construction\AnimStatus.cs" />
+    <Compile Include="Construction\AnimUtils.cs" />
+    <Compile Include="Construction\Anim\AnimationSFX.cs" />
+    <Compile Include="Construction\Anim\AnimationStateSequencer.cs" />
+    <Compile Include="Construction\Anim\BreakStickAndPlaceAnimationStateSequencer.cs" />
+    <Compile Include="Construction\Anim\BuildActionAccessories.cs" />
+    <Compile Include="Construction\Anim\ConstructionAnimationActor.cs" />
+    <Compile Include="Construction\Anim\ConstructionAnimationRemoteActor.cs" />
+    <Compile Include="Construction\Anim\CutElementAnimationStateSequencer.cs" />
+    <Compile Include="Construction\Anim\FreeFormScrewPlacementAction.cs" />
+    <Compile Include="Construction\Anim\FreeFormScrewPlacementActionLoader.cs" />
+    <Compile Include="Construction\Anim\GameObjectIdentifier.cs" />
+    <Compile Include="Construction\Anim\GenericAnimationStateSequencer.cs" />
+    <Compile Include="Construction\Anim\HierarchyGameObject.cs" />
+    <Compile Include="Construction\Anim\HierarchyGameObjectReceiver.cs" />
+    <Compile Include="Construction\Anim\IAnimationSequencer.cs" />
+    <Compile Include="Construction\Anim\IAnimationSfx.cs" />
+    <Compile Include="Construction\Anim\IConstructionAnimationActor.cs" />
+    <Compile Include="Construction\Anim\IEquipAccessoryListener.cs" />
+    <Compile Include="Construction\Anim\IHierarchyGameObject.cs" />
+    <Compile Include="Construction\Anim\IHierarchyGameObjectReceiver.cs" />
+    <Compile Include="Construction\Anim\IPerfectFinishSettings.cs" />
+    <Compile Include="Construction\Anim\IPlaceActionBeganReceiver.cs" />
+    <Compile Include="Construction\Anim\IPlaceActionCompletedReceiver.cs" />
+    <Compile Include="Construction\Anim\IPlaceActionFinishedReceiver.cs" />
+    <Compile Include="Construction\Anim\IPlayerBuildingModeAction.cs" />
+    <Compile Include="Construction\Anim\LeftHandAccessories.cs" />
+    <Compile Include="Construction\Anim\LiftBeamWithPilarAnimationStateSequencer.cs" />
+    <Compile Include="Construction\Anim\LiftBeamWithStrutAnimationStateSequencer.cs" />
+    <Compile Include="Construction\Anim\LogVisibilityController.cs" />
+    <Compile Include="Construction\Anim\NoneStateSequencer.cs" />
+    <Compile Include="Construction\Anim\PerfectFinish.cs" />
+    <Compile Include="Construction\Anim\PerfectFinishIkModes.cs" />
+    <Compile Include="Construction\Anim\PlaceElementTypes.cs" />
+    <Compile Include="Construction\Anim\PlaceFloorAnimationStateSequencer.cs" />
+    <Compile Include="Construction\Anim\PlacePilarAnimationStateSequencer.cs" />
+    <Compile Include="Construction\Anim\PlaceWallAnimationStateSequencer.cs" />
+    <Compile Include="Construction\Anim\PlantStickAndAttachTarpAnimationStateSequencer.cs" />
+    <Compile Include="Construction\Anim\PlantStickAndTwistAnimationStateSequencer.cs" />
+    <Compile Include="Construction\Anim\PlayerAnimationData.cs" />
+    <Compile Include="Construction\Anim\PlayerBuildingModeAction.cs" />
+    <Compile Include="Construction\Anim\PlayPlaceAction.cs" />
+    <Compile Include="Construction\Anim\PlayPlaceActionOnMpRemote.cs" />
+    <Compile Include="Construction\Anim\RightHandAccessories.cs" />
+    <Compile Include="Construction\Anim\State.cs" />
+    <Compile Include="Construction\Anim\StopPlaceActionOnMpRemote.cs" />
+    <Compile Include="Construction\Anim\WaitForIdleStateSequencer.cs" />
+    <Compile Include="Construction\ApexStructure.cs" />
+    <Compile Include="Construction\ArrowTypes.cs" />
+    <Compile Include="Construction\AudioClipProfile.cs" />
+    <Compile Include="Construction\BeamDirections.cs" />
+    <Compile Include="Construction\BeamFillGrabsStructureModule.cs" />
+    <Compile Include="Construction\BeamStructure.cs" />
+    <Compile Include="Construction\BreakableStructure.cs" />
+    <Compile Include="Construction\BridgeFloorStructure.cs" />
+    <Compile Include="Construction\BridgeRopeStructure.cs" />
+    <Compile Include="Construction\BuiltStructureValidator.cs" />
+    <Compile Include="Construction\BumpTerrainHeightScaling.cs" />
+    <Compile Include="Construction\CirclePlacementGuide.cs" />
+    <Compile Include="Construction\ClimbableLadder.cs" />
+    <Compile Include="Construction\ClimbLadderAction.cs" />
+    <Compile Include="Construction\ClipTypes.cs" />
+    <Compile Include="Construction\CollectPlacedElementModule.cs" />
+    <Compile Include="Construction\CombineableItem.cs" />
+    <Compile Include="Construction\CombineIntoTrapStructureModule.cs" />
+    <Compile Include="Construction\CombineItemIntoRaftModule.cs" />
+    <Compile Include="Construction\CombineItemModule.cs" />
+    <Compile Include="Construction\CompoundStructure.cs" />
+    <Compile Include="Construction\Constants.cs" />
+    <Compile Include="Construction\ConstructionFallingTreeDamage.cs" />
+    <Compile Include="Construction\ConstructionInput.cs" />
+    <Compile Include="Construction\ConstructionManager.cs" />
+    <Compile Include="Construction\ConstructionModule.cs" />
+    <Compile Include="Construction\ConstructionSettings.cs" />
+    <Compile Include="Construction\ConstructionSystem.cs" />
+    <Compile Include="Construction\ConstructionVailActions.cs" />
+    <Compile Include="Construction\ConstructionWarmthProbe.cs" />
+    <Compile Include="Construction\CookingFireDebug.cs" />
+    <Compile Include="Construction\CookingFireNew.cs" />
+    <Compile Include="Construction\Counter.cs" />
+    <Compile Include="Construction\CustomListPlacementModeGroup.cs" />
+    <Compile Include="Construction\CutDefensiveWallTipModule.cs" />
+    <Compile Include="Construction\CutDoorAndWindowModule.cs" />
+    <Compile Include="Construction\CutFloorHoleModule.cs" />
+    <Compile Include="Construction\CutLengthModule.cs" />
+    <Compile Include="Construction\CutLogBase.cs" />
+    <Compile Include="Construction\CutOffQuarters.cs" />
+    <Compile Include="Construction\CutOffQuarterUtils.cs" />
+    <Compile Include="Construction\CutPilarModule.cs" />
+    <Compile Include="Construction\CutPilarUtils.cs" />
+    <Compile Include="Construction\CutQuartersModule.cs" />
+    <Compile Include="Construction\CutSplitLength.cs" />
+    <Compile Include="Construction\Decals.cs" />
+    <Compile Include="Construction\DecorationStructure.cs" />
+    <Compile Include="Construction\DefenseStructure.cs" />
+    <Compile Include="Construction\DefenseWeapon.cs" />
+    <Compile Include="Construction\DefensiveWallGateControl.cs" />
+    <Compile Include="Construction\DefensiveWallGateInteraction.cs" />
+    <Compile Include="Construction\DefensiveWallGateStructure.cs" />
+    <Compile Include="Construction\DefensiveWallStructure.cs" />
+    <Compile Include="Construction\DeformationMethods.cs" />
+    <Compile Include="Construction\DelayedSwapFixer.cs" />
+    <Compile Include="Construction\DiagLogEnableStatus.cs" />
+    <Compile Include="Construction\Directions.cs" />
+    <Compile Include="Construction\DoorLock.cs" />
+    <Compile Include="Construction\DoorStructure.cs" />
+    <Compile Include="Construction\DummyModuleProfileProvider.cs" />
+    <Compile Include="Construction\EditorUtils.cs" />
+    <Compile Include="Construction\EffigyStructure.cs" />
+    <Compile Include="Construction\ElectricDeviceStructure.cs" />
+    <Compile Include="Construction\ElectricDeviceSwitch.cs" />
+    <Compile Include="Construction\ElectricWireDirections.cs" />
+    <Compile Include="Construction\ElectricWireStructure.cs" />
+    <Compile Include="Construction\ElementPlaceAnimation.cs" />
+    <Compile Include="Construction\ElementPlaceAnimationClip.cs" />
+    <Compile Include="Construction\ElementPlaceAnimationParticles.cs" />
+    <Compile Include="Construction\ElementPlaceAnimationTween.cs" />
+    <Compile Include="Construction\ElementProfile.cs" />
+    <Compile Include="Construction\ElementProfileDatabase.cs" />
+    <Compile Include="Construction\ElementRepositionAnimationTool.cs" />
+    <Compile Include="Construction\EnvironmentCleanupManager.cs" />
+    <Compile Include="Construction\EvolveFencePostModule.cs" />
+    <Compile Include="Construction\EvolveFurnitureFromNotchGridModule.cs" />
+    <Compile Include="Construction\EvolveFurnitureModule.cs" />
+    <Compile Include="Construction\ExitStatus.cs" />
+    <Compile Include="Construction\FakeBeamStructure.cs" />
+    <Compile Include="Construction\FakePilarElementProfile.cs" />
+    <Compile Include="Construction\FakePilarScrewGhostHelper.cs" />
+    <Compile Include="Construction\FakePilarStructure.cs" />
+    <Compile Include="Construction\FenceDirections.cs" />
+    <Compile Include="Construction\FencePostStructure.cs" />
+    <Compile Include="Construction\FenceStructure.cs" />
+    <Compile Include="Construction\FillGrabsStructureModule.cs" />
+    <Compile Include="Construction\FillRockBeamModule.cs" />
+    <Compile Include="Construction\FireFuelSource.cs" />
+    <Compile Include="Construction\FireMpProxy.cs" />
+    <Compile Include="Construction\FireRenderers.cs" />
+    <Compile Include="Construction\FireSerializer.cs" />
+    <Compile Include="Construction\FireStructure.cs" />
+    <Compile Include="Construction\FloorDirections.cs" />
+    <Compile Include="Construction\FloorFillGrabsStructureModule.cs" />
+    <Compile Include="Construction\FloorStructure.cs" />
+    <Compile Include="Construction\FreeFormGhostPrefab.cs" />
+    <Compile Include="Construction\FreeFormGpsLocator.cs" />
+    <Compile Include="Construction\FreeFormStructureBuiltLinker.cs" />
+    <Compile Include="Construction\FreeFormStructureLinker.cs" />
+    <Compile Include="Construction\FreeFormStructureLinkerManager.cs" />
+    <Compile Include="Construction\FreeFormStructureNodeLinker.cs" />
+    <Compile Include="Construction\FuelFireModule.cs" />
+    <Compile Include="Construction\FurnitureStorageSerializer.cs" />
+    <Compile Include="Construction\FurnitureStructure.cs" />
+    <Compile Include="Construction\GridSnapSize.cs" />
+    <Compile Include="Construction\GuidedPlacementModeGroup.cs" />
+    <Compile Include="Construction\GuidedPlacementUtils.cs" />
+    <Compile Include="Construction\HalfFloorStructure.cs" />
+    <Compile Include="Construction\HalfStairsElementProfile.cs" />
+    <Compile Include="Construction\HalfStairsStructure.cs" />
+    <Compile Include="Construction\HeldItemUpdater.cs" />
+    <Compile Include="Construction\HeldScrewStructure.cs" />
+    <Compile Include="Construction\HeldScrewStructureBone.cs" />
+    <Compile Include="Construction\HeldScrewStructureProxy.cs" />
+    <Compile Include="Construction\IAnimatableIngredient.cs" />
+    <Compile Include="Construction\IApexSupport.cs" />
+    <Compile Include="Construction\IAreaProcessor.cs" />
+    <Compile Include="Construction\IBeamSupport.cs" />
+    <Compile Include="Construction\IBeginPlaceActionReceiver.cs" />
+    <Compile Include="Construction\IBreakableStructure.cs" />
+    <Compile Include="Construction\IBridgeRopeSupport.cs" />
+    <Compile Include="Construction\IClimbRopeSupport.cs" />
+    <Compile Include="Construction\IConstructionModule.cs" />
+    <Compile Include="Construction\IDetachedPlacementStructure.cs" />
+    <Compile Include="Construction\IDynamicSnapPointModule.cs" />
+    <Compile Include="Construction\IEffigySupport.cs" />
+    <Compile Include="Construction\IElectricDeviceSupport.cs" />
+    <Compile Include="Construction\IElectricWireSupport.cs" />
+    <Compile Include="Construction\IElementIdentifier.cs" />
+    <Compile Include="Construction\IElementItemProvider.cs" />
+    <Compile Include="Construction\IElementItemTypeProvider.cs" />
+    <Compile Include="Construction\IFloorSupport.cs" />
+    <Compile Include="Construction\IFreeFormStructureLinker.cs" />
+    <Compile Include="Construction\IHalfStairsSupport.cs" />
+    <Compile Include="Construction\IHangingBetweenSupports.cs" />
+    <Compile Include="Construction\IIdleStateUpdateReceiver.cs" />
+    <Compile Include="Construction\IIkDualGoalsProviderModule.cs" />
+    <Compile Include="Construction\IIkSingleGoalProviderModule.cs" />
+    <Compile Include="Construction\IInputModeProvider.cs" />
+    <Compile Include="Construction\IkSingleGoalProvider.cs" />
+    <Compile Include="Construction\IkUtils.cs" />
+    <Compile Include="Construction\ImpactAntiBurstValidator.cs" />
+    <Compile Include="Construction\ImpactSiegeValidator.cs" />
+    <Compile Include="Construction\INonStructureDynamicSnapPointModule.cs" />
+    <Compile Include="Construction\InputModes.cs" />
+    <Compile Include="Construction\InteriorSpaceSnowAndWetnessOcclusion.cs" />
+    <Compile Include="Construction\IOnStructureDynamicSnapPointModule.cs" />
+    <Compile Include="Construction\IPilarSupport.cs" />
+    <Compile Include="Construction\IPlaceElementProfile.cs" />
+    <Compile Include="Construction\IPlacementGuide.cs" />
+    <Compile Include="Construction\IPlacementModeGroup.cs" />
+    <Compile Include="Construction\IPlayerPlaceAnimProvider.cs" />
+    <Compile Include="Construction\IPreviewManager.cs" />
+    <Compile Include="Construction\IProcessableSuperStructure.cs" />
+    <Compile Include="Construction\IRampSupport.cs" />
+    <Compile Include="Construction\IReinforceableStructure.cs" />
+    <Compile Include="Construction\IRockStructure.cs" />
+    <Compile Include="Construction\ISetInstanceIdReceiver.cs" />
+    <Compile Include="Construction\ISiegeStructure.cs" />
+    <Compile Include="Construction\ISingleStepSupport.cs" />
+    <Compile Include="Construction\ISnapPointPredictingModule.cs" />
+    <Compile Include="Construction\ISnapPointValidator.cs" />
+    <Compile Include="Construction\ISolarPanelSupport.cs" />
+    <Compile Include="Construction\IStagedMessageOverrideProvider.cs" />
+    <Compile Include="Construction\IStoppedPlaceActionReceiver.cs" />
+    <Compile Include="Construction\IStructure.cs" />
+    <Compile Include="Construction\IStructureCompletedReceiver.cs" />
+    <Compile Include="Construction\IStructureDirtyReceiver.cs" />
+    <Compile Include="Construction\IStructureImpactProcessor.cs" />
+    <Compile Include="Construction\IStructureImpactValidator.cs" />
+    <Compile Include="Construction\ISuperStructureNode.cs" />
+    <Compile Include="Construction\ISuperStructureRefreshedReceiver.cs" />
+    <Compile Include="Construction\ITargetablePlacement.cs" />
+    <Compile Include="Construction\ItemLoader.cs" />
+    <Compile Include="Construction\ItemModuleProfile.cs" />
+    <Compile Include="Construction\ItemPicker.cs" />
+    <Compile Include="Construction\ItemTypeModuleProfile.cs" />
+    <Compile Include="Construction\ItemUtils.cs" />
+    <Compile Include="Construction\ITileCenter.cs" />
+    <Compile Include="Construction\ITileEdge.cs" />
+    <Compile Include="Construction\ITileSupport.cs" />
+    <Compile Include="Construction\IUpdateReceiver.cs" />
+    <Compile Include="Construction\IWallSupport.cs" />
+    <Compile Include="Construction\LadderStructure.cs" />
+    <Compile Include="Construction\LineDecal.cs" />
+    <Compile Include="Construction\LookupType.cs" />
+    <Compile Include="Construction\MainOnlyPlacementModeGroup.cs" />
+    <Compile Include="Construction\ManagerValuesUpdater.cs" />
+    <Compile Include="Construction\ModifierUiMessages.cs" />
+    <Compile Include="Construction\ModuleProfile.cs" />
+    <Compile Include="Construction\ModuleProfileDatabase.cs" />
+    <Compile Include="Construction\ModuleState.cs" />
+    <Compile Include="Construction\Multiplayer\AnticipatedStructureFlags.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormPlayerNetworkAnimation.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormPlayerNetworkAnimationRef.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormStructureCascadeRepositionCommand.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormStructureCommand.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormStructureCreatedCommand.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormStructureDestroyedCommand.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormStructureDistortedStatusCommand.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormStructureEditedElementsCommand.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormStructureEditedLinksCommand.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormStructureEditedTransformCommand.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormSystemNetworkProxyBase.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormSystemNetworkProxyClient.cs" />
+    <Compile Include="Construction\Multiplayer\FreeFormSystemNetworkProxyServer.cs" />
+    <Compile Include="Construction\Multiplayer\IStateSwitchReceiver.cs" />
+    <Compile Include="Construction\Multiplayer\LocallyAnticipatedStructures.cs" />
+    <Compile Include="Construction\Multiplayer\MultiplayerUtils.cs" />
+    <Compile Include="Construction\Multiplayer\PlayerAnimationNetworkSyncLoader.cs" />
+    <Compile Include="Construction\Multiplayer\RemotelyAnticipatedStructures.cs" />
+    <Compile Include="Construction\NavmeshCutScrewGhostHelper.cs" />
+    <Compile Include="Construction\NonPredictedTargetsUpdater.cs" />
+    <Compile Include="Construction\Notches.cs" />
+    <Compile Include="Construction\NotchingDataGrid.cs" />
+    <Compile Include="Construction\OcclusionRoomsProcessor.cs" />
+    <Compile Include="Construction\OneSidedApexStructure.cs" />
+    <Compile Include="Construction\PhysicsCaster.cs" />
+    <Compile Include="Construction\PilarDirections.cs" />
+    <Compile Include="Construction\PilarFillGrabsStructureModule.cs" />
+    <Compile Include="Construction\PilarStructure.cs" />
+    <Compile Include="Construction\PlaceApexStructureModule.cs" />
+    <Compile Include="Construction\PlaceBeamOnDefensiveWallModule.cs" />
+    <Compile Include="Construction\PlaceBeamOnGroundModule.cs" />
+    <Compile Include="Construction\PlaceBeamOnTreeModule.cs" />
+    <Compile Include="Construction\PlaceBeamOnWallModule.cs" />
+    <Compile Include="Construction\PlaceBridgeFloorModule.cs" />
+    <Compile Include="Construction\PlaceBridgeRopeStructureModule.cs" />
+    <Compile Include="Construction\PlaceClimbRopeStructureModule.cs" />
+    <Compile Include="Construction\PlaceDecorationModule.cs" />
+    <Compile Include="Construction\PlaceDefensiveWallGateStructureModule.cs" />
+    <Compile Include="Construction\PlaceDefensiveWallStructureModule.cs" />
+    <Compile Include="Construction\PlaceDoorFromWallWithWindowModule.cs" />
+    <Compile Include="Construction\PlaceEffigyModule.cs" />
+    <Compile Include="Construction\PlaceElectricDeviceStructureModule.cs" />
+    <Compile Include="Construction\PlaceElectricWireStructureModule.cs" />
+    <Compile Include="Construction\PlaceFenceModule.cs" />
+    <Compile Include="Construction\PlaceFencePostOnGroundModule.cs" />
+    <Compile Include="Construction\PlaceFireOnGroundModule.cs" />
+    <Compile Include="Construction\PlaceFloorStructureModule.cs" />
+    <Compile Include="Construction\PlaceFurnitureExtensionFromTemplateModule.cs" />
+    <Compile Include="Construction\PlaceFurnitureFromTemplateModule.cs" />
+    <Compile Include="Construction\PlaceFurnitureOnGroundModule.cs" />
+    <Compile Include="Construction\PlaceHalfStairsOnWallSideModule.cs" />
+    <Compile Include="Construction\PlaceHookStructureModule.cs" />
+    <Compile Include="Construction\PlaceLadderStructureModule.cs" />
+    <Compile Include="Construction\PlaceLeaningBeamStructureModule.cs" />
+    <Compile Include="Construction\PlacementMode.cs" />
+    <Compile Include="Construction\PlacementModeGroup.cs" />
+    <Compile Include="Construction\PlacementModeGroupBase.cs" />
+    <Compile Include="Construction\PlacementModeTypes.cs" />
+    <Compile Include="Construction\PlaceOnGroundModule.cs" />
+    <Compile Include="Construction\PlacePilarOnGroundModule.cs" />
+    <Compile Include="Construction\PlacePilarStructureModule.cs" />
+    <Compile Include="Construction\PlacePresetOnGroundAltModule.cs" />
+    <Compile Include="Construction\PlacePresetOnGroundModule.cs" />
+    <Compile Include="Construction\PlacePresetTarpOnPilarsModule.cs" />
+    <Compile Include="Construction\PlaceRaftStructureModule.cs" />
+    <Compile Include="Construction\PlaceRampAndStairsStructureModule.cs" />
+    <Compile Include="Construction\PlaceRockWallStructureModule.cs" />
+    <Compile Include="Construction\PlaceShutterFromWallWithWindowModule.cs" />
+    <Compile Include="Construction\PlaceSingleStepStructureModule.cs" />
+    <Compile Include="Construction\PlaceSolarPanelStructureModule.cs" />
+    <Compile Include="Construction\PlaceStackOnGroundModule.cs" />
+    <Compile Include="Construction\PlaceStackStructureModule.cs" />
+    <Compile Include="Construction\PlaceStrutStructureModule.cs" />
+    <Compile Include="Construction\PlaceTarpOnGroundModule.cs" />
+    <Compile Include="Construction\PlaceTarpStakeStructureModule.cs" />
+    <Compile Include="Construction\PlaceWalkwayStructureModule.cs" />
+    <Compile Include="Construction\PlaceWallStructureModule.cs" />
+    <Compile Include="Construction\PlayerRelocateScrewStructureAction.cs" />
+    <Compile Include="Construction\PlayerStateChecker.cs" />
+    <Compile Include="Construction\PredictedAreaData.cs" />
+    <Compile Include="Construction\PredictedSnapPointsUpdater.cs" />
+    <Compile Include="Construction\PredictedTarget.cs" />
+    <Compile Include="Construction\PresetElementsTemplate.cs" />
+    <Compile Include="Construction\PresetElementsTemplateConditionBase.cs" />
+    <Compile Include="Construction\PresetElementsTemplateNotchingCondition.cs" />
+    <Compile Include="Construction\PresetStructure.cs" />
+    <Compile Include="Construction\PresetStructuresSubTypes.cs" />
+    <Compile Include="Construction\PresetTarpStructure.cs" />
+    <Compile Include="Construction\PreviewAnimationManager.cs" />
+    <Compile Include="Construction\PreviewArrowManager.cs" />
+    <Compile Include="Construction\PreviewDashedLine3DManager.cs" />
+    <Compile Include="Construction\PreviewDecalCircleManager.cs" />
+    <Compile Include="Construction\PreviewDecalManager.cs" />
+    <Compile Include="Construction\PreviewLineManager.cs" />
+    <Compile Include="Construction\PreviewManager.cs" />
+    <Compile Include="Construction\PreviewSquareManager.cs" />
+    <Compile Include="Construction\PreviewSquareOnTerrainManager.cs" />
+    <Compile Include="Construction\PreviewsUpdater.cs" />
+    <Compile Include="Construction\PrimaryUiMessages.cs" />
+    <Compile Include="Construction\PseudoRandom.cs" />
+    <Compile Include="Construction\RaftStructure.cs" />
+    <Compile Include="Construction\RampDirections.cs" />
+    <Compile Include="Construction\RampStructure.cs" />
+    <Compile Include="Construction\ReinforceBreakableStructureModule.cs" />
+    <Compile Include="Construction\ReinforcementUtils.cs" />
+    <Compile Include="Construction\Rendering\CustomOcclusionVolume.cs" />
+    <Compile Include="Construction\RepairTool.cs" />
+    <Compile Include="Construction\RepositioningUtils.cs" />
+    <Compile Include="Construction\RepositionLeaningBeamStructureModule.cs" />
+    <Compile Include="Construction\RepositionResults.cs" />
+    <Compile Include="Construction\RockBeamStructure.cs" />
+    <Compile Include="Construction\RockFloorStructure.cs" />
+    <Compile Include="Construction\RockPilarStructure.cs" />
+    <Compile Include="Construction\RockStructureUtils.cs" />
+    <Compile Include="Construction\RockWallStructure.cs" />
+    <Compile Include="Construction\RotationUpdater.cs" />
+    <Compile Include="Construction\RuntimeStructureDatabase.cs" />
+    <Compile Include="Construction\RuntimeStructureDBCallbacksInitializer.cs" />
+    <Compile Include="Construction\SawHorseController.cs" />
+    <Compile Include="Construction\SawHorseUtils.cs" />
+    <Compile Include="Construction\ScrewGhostExportUtils.cs" />
+    <Compile Include="Construction\ScrewPrefabProcessor.cs" />
+    <Compile Include="Construction\SecondaryUiMessages.cs" />
+    <Compile Include="Construction\SharpenStickIntoDefenseStructureModule.cs" />
+    <Compile Include="Construction\ShutterLock.cs" />
+    <Compile Include="Construction\ShutterStructure.cs" />
+    <Compile Include="Construction\SimulatedEventsManager.cs" />
+    <Compile Include="Construction\SingleStepStructure.cs" />
+    <Compile Include="Construction\SnappingUtils.cs" />
+    <Compile Include="Construction\SnapPointPreviewManager.cs" />
+    <Compile Include="Construction\SolarPanelStructure.cs" />
+    <Compile Include="Construction\SpawnInteractionController.cs" />
+    <Compile Include="Construction\SplitArrowTypes.cs" />
+    <Compile Include="Construction\SquarePlacementGuide.cs" />
+    <Compile Include="Construction\StackStructure.cs" />
+    <Compile Include="Construction\StagedPreview.cs" />
+    <Compile Include="Construction\StagingDelay.cs" />
+    <Compile Include="Construction\StairsStructure.cs" />
+    <Compile Include="Construction\StakeStructure.cs" />
+    <Compile Include="Construction\StimuliUtils.cs" />
+    <Compile Include="Construction\StraightPlacementGuide.cs" />
+    <Compile Include="Construction\Structure.cs" />
+    <Compile Include="Construction\StructureAlreadyDestroyedProcessor.cs" />
+    <Compile Include="Construction\StructureCollapsedProcessor.cs" />
+    <Compile Include="Construction\StructureCrawler.cs" />
+    <Compile Include="Construction\StructureCreationUtils.cs" />
+    <Compile Include="Construction\StructureDamageFXProcessor.cs" />
+    <Compile Include="Construction\StructureDamageProcessor.cs" />
+    <Compile Include="Construction\StructureDestruction.cs" />
+    <Compile Include="Construction\StructureDestructionManager.cs" />
+    <Compile Include="Construction\StructureDistortionProcessor.cs" />
+    <Compile Include="Construction\StructureElement.cs" />
+    <Compile Include="Construction\StructureElementItemVisualController.cs" />
+    <Compile Include="Construction\StructureElementPlaceHolder.cs" />
+    <Compile Include="Construction\StructureExtensions.cs" />
+    <Compile Include="Construction\StructureImpactProcessingData.cs" />
+    <Compile Include="Construction\StructureInfo.cs" />
+    <Compile Include="Construction\StructurePartialCollapseProcessor.cs" />
+    <Compile Include="Construction\StructureResistanceDebug.cs" />
+    <Compile Include="Construction\StructureSnapping.cs" />
+    <Compile Include="Construction\StructureTransformationUtils.cs" />
+    <Compile Include="Construction\StrutStructure.cs" />
+    <Compile Include="Construction\SuperStructure.cs" />
+    <Compile Include="Construction\SuperStructureManager.cs" />
+    <Compile Include="Construction\SuperStructureRoomVisualDebug.cs" />
+    <Compile Include="Construction\SwitchStateBase.cs" />
+    <Compile Include="Construction\TargetInfo.cs" />
+    <Compile Include="Construction\TarpCollision.cs" />
+    <Compile Include="Construction\TarpCornerAttachments.cs" />
+    <Compile Include="Construction\TarpDeformationEffector.cs" />
+    <Compile Include="Construction\TarpDeformationSystem.cs" />
+    <Compile Include="Construction\TarpDirections.cs" />
+    <Compile Include="Construction\TarpStructure.cs" />
+    <Compile Include="Construction\TertiaryUiMessages.cs" />
+    <Compile Include="Construction\Trampoline.cs" />
+    <Compile Include="Construction\Traps\AnimalTrap.cs" />
+    <Compile Include="Construction\Traps\BreakableElement.cs" />
+    <Compile Include="Construction\Traps\BreakableSoftElement.cs" />
+    <Compile Include="Construction\Traps\BreakableTarpElement.cs" />
+    <Compile Include="Construction\Traps\ReplaceByItemPickup.cs" />
+    <Compile Include="Construction\Traps\TrapTrigger.cs" />
+    <Compile Include="Construction\TreeStructure.cs" />
+    <Compile Include="Construction\TreeStructureSaveManager.cs" />
+    <Compile Include="Construction\Tutorials\ConstructionTutorial.cs" />
+    <Compile Include="Construction\Tutorials\DismantleTutorial.cs" />
+    <Compile Include="Construction\Tutorials\FreeFormTutorialLoader.cs" />
+    <Compile Include="Construction\Tweener.cs" />
+    <Compile Include="Construction\TweenTypes.cs" />
+    <Compile Include="Construction\UiMessages.cs" />
+    <Compile Include="Construction\UiMessageTemplates.cs" />
+    <Compile Include="Construction\VerticalPlacementGuide.cs" />
+    <Compile Include="Construction\WalkwayStructure.cs" />
+    <Compile Include="Construction\WallDirections.cs" />
+    <Compile Include="Construction\WallFillGrabsStructureModule.cs" />
+    <Compile Include="Construction\WallStructure.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bolt.user\bolt.user.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D78}</Project>
+      <Name>bolt.user</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bolt\bolt.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D76}</Project>
+      <Name>bolt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Endnight\Endnight.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D81}</Project>
+      <Name>Endnight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FMOD.Unity\FMOD.Unity.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D89}</Project>
+      <Name>FMOD.Unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Newtonsoft.Json\Newtonsoft.Json.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D98}</Project>
+      <Name>Newtonsoft.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Obi\Obi.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DA5}</Project>
+      <Name>Obi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Ai.Utilities\Sons.Ai.Utilities.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB1}</Project>
+      <Name>Sons.Ai.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Ai.Vail\Sons.Ai.Vail.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB2}</Project>
+      <Name>Sons.Ai.Vail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Atmosphere\Sons.Atmosphere.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB5}</Project>
+      <Name>Sons.Atmosphere</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Construction.Utils\Sons.Construction.Utils.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DBA}</Project>
+      <Name>Sons.Construction.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.ConstructionBoltToken\Sons.ConstructionBoltToken.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DBB}</Project>
+      <Name>Sons.ConstructionBoltToken</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Electricity\Sons.Electricity.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DC0}</Project>
+      <Name>Sons.Electricity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Gui\Sons.Gui.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DCC}</Project>
+      <Name>Sons.Gui</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Input\Sons.Input.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD0}</Project>
+      <Name>Sons.Input</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Interfaces\Sons.Interfaces.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD1}</Project>
+      <Name>Sons.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Item\Sons.Item.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD2}</Project>
+      <Name>Sons.Item</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Multiplayer\Sons.Multiplayer.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD6}</Project>
+      <Name>Sons.Multiplayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Save\Sons.Save.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DDD}</Project>
+      <Name>Sons.Save</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Weapon\Sons.Weapon.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DE9}</Project>
+      <Name>Sons.Weapon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons\Sons.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DBE}</Project>
+      <Name>Sons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DEF}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.InputSystem\Unity.InputSystem.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E05}</Project>
+      <Name>Unity.InputSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.HighDefinition.Runtime\Unity.RenderPipelines.HighDefinition.Runtime.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0B}</Project>
+      <Name>Unity.RenderPipelines.HighDefinition.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E13}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E20}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E22}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E2F}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

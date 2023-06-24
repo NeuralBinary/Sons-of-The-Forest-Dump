@@ -1,0 +1,20 @@
+﻿using System;
+using Il2CppDummyDll;
+
+namespace FMOD
+{
+	// Token: 0x02000082 RID: 130
+	[Token(Token = "0x2000082")]
+	public enum DSP_PARAMETER_FLOAT_MAPPING_TYPE
+	{
+		// Token: 0x04000270 RID: 624
+		[Token(Token = "0x4000270")]
+		DSP_PARAMETER_FLOAT_MAPPING_TYPE_LINEAR,
+		// Token: 0x04000271 RID: 625
+		[Token(Token = "0x4000271")]
+		DSP_PARAMETER_FLOAT_MAPPING_TYPE_AUTO,
+		// Token: 0x04000272 RID: 626
+		[Token(Token = "0x4000272")]
+		DSP_PARAMETER_FLOAT_MAPPING_TYPE_PIECEWISE_LINEAR
+	}
+}

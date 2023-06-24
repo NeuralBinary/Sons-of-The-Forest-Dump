@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DCF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sons.Gui.Options</RootNamespace>
+    <AssemblyName>Sons.Gui.Options</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlignUi.cs" />
+    <Compile Include="AmbientOcclusionQualityOptionGui.cs" />
+    <Compile Include="AnimalSpawnRateOptionGui.cs" />
+    <Compile Include="AnisotropicQualityOptionGui.cs" />
+    <Compile Include="AntiAliasOptionGui.cs" />
+    <Compile Include="ApplyButton.cs" />
+    <Compile Include="AudioOptionsGui.cs" />
+    <Compile Include="BackButton.cs" />
+    <Compile Include="BigHeadModeOptionGui.cs" />
+    <Compile Include="BillboardQualityOptionGui.cs" />
+    <Compile Include="BloomOptionGui.cs" />
+    <Compile Include="BrightnessOptionGui.cs" />
+    <Compile Include="BuildingGuiOptionGui.cs" />
+    <Compile Include="ChromaticAberrationOptionGui.cs" />
+    <Compile Include="CloudTypeOptionGui.cs" />
+    <Compile Include="ColdPenaltiesOptionGui.cs" />
+    <Compile Include="ColorGradeOptionGui.cs" />
+    <Compile Include="ConfirmButton.cs" />
+    <Compile Include="ConsumableEffectsOptionGui.cs" />
+    <Compile Include="ContactShadowsOptionGui.cs" />
+    <Compile Include="ControlOptionsGui.cs" />
+    <Compile Include="CrouchToggleOptionGui.cs" />
+    <Compile Include="CustomGameOptionsGui.cs" />
+    <Compile Include="CustomGameSetupGuiManager.cs" />
+    <Compile Include="CustomMenuGameSettingGui.cs" />
+    <Compile Include="CustomMenuOptionGui.cs" />
+    <Compile Include="DayLengthOptionGui.cs" />
+    <Compile Include="DisplayOptionsGui.cs" />
+    <Compile Include="DlssOptionGui.cs" />
+    <Compile Include="DrawDistanceOptionGui.cs" />
+    <Compile Include="DynamicRangeProfileOptionGui.cs" />
+    <Compile Include="DynamicResolutionTargetOptionGui.cs" />
+    <Compile Include="DynamicResUpscaleOptionGui.cs" />
+    <Compile Include="EnemyAggressionOptionGui.cs" />
+    <Compile Include="EnemyArmourOptionGui.cs" />
+    <Compile Include="EnemyDamageOptionGui.cs" />
+    <Compile Include="EnemyHealthOptionGui.cs" />
+    <Compile Include="EnemySpawningOptionGui.cs" />
+    <Compile Include="FilmGrainOptionGui.cs" />
+    <Compile Include="FloatOptionGui.cs" />
+    <Compile Include="FloatSliderOptionGuiBase.cs" />
+    <Compile Include="FogQualityOptionGui.cs" />
+    <Compile Include="FovOffsetOptionGui.cs" />
+    <Compile Include="FullscreenOptionGui.cs" />
+    <Compile Include="GamePadDeadzoneOptionGui.cs" />
+    <Compile Include="GamePadXSensitivityOptionGui.cs" />
+    <Compile Include="GamePadYSensitivityOptionGui.cs" />
+    <Compile Include="GameplayOptionsGui.cs" />
+    <Compile Include="GammaOptionGui.cs" />
+    <Compile Include="GenericInputBindingOptionGui.cs" />
+    <Compile Include="GraphicsOptionsGui.cs" />
+    <Compile Include="GrassQualityOptionGui.cs" />
+    <Compile Include="GuiOptionGui.cs" />
+    <Compile Include="HighLowOffOptionGuiBase.cs" />
+    <Compile Include="HighLowOptionGuiBase.cs" />
+    <Compile Include="HighMediumLowOptionGuiBase.cs" />
+    <Compile Include="HudGuiOptionGui.cs" />
+    <Compile Include="HudGuiScaleOptionGui.cs" />
+    <Compile Include="InputOptionGui.cs" />
+    <Compile Include="IntSliderOptionGuiBase.cs" />
+    <Compile Include="InvertYOptionGui.cs" />
+    <Compile Include="JumpOptionGui.cs" />
+    <Compile Include="LanguageOptionGui.cs" />
+    <Compile Include="LinkSliderToText.cs" />
+    <Compile Include="MasterVolumeOptionGui.cs" />
+    <Compile Include="MenuOptionGui.cs" />
+    <Compile Include="MicroShadowingOptionGui.cs" />
+    <Compile Include="MiniMapGuiOptionGui.cs" />
+    <Compile Include="MotionBlurOptionGui.cs" />
+    <Compile Include="MouseXSensitivityOptionGui.cs" />
+    <Compile Include="MouseYSensitivityOptionGui.cs" />
+    <Compile Include="MusicVolumeOptionGui.cs" />
+    <Compile Include="OnOffOptionGuiBase.cs" />
+    <Compile Include="OptionGuiTooltipController.cs" />
+    <Compile Include="OptionsGui.cs" />
+    <Compile Include="OptionsGuiManager.cs" />
+    <Compile Include="PausedInInventoryOptionGui.cs" />
+    <Compile Include="PlayerActorsModeOptionGui.cs" />
+    <Compile Include="PlayerNameTagsOptionGui.cs" />
+    <Compile Include="PlayerStatsDamageOptionGui.cs" />
+    <Compile Include="PrecipitationFrequencyOptionGui.cs" />
+    <Compile Include="ProjectileReticleOptionGui.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QualityOptionGui.cs" />
+    <Compile Include="QualityPresetOptionGui.cs" />
+    <Compile Include="QualityWithOffOptionGuiBase.cs" />
+    <Compile Include="RebindingInputOptionGui.cs" />
+    <Compile Include="ReducedFoodInContainersOptionGui.cs" />
+    <Compile Include="ResolutionOptionGui.cs" />
+    <Compile Include="RumbleOptionGui.cs" />
+    <Compile Include="ScreenSpaceReflectionOptionGui.cs" />
+    <Compile Include="SeasonLengthOptionGui.cs" />
+    <Compile Include="SfxVolumeOptionGui.cs" />
+    <Compile Include="SfxVolumeSamplePlayer.cs" />
+    <Compile Include="ShadowQualityOptionGui.cs" />
+    <Compile Include="SingleUseContainersOptionGui.cs" />
+    <Compile Include="SleepingDelayOptionGui.cs" />
+    <Compile Include="SprintToggleOptionGui.cs" />
+    <Compile Include="StartingSeasonOptionGui.cs" />
+    <Compile Include="StructureDamageOptionGui.cs" />
+    <Compile Include="TakeAndUseOptionGui.cs" />
+    <Compile Include="TargetFrameRateOptionGui.cs" />
+    <Compile Include="TerrainParallaxDistanceOptionGui.cs" />
+    <Compile Include="TerrainTessellationQualityOptionGui.cs" />
+    <Compile Include="TextureResolutionOptionGui.cs" />
+    <Compile Include="ToggleMenuGameSettingGui.cs" />
+    <Compile Include="ToggleMenuOptionGui.cs" />
+    <Compile Include="TreeRegrowthOptionGui.cs" />
+    <Compile Include="TutorialsGuiOptionGui.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="VoiceCountOptionGui.cs" />
+    <Compile Include="VoiceVolumeOptionGui.cs" />
+    <Compile Include="VSyncOptionGui.cs" />
+    <Compile Include="WaterQualityOptionGui.cs" />
+    <Compile Include="WeatherOcclusionQualityOptionGui.cs" />
+    <Compile Include="WorldInteractionGuiOptionGui.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.FMOD\Sons.FMOD.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DC5}</Project>
+      <Name>Sons.FMOD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Gui\Sons.Gui.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DCC}</Project>
+      <Name>Sons.Gui</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.UiElements\Sons.UiElements.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DE5}</Project>
+      <Name>Sons.UiElements</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Localization\Unity.Localization.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E06}</Project>
+      <Name>Unity.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0E}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E2F}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

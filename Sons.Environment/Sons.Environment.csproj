@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DC1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sons.Environment</RootNamespace>
+    <AssemblyName>Sons.Environment</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DiggingVirtualNode.cs" />
+    <Compile Include="Digging\ColliderIgnoreAllInHierarchy.cs" />
+    <Compile Include="Digging\DiggingManager.cs" />
+    <Compile Include="Digging\DiggingTile.cs" />
+    <Compile Include="Digging\DiggingTileFlagsExtensions.cs" />
+    <Compile Include="Digging\DiggingTileGrid.cs" />
+    <Compile Include="Digging\DiggingTileGroup.cs" />
+    <Compile Include="Digging\DiggingTileMesh.cs" />
+    <Compile Include="Digging\DiggingTileMeshData.cs" />
+    <Compile Include="Digging\DiggingTileRemovedFlags.cs" />
+    <Compile Include="Digging\DiggingTileTypeFlags.cs" />
+    <Compile Include="Digging\DigMergeTester.cs" />
+    <Compile Include="Digging\DigTool.cs" />
+    <Compile Include="Digging\DirtClump.cs" />
+    <Compile Include="Digging\DirtClumpActivator.cs" />
+    <Compile Include="Digging\DirtClumpParticleImpact.cs" />
+    <Compile Include="Digging\DisableJoint.cs" />
+    <Compile Include="Digging\KeyFloatPair.cs" />
+    <Compile Include="Digging\KeyFloatPairSet.cs" />
+    <Compile Include="Digging\MutualIgnore.cs" />
+    <Compile Include="Digging\RecordSimulation.cs" />
+    <Compile Include="Digging\ShovelDirt.cs" />
+    <Compile Include="Digging\ShovelDirtAnimEvents.cs" />
+    <Compile Include="Digging\TerrainDig\ActivateOnDigCount.cs" />
+    <Compile Include="Digging\TerrainDig\ClusterObjectRefs.cs" />
+    <Compile Include="Digging\TerrainDig\EnableDigNodesOverTime.cs" />
+    <Compile Include="Digging\TerrainDig\MultiplayerTerrainDig.cs" />
+    <Compile Include="Digging\TerrainDig\ShovelAttackOverrideArea.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigCluster.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigColliderSwitch.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigColliderSwitchTracker.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigCollision.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigCollisionGrid.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigDetectionArea.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigManager.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigNode.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigNodeConnector.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigObjectDef.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigObjectDefExtensions.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigObjectDefSet.cs" />
+    <Compile Include="Digging\TerrainDig\TerrainDigThroughArea.cs" />
+    <Compile Include="Digging\VfxConstants.cs" />
+    <Compile Include="Endnight\Environment\HoudiniDetailData.cs" />
+    <Compile Include="GameEnvironment.cs" />
+    <Compile Include="IDiggingTool.cs" />
+    <Compile Include="JSONGreebleData.cs" />
+    <Compile Include="NormalizeSplats.cs" />
+    <Compile Include="NormalSolver.cs" />
+    <Compile Include="OpenSimplexNoise.cs" />
+    <Compile Include="PathCreatorFromJson.cs" />
+    <Compile Include="Poligonizator.cs" />
+    <Compile Include="PrefabInstancesFromJson.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpawnPickup.cs" />
+    <Compile Include="TerrainShaderGlobals.cs" />
+    <Compile Include="TheForest\Utils\TerrainUtils.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="WaterFlowExport.cs" />
+    <Compile Include="WindGustedParticles.cs" />
+    <Compile Include="WorldObjectLocatorData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bolt.user\bolt.user.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D78}</Project>
+      <Name>bolt.user</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Endnight\Endnight.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D81}</Project>
+      <Name>Endnight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\geometry3Sharp\geometry3Sharp.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8A}</Project>
+      <Name>geometry3Sharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibNoise.Unity\LibNoise.Unity.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8E}</Project>
+      <Name>LibNoise.Unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NatureManufacture.SplineSystem\NatureManufacture.SplineSystem.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D97}</Project>
+      <Name>NatureManufacture.SplineSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PathCreator\PathCreator.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DA6}</Project>
+      <Name>PathCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Atmosphere\Sons.Atmosphere.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB5}</Project>
+      <Name>Sons.Atmosphere</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Lodding\Sons.Lodding.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD4}</Project>
+      <Name>Sons.Lodding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Physics\Sons.Physics.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD8}</Project>
+      <Name>Sons.Physics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DEF}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E13}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E20}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E22}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TerrainModule\UnityEngine.TerrainModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E29}</Project>
+      <Name>UnityEngine.TerrainModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TerrainPhysicsModule\UnityEngine.TerrainPhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E2A}</Project>
+      <Name>UnityEngine.TerrainPhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.VFXModule\UnityEngine.VFXModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E37}</Project>
+      <Name>UnityEngine.VFXModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

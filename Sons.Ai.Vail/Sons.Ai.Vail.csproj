@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sons</RootNamespace>
+    <AssemblyName>Sons.Ai.Vail</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ai\FindNavPath.cs" />
+    <Compile Include="Ai\NavPathTester.cs" />
+    <Compile Include="Ai\SwapSkinnedMeshWithPrefab.cs" />
+    <Compile Include="Ai\TestCharacterMove.cs" />
+    <Compile Include="Ai\Vail\ActorHealthVariations.cs" />
+    <Compile Include="Ai\Vail\ActorMover.cs" />
+    <Compile Include="Ai\Vail\ActorSpawner.cs" />
+    <Compile Include="Ai\Vail\Attention.cs" />
+    <Compile Include="Ai\Vail\CeilingWalkArea.cs" />
+    <Compile Include="Ai\Vail\CharacterMaterials.cs" />
+    <Compile Include="Ai\Vail\Condition.cs" />
+    <Compile Include="Ai\Vail\ConditionOperator.cs" />
+    <Compile Include="Ai\Vail\ConditionSet.cs" />
+    <Compile Include="Ai\Vail\ConditionType.cs" />
+    <Compile Include="Ai\Vail\Constants.cs" />
+    <Compile Include="Ai\Vail\DamageReceivedStimuli.cs" />
+    <Compile Include="Ai\Vail\DamageStatAdjustment.cs" />
+    <Compile Include="Ai\Vail\DismemberedBodyPart.cs" />
+    <Compile Include="Ai\Vail\DismemberMaterialRenderer.cs" />
+    <Compile Include="Ai\Vail\DismembermentController.cs" />
+    <Compile Include="Ai\Vail\DragBodyInteraction.cs" />
+    <Compile Include="Ai\Vail\DragLogInteraction.cs" />
+    <Compile Include="Ai\Vail\DropLocation.cs" />
+    <Compile Include="Ai\Vail\Enumeration.cs" />
+    <Compile Include="Ai\Vail\FeminineTrait.cs" />
+    <Compile Include="Ai\Vail\FlightPathMover.cs" />
+    <Compile Include="Ai\Vail\FootIkTargets.cs" />
+    <Compile Include="Ai\Vail\GibSystem.cs" />
+    <Compile Include="Ai\Vail\Group.cs" />
+    <Compile Include="Ai\Vail\GroupListItem.cs" />
+    <Compile Include="Ai\Vail\HeavyEngineEquip.cs" />
+    <Compile Include="Ai\Vail\Helpers.cs" />
+    <Compile Include="Ai\Vail\IActorAudioPlayer.cs" />
+    <Compile Include="Ai\Vail\IActorSeed.cs" />
+    <Compile Include="Ai\Vail\IActorVariation.cs" />
+    <Compile Include="Ai\Vail\IActorZone.cs" />
+    <Compile Include="Ai\Vail\IArmorSystem.cs" />
+    <Compile Include="Ai\Vail\IBurnableBody.cs" />
+    <Compile Include="Ai\Vail\IConstructionVailActions.cs" />
+    <Compile Include="Ai\Vail\Influences\AngerInfluence.cs" />
+    <Compile Include="Ai\Vail\Influences\FearInfluence.cs" />
+    <Compile Include="Ai\Vail\Influences\Influence.cs" />
+    <Compile Include="Ai\Vail\Influences\SentimentInfluence.cs" />
+    <Compile Include="Ai\Vail\InterruptReason.cs" />
+    <Compile Include="Ai\Vail\Inventory\CarryAttachments.cs" />
+    <Compile Include="Ai\Vail\Inventory\InventoryManager.cs" />
+    <Compile Include="Ai\Vail\Inventory\InventoryTypeList.cs" />
+    <Compile Include="Ai\Vail\Inventory\IVailDropTarget.cs" />
+    <Compile Include="Ai\Vail\Inventory\IVailPickupItem.cs" />
+    <Compile Include="Ai\Vail\Inventory\VailGiftData.cs" />
+    <Compile Include="Ai\Vail\Inventory\VailGiftManager.cs" />
+    <Compile Include="Ai\Vail\Inventory\VailPickup.cs" />
+    <Compile Include="Ai\Vail\Inventory\VailPickupManager.cs" />
+    <Compile Include="Ai\Vail\IRobbyCallbacks.cs" />
+    <Compile Include="Ai\Vail\ISimpleSpawner.cs" />
+    <Compile Include="Ai\Vail\ISpawner.cs" />
+    <Compile Include="Ai\Vail\IStimuli.cs" />
+    <Compile Include="Ai\Vail\IStimuliQuery.cs" />
+    <Compile Include="Ai\Vail\IStimuliSortAction.cs" />
+    <Compile Include="Ai\Vail\IVailActorInteract.cs" />
+    <Compile Include="Ai\Vail\IVailCraftingNode.cs" />
+    <Compile Include="Ai\Vail\IVailDamageableStructure.cs" />
+    <Compile Include="Ai\Vail\IVailGridObject.cs" />
+    <Compile Include="Ai\Vail\IVailSpawner.cs" />
+    <Compile Include="Ai\Vail\IVailWeapon.cs" />
+    <Compile Include="Ai\Vail\IWorldActorLocators.cs" />
+    <Compile Include="Ai\Vail\IWorldEventsSystem.cs" />
+    <Compile Include="Ai\Vail\IWorldQuerySystem.cs" />
+    <Compile Include="Ai\Vail\LastSeenStimuli.cs" />
+    <Compile Include="Ai\Vail\LookAtRange.cs" />
+    <Compile Include="Ai\Vail\LookAtState.cs" />
+    <Compile Include="Ai\Vail\LookAtWeight.cs" />
+    <Compile Include="Ai\Vail\MaterialVariationSetter.cs" />
+    <Compile Include="Ai\Vail\MeleeWeapon.cs" />
+    <Compile Include="Ai\Vail\Memory\ActorMemory.cs" />
+    <Compile Include="Ai\Vail\Memory\ActorMemoryManager.cs" />
+    <Compile Include="Ai\Vail\Memory\EventMemoryData.cs" />
+    <Compile Include="Ai\Vail\Memory\EventStat.cs" />
+    <Compile Include="Ai\Vail\Memory\MemoryEvent.cs" />
+    <Compile Include="Ai\Vail\Memory\StimuliInfluence.cs" />
+    <Compile Include="Ai\Vail\Memory\StimuliInfluenceDefaults.cs" />
+    <Compile Include="Ai\Vail\Memory\StimuliInfluenceTarget.cs" />
+    <Compile Include="Ai\Vail\Memory\StimuliInfluenceValues.cs" />
+    <Compile Include="Ai\Vail\MonoBehaviourStimuli.cs" />
+    <Compile Include="Ai\Vail\MonoBehaviourStimuliValue.cs" />
+    <Compile Include="Ai\Vail\PlayerAura.cs" />
+    <Compile Include="Ai\Vail\Priority.cs" />
+    <Compile Include="Ai\Vail\ProjectSettings.cs" />
+    <Compile Include="Ai\Vail\PushCollision.cs" />
+    <Compile Include="Ai\Vail\RendererSection.cs" />
+    <Compile Include="Ai\Vail\RescueFriendInteraction.cs" />
+    <Compile Include="Ai\Vail\StaggerController.cs" />
+    <Compile Include="Ai\Vail\StatDriver.cs" />
+    <Compile Include="Ai\Vail\State.cs" />
+    <Compile Include="Ai\Vail\StateProfile.cs" />
+    <Compile Include="Ai\Vail\StateProfileManager.cs" />
+    <Compile Include="Ai\Vail\StateSet.cs" />
+    <Compile Include="Ai\Vail\Stimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliGroupList.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\ArrowBlockStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\ArrowImpactStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\AxeBlockStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\AxeImpactStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\BulletBlockStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\BulletImpactStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\ClubBlockStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\ClubImpactStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\ExplosionImpactStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\ImpactStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\MeleeBlockStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\MeleeImpactStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\NonLethalBlockStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\NonLethalImpactStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\ParriedStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\ProjectileBlockStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\ProjectileImpactStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\ShotgunBlockStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\ShotgunImpactStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StaggerImpactStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQuery.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryAlertedTo.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryDamageReceived.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryDistance.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryFar.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryHasImmediate.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryHasStatusEffect.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryIgnore.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryLostSight.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryMissingStatusEffect.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryNear.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryNotWithinFar.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryTargetMonoBehaviour.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryUtils.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryVeryClose.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryVeryCloseDamagedBy.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\StimuliQueryWorld.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\SwordBlockStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliQueries\SwordImpactStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliSorting\Closest.cs" />
+    <Compile Include="Ai\Vail\StimuliSorting\EnemySort.cs" />
+    <Compile Include="Ai\Vail\StimuliSorting\Furthest.cs" />
+    <Compile Include="Ai\Vail\StimuliSorting\LookAtSort.cs" />
+    <Compile Include="Ai\Vail\StimuliSorting\None.cs" />
+    <Compile Include="Ai\Vail\StimuliSorting\Preferred.cs" />
+    <Compile Include="Ai\Vail\StimuliSorting\Random.cs" />
+    <Compile Include="Ai\Vail\StimuliSorting\StimuliSortAction.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ActorDiedStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ActorGroupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\AffectOverTimeStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\AimedAtStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\AngerEventStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ArrowPickupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\AuraInfluence.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BatStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BeckonLocationStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BedStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BerryBushStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BirdStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BleedingStatusStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BloodGroundStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BloodTroughStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BoundCharacterStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BuildActionStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BuildShelterStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BurningStatusStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\BushEventStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\CampFireStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\CampSiteStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\CannibalStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\CeilingWalkStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ColdStatusStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ConsumableData.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ConsumableStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\CreepyNestStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\CreepyStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\CreepyWallStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\DeadBodyCannibalStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\DeadBodyCreepyStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\DeadBodyPlayerStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\DeadBodyStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\DeerStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\DoorStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\DraggableBodyStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\DraggedStatusStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\DragLogStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\DropNowStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\DrowningStatusStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\DuckStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\EagleStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ElectrocutedStatusStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\EnemyGroupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\EventDescription.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\EventStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\EventStimuliSpawner.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ExplosionEvent.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\FightClubStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\FoodGroupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\FriendGroupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\GrabPreyStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\GroupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\GuardPointStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\HeavyThroneStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\Helicopter.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\HomeStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\HugPlayerStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\HuntingPartyTargetStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\HuntingZoneStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\HuntTargetStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\IgnoreStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ImmediateStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\InjuredStatusStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\InteractStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\IsRainingStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\IsSnowingStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ItemHolderStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\KnockedBackStatusStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\KnockedDownStatusStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\LakeFoodStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\LandingSpotInteractStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\LandingSpotStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\LandingZone.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\LandTurtleStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\LightStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\LogPickupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\LogSledHolderStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\LoudNoiseStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\MaskStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\MeatStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\MediumNoiseStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\MeleeAttack.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\MigrationZone.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\MooseStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\MuddyStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\MusicStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\MutantFoodProxyStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\MutantStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\OrderCompleteStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\OysterStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PerchSpotStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PickupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PlantFoodStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PlayerBuilding.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PlayerCampFireStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PlayerDefences.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PlayerEffigyStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PlayerInteractStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PlayerShelter.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PlayerStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PlayerStructureStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PlayerTarpShelter.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PlayerTrapStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PopMusicStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PrayLocation.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\PreyGroupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RabbitStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RadioPickupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RaftStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RangeAttack.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RescueDragStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RestNowStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RobbyClearStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RobbyClearTreeStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RobbyDropStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RobbyFollowStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RobbyOrderStimuliBase.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RobbyStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RockMusicStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RockPickupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\RockStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ScaryObject.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ScenicZoneStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SeagullStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SearchPartyRetreatStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SearchPartyStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SearchPartyTargetStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SharkFoodStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SharkStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ShelterGroupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SitLocationStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SleepLocationStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SmallBirdStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SoftNoiseStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SquirrelStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\StarFishStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\StatAdjustmentsByClass.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\StatusEffectStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\StickPickupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\StonePickupStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\StructureAttackStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\StructureStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\StunnedStatusStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\StunShrineStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SurfaceWalkStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\SurroundTargetStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\TargetSightedStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ThrowableBodyInteractStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\TimmyStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\TrapBaitStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\TreeCutStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\TreeDestroyedStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\TreeStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\TripAndFallStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\TurtleStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\VeryLoudNoiseStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\VirginiaStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\WallClimbBoostStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\WallStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\WatchSpotStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\WaterfallStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\WaterPartyTargetStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\WaterStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\WaterZone.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\WaterZoneClustersStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\WaypointClustersStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\WeaponHitStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\WindowStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ZiplineStimuli.cs" />
+    <Compile Include="Ai\Vail\StimuliTypes\ZoneStimuli.cs" />
+    <Compile Include="Ai\Vail\SurfaceMover.cs" />
+    <Compile Include="Ai\Vail\SurfaceMoverPath.cs" />
+    <Compile Include="Ai\Vail\SurfaceMoverPoint.cs" />
+    <Compile Include="Ai\Vail\Thought.cs" />
+    <Compile Include="Ai\Vail\ThoughtAction.cs" />
+    <Compile Include="Ai\Vail\ThrowableBodyInteraction.cs" />
+    <Compile Include="Ai\Vail\Traits\AlcoholismTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\AngerTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\CowardiceTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\CuriosityTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\FaithTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\GluttonyTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\InsanityTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\IntelligenceTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\LazinessTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\LeadershipTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\LoyaltyTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\LustTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\PrideTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\PrimitiveTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\SentimentalityTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\StrengthTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\SuperstitionTrait.cs" />
+    <Compile Include="Ai\Vail\Traits\Trait.cs" />
+    <Compile Include="Ai\Vail\Traits\WeightTrait.cs" />
+    <Compile Include="Ai\Vail\VailActor.cs" />
+    <Compile Include="Ai\Vail\VailActorClassId.cs" />
+    <Compile Include="Ai\Vail\VailActorLods.cs" />
+    <Compile Include="Ai\Vail\VailActorManager.cs" />
+    <Compile Include="Ai\Vail\VailActorNetworked.cs" />
+    <Compile Include="Ai\Vail\VailActorPools.cs" />
+    <Compile Include="Ai\Vail\VailActorStateFX.cs" />
+    <Compile Include="Ai\Vail\VailActorTypeId.cs" />
+    <Compile Include="Ai\Vail\VailActorVariations.cs" />
+    <Compile Include="Ai\Vail\VailAnimEvents.cs" />
+    <Compile Include="Ai\Vail\VailAnimStateTag.cs" />
+    <Compile Include="Ai\Vail\VailAudioManager.cs" />
+    <Compile Include="Ai\Vail\VailController.cs" />
+    <Compile Include="Ai\Vail\VailControllerBase.cs" />
+    <Compile Include="Ai\Vail\VailControllerOverride.cs" />
+    <Compile Include="Ai\Vail\VailCoopObject.cs" />
+    <Compile Include="Ai\Vail\VailDebugCamera.cs" />
+    <Compile Include="Ai\Vail\VailLevelGrid.cs" />
+    <Compile Include="Ai\Vail\VailLookAt.cs" />
+    <Compile Include="Ai\Vail\VailNetworkAction.cs" />
+    <Compile Include="Ai\Vail\VailObjectThrower.cs" />
+    <Compile Include="Ai\Vail\VailOverlayType.cs" />
+    <Compile Include="Ai\Vail\VailPath.cs" />
+    <Compile Include="Ai\Vail\VailPhysicsInteraction.cs" />
+    <Compile Include="Ai\Vail\VailPistol.cs" />
+    <Compile Include="Ai\Vail\VailProp.cs" />
+    <Compile Include="Ai\Vail\VailRadarType.cs" />
+    <Compile Include="Ai\Vail\VailSpawnModifiers.cs" />
+    <Compile Include="Ai\Vail\VailStateMachineEvents.cs" />
+    <Compile Include="Ai\Vail\VailStatsManager.cs" />
+    <Compile Include="Ai\Vail\VailThrownObject.cs" />
+    <Compile Include="Ai\Vail\VailTraitDefinition.cs" />
+    <Compile Include="Ai\Vail\VailTypes.cs" />
+    <Compile Include="Ai\Vail\VailWanderZone.cs" />
+    <Compile Include="Ai\Vail\VailWorldPaths.cs" />
+    <Compile Include="Ai\Vail\VailWorldSimulation.cs" />
+    <Compile Include="Ai\Vail\VailWorldStateNetworked.cs" />
+    <Compile Include="Ai\Vail\VailZoneBase.cs" />
+    <Compile Include="Ai\Vail\VailZoneId.cs" />
+    <Compile Include="Ai\Vail\WorldGuard.cs" />
+    <Compile Include="Ai\Vail\WorldHold.cs" />
+    <Compile Include="Ai\Vail\WorldMoveTo.cs" />
+    <Compile Include="Ai\Vail\WorldPathModifier.cs" />
+    <Compile Include="Ai\Vail\WorldSimAction.cs" />
+    <Compile Include="Ai\Vail\WorldSimActor.cs" />
+    <Compile Include="Ai\Vail\WorldSimController.cs" />
+    <Compile Include="Ai\Vail\WorldTeleport.cs" />
+    <Compile Include="AlignToGround.cs" />
+    <Compile Include="AnimationSampler.cs" />
+    <Compile Include="BoundsShape.cs" />
+    <Compile Include="Characters\PlayRandomAnimationState.cs" />
+    <Compile Include="Characters\SimpleMoverActor.cs" />
+    <Compile Include="Characters\SimpleMoverTrigger.cs" />
+    <Compile Include="Gameplay\RobbyBuildPrefabStimuli.cs" />
+    <Compile Include="Gameplay\RobbyBuildWallStimuli.cs" />
+    <Compile Include="PathBoundsList.cs" />
+    <Compile Include="PointGenerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="VailDebugConsole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AstarPathfindingProject\AstarPathfindingProject.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D73}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bolt.user\bolt.user.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D78}</Project>
+      <Name>bolt.user</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bolt\bolt.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D76}</Project>
+      <Name>bolt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Endnight\Endnight.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D81}</Project>
+      <Name>Endnight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FMOD.Unity\FMOD.Unity.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D89}</Project>
+      <Name>FMOD.Unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RootMotion\RootMotion.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DAC}</Project>
+      <Name>RootMotion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sirenix.OdinInspector.Attributes\Sirenix.OdinInspector.Attributes.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB0}</Project>
+      <Name>Sirenix.OdinInspector.Attributes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Ai.Utilities\Sons.Ai.Utilities.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB1}</Project>
+      <Name>Sons.Ai.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Animation.Mae\Sons.Animation.Mae.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB3}</Project>
+      <Name>Sons.Animation.Mae</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Areas\Sons.Areas.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB4}</Project>
+      <Name>Sons.Areas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Atmosphere\Sons.Atmosphere.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB5}</Project>
+      <Name>Sons.Atmosphere</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Gameplay.StatusEffects\Sons.Gameplay.StatusEffects.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DCA}</Project>
+      <Name>Sons.Gameplay.StatusEffects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Interfaces\Sons.Interfaces.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD1}</Project>
+      <Name>Sons.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Item\Sons.Item.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD2}</Project>
+      <Name>Sons.Item</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Physics\Sons.Physics.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD8}</Project>
+      <Name>Sons.Physics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Ragdoll\Sons.Ragdoll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DDB}</Project>
+      <Name>Sons.Ragdoll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Save\Sons.Save.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DDD}</Project>
+      <Name>Sons.Save</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.StatSystem\Sons.StatSystem.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DE1}</Project>
+      <Name>Sons.StatSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Weapon\Sons.Weapon.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DE9}</Project>
+      <Name>Sons.Weapon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0E}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E13}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.IMGUIModule\UnityEngine.IMGUIModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E1B}</Project>
+      <Name>UnityEngine.IMGUIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E20}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E22}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.VFXModule\UnityEngine.VFXModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E37}</Project>
+      <Name>UnityEngine.VFXModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

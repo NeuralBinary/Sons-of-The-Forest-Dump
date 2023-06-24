@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530D72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdjustTimeScale.cs" />
+    <Compile Include="AmbientProbeData.cs" />
+    <Compile Include="AutoSetFoliagePivot.cs" />
+    <Compile Include="BeachWaveDecalAnimated.cs" />
+    <Compile Include="BillboardTest.cs" />
+    <Compile Include="BindGlobalTextureStreamVFX.cs" />
+    <Compile Include="BindGlobalTextureVFX.cs" />
+    <Compile Include="BlitLocalFog.cs" />
+    <Compile Include="BloodOnWeaponsFluidInteraction.cs" />
+    <Compile Include="BurnBush.cs" />
+    <Compile Include="CloudShadows.cs" />
+    <Compile Include="CustomBillboardTest.cs" />
+    <Compile Include="DriftParticles.cs" />
+    <Compile Include="DynamicBoneDemo1.cs" />
+    <Compile Include="EvalAmbient.cs" />
+    <Compile Include="Example.cs" />
+    <Compile Include="FreezeFire.cs" />
+    <Compile Include="HighlightObject.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="MTAssets\EasyMeshCombiner\CombinedMeshesManager.cs" />
+    <Compile Include="MTAssets\EasyMeshCombiner\CombineInRuntimeDemo.cs" />
+    <Compile Include="MTAssets\EasyMeshCombiner\EnviromentMovement.cs" />
+    <Compile Include="MTAssets\EasyMeshCombiner\ListMethodsExtensions.cs" />
+    <Compile Include="MTAssets\EasyMeshCombiner\MTAssetsEditorUi.cs" />
+    <Compile Include="MTAssets\EasyMeshCombiner\MTAssetsMathematics.cs" />
+    <Compile Include="MTAssets\EasyMeshCombiner\RuntimeMeshCombiner.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\CurrentRenderPipeline.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\ListMethodsExtensions.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\BlendShape.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\BlendShapeFrame.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\Internal\BlendShapeContainer.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\Internal\BlendShapeFrameContainer.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\Internal\BorderVertex.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\Internal\BorderVertexComparer.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\Internal\Ref.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\Internal\Triangle.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\Internal\UVChannels.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\Internal\Vertex.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\IOUtils.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\MathHelper.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\MeshCombiner.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\MeshSimplifier.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\MeshUtils.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\ResizableArray.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\SimplificationOptions.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\SymmetricMatrix.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MeshSimplifier\Vector3d.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MTAssetsEditorUi.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\MTAssetsMathematics.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\RuntimeCameraDetector.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\RuntimeInstancesDetector.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\UltimateLevelOfDetail.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\UltimateLevelOfDetailGlobal.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\UltimateLevelOfDetailMeshes.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\UltimateLevelOfDetailOptimizer.cs" />
+    <Compile Include="MTAssets\UltimateLODSystem\UltimateLevelOfDetailPivot.cs" />
+    <Compile Include="MutantFluidInteraction.cs" />
+    <Compile Include="OcclusionProbeData.cs" />
+    <Compile Include="OcclusionProbes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProximityActivate.cs" />
+    <Compile Include="RampAsset.cs" />
+    <Compile Include="RaycastMeDown.cs" />
+    <Compile Include="Readme.cs" />
+    <Compile Include="Rendering\FireParticle.cs" />
+    <Compile Include="Rendering\FireVolume.cs" />
+    <Compile Include="Rendering\GrassDisplacement\ScaleMeshBounds.cs" />
+    <Compile Include="RenderOrthoCameraPass.cs" />
+    <Compile Include="RenderOrthoCameraPassConstatants.cs" />
+    <Compile Include="RenderStarsPass.cs" />
+    <Compile Include="ResetBasemapResolution.cs" />
+    <Compile Include="RTSize.cs" />
+    <Compile Include="ScaleMeshBoundsGlobally.cs" />
+    <Compile Include="ScriptableTOD.cs" />
+    <Compile Include="SetStencilValues.cs" />
+    <Compile Include="SetStippleRangeTest.cs" />
+    <Compile Include="ShaderDevScript.cs" />
+    <Compile Include="SimpleBottleFluidController.cs" />
+    <Compile Include="SimpleBRGa.cs" />
+    <Compile Include="SimpleCharacterMotor.cs" />
+    <Compile Include="SimplexNoiseGenerator.cs" />
+    <Compile Include="SonsDrawBatch.cs" />
+    <Compile Include="SonsDrawKey.cs" />
+    <Compile Include="SonsDrawRange.cs" />
+    <Compile Include="SonsDrawRenderer.cs" />
+    <Compile Include="SonsEasyFluidInteraction.cs" />
+    <Compile Include="SonsLOD\CullingExtensions.cs" />
+    <Compile Include="SonsLOD\SimpleBRGb.cs" />
+    <Compile Include="SonsLOD\SonsDrawBatch.cs" />
+    <Compile Include="SonsLOD\SonsDrawKey.cs" />
+    <Compile Include="SonsLOD\SonsDrawRange.cs" />
+    <Compile Include="SonsLOD\SonsDrawRenderer.cs" />
+    <Compile Include="SonsLOD\SonsRangeKey.cs" />
+    <Compile Include="SonsRangeKey.cs" />
+    <Compile Include="SpawnEffect.cs" />
+    <Compile Include="StreamTextureContainer.cs" />
+    <Compile Include="SunRotator.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsUnmanagedAttribute.cs" />
+    <Compile Include="Texture3DNoiseGenerator.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="UnityTemplateProjects\SimpleCameraController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FluidFlow\FluidFlow.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D88}</Project>
+      <Name>FluidFlow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Atmosphere\Sons.Atmosphere.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DB5}</Project>
+      <Name>Sons.Atmosphere</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Interfaces\Sons.Interfaces.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD1}</Project>
+      <Name>Sons.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Item\Sons.Item.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD2}</Project>
+      <Name>Sons.Item</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons.Lodding\Sons.Lodding.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DD4}</Project>
+      <Name>Sons.Lodding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sons\Sons.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DBE}</Project>
+      <Name>Sons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DEF}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Burst\Unity.Burst.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E00}</Project>
+      <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Collections\Unity.Collections.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E02}</Project>
+      <Name>Unity.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Mathematics\Unity.Mathematics.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E07}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.BatchRendererGroup-Testing\Unity.RenderPipelines.BatchRendererGroup-Testing.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E08}</Project>
+      <Name>Unity.RenderPipelines.BatchRendererGroup-Testing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.Core.Runtime\Unity.RenderPipelines.Core.Runtime.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E09}</Project>
+      <Name>Unity.RenderPipelines.Core.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.HighDefinition.Runtime\Unity.RenderPipelines.HighDefinition.Runtime.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0B}</Project>
+      <Name>Unity.RenderPipelines.HighDefinition.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0E}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E13}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E20}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E22}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TerrainModule\UnityEngine.TerrainModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E29}</Project>
+      <Name>UnityEngine.TerrainModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UIModule\UnityEngine.UIModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E31}</Project>
+      <Name>UnityEngine.UIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.VFXModule\UnityEngine.VFXModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E37}</Project>
+      <Name>UnityEngine.VFXModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

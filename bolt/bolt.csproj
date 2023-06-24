@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530D76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bolt</RootNamespace>
+    <AssemblyName>bolt</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assert.cs" />
+    <Compile Include="BoltAssertFailedException.cs" />
+    <Compile Include="BoltConfig.cs" />
+    <Compile Include="BoltConfigLogTargets.cs" />
+    <Compile Include="BoltConnection.cs" />
+    <Compile Include="BoltConnectionAcceptMode.cs" />
+    <Compile Include="BoltConsole.cs" />
+    <Compile Include="BoltCore.cs" />
+    <Compile Include="BoltDoubleList.cs" />
+    <Compile Include="BoltEditorStartMode.cs" />
+    <Compile Include="BoltEntity.cs" />
+    <Compile Include="BoltEntitySettingsModifier.cs" />
+    <Compile Include="BoltException.cs" />
+    <Compile Include="BoltExecutionOrderAttribute.cs" />
+    <Compile Include="BoltGlobalBehaviourAttribute.cs" />
+    <Compile Include="BoltGUI.cs" />
+    <Compile Include="BoltHitbox.cs" />
+    <Compile Include="BoltHitboxBody.cs" />
+    <Compile Include="BoltHitboxBodySnapshot.cs" />
+    <Compile Include="BoltHitboxShape.cs" />
+    <Compile Include="BoltHitboxType.cs" />
+    <Compile Include="BoltHitboxWorldSnapshot.cs" />
+    <Compile Include="BoltHitboxWorldSnapshotPool.cs" />
+    <Compile Include="BoltInternal\BoltCoreInternal.cs" />
+    <Compile Include="BoltInternal\EntityEventListenerBase.2.cs" />
+    <Compile Include="BoltInternal\EntityEventListenerBase.cs" />
+    <Compile Include="BoltInternal\GlobalEventListenerBase.cs" />
+    <Compile Include="BoltInternal\IDebugDrawer.cs" />
+    <Compile Include="BoltInternal\NatCommunicator.cs" />
+    <Compile Include="BoltIterator.cs" />
+    <Compile Include="BoltLog.cs" />
+    <Compile Include="BoltNetwork.cs" />
+    <Compile Include="BoltNetworkInternal.cs" />
+    <Compile Include="BoltNetworkModes.cs" />
+    <Compile Include="BoltObject.cs" />
+    <Compile Include="BoltObjectPool.cs" />
+    <Compile Include="BoltPhysics.cs" />
+    <Compile Include="BoltPhysicsHit.cs" />
+    <Compile Include="BoltPhysicsHits.cs" />
+    <Compile Include="BoltPoll.cs" />
+    <Compile Include="BoltRandomFunction.cs" />
+    <Compile Include="BoltRingBuffer.cs" />
+    <Compile Include="BoltRuntimeSettings.cs" />
+    <Compile Include="BoltSceneLoader.cs" />
+    <Compile Include="BoltSend.cs" />
+    <Compile Include="BoltSequenceGenerator.cs" />
+    <Compile Include="BoltSingleList.cs" />
+    <Compile Include="BoltSingletonPrefab.cs" />
+    <Compile Include="BoltUtils.cs" />
+    <Compile Include="Bolt\AddCallback.cs" />
+    <Compile Include="Bolt\ArrayIndices.cs" />
+    <Compile Include="Bolt\AxisSelections.cs" />
+    <Compile Include="Bolt\BitSet.cs" />
+    <Compile Include="Bolt\BoltChannel.cs" />
+    <Compile Include="Bolt\CachedComponent.cs" />
+    <Compile Include="Bolt\CachedObject.cs" />
+    <Compile Include="Bolt\Command.cs" />
+    <Compile Include="Bolt\CommandCallback.cs" />
+    <Compile Include="Bolt\CommandCallbackItem.cs" />
+    <Compile Include="Bolt\CommandCallbackModes.cs" />
+    <Compile Include="Bolt\CommandFlags.cs" />
+    <Compile Include="Bolt\Command_Meta.cs" />
+    <Compile Include="Bolt\ControlBehaviour.cs" />
+    <Compile Include="Bolt\ControlCommand.cs" />
+    <Compile Include="Bolt\ControlCommandShutdown.cs" />
+    <Compile Include="Bolt\ControlCommandStart.cs" />
+    <Compile Include="Bolt\ControlState.cs" />
+    <Compile Include="Bolt\DebugInfo.cs" />
+    <Compile Include="Bolt\DefaultEventFilter.cs" />
+    <Compile Include="Bolt\DefaultPrefabPool.cs" />
+    <Compile Include="Bolt\DocumentationAttribute.cs" />
+    <Compile Include="Bolt\DoubleBuffer.cs" />
+    <Compile Include="Bolt\Entity.cs" />
+    <Compile Include="Bolt\EntityBehaviour.2.cs" />
+    <Compile Include="Bolt\EntityBehaviour.cs" />
+    <Compile Include="Bolt\EntityFlags.cs" />
+    <Compile Include="Bolt\EntityList.cs" />
+    <Compile Include="Bolt\EntityLookup.cs" />
+    <Compile Include="Bolt\EntityTargets.cs" />
+    <Compile Include="Bolt\Event.cs" />
+    <Compile Include="Bolt\EventChannel.cs" />
+    <Compile Include="Bolt\EventDispatcher.cs" />
+    <Compile Include="Bolt\EventReliable.cs" />
+    <Compile Include="Bolt\EventReliableRecvBuffer.cs" />
+    <Compile Include="Bolt\EventReliableSendBuffer.cs" />
+    <Compile Include="Bolt\EventUnreliable.cs" />
+    <Compile Include="Bolt\Event_Meta.cs" />
+    <Compile Include="Bolt\ExistsResult.cs" />
+    <Compile Include="Bolt\ExtrapolationVelocityModes.cs" />
+    <Compile Include="Bolt\Factory.cs" />
+    <Compile Include="Bolt\Filter.cs" />
+    <Compile Include="Bolt\GlobalTargets.cs" />
+    <Compile Include="Bolt\ICommandFactory.cs" />
+    <Compile Include="Bolt\IEntityBehaviour.2.cs" />
+    <Compile Include="Bolt\IEntityBehaviour.cs" />
+    <Compile Include="Bolt\IEntityReplicationFilter.cs" />
+    <Compile Include="Bolt\IEntitySerializer.2.cs" />
+    <Compile Include="Bolt\IEntitySerializer.cs" />
+    <Compile Include="Bolt\IEventFactory.cs" />
+    <Compile Include="Bolt\IEventFilter.cs" />
+    <Compile Include="Bolt\IEventListener.cs" />
+    <Compile Include="Bolt\IFactory.cs" />
+    <Compile Include="Bolt\INatDevice.cs" />
+    <Compile Include="Bolt\INetworkCommandData.cs" />
+    <Compile Include="Bolt\InstantiateFlags.cs" />
+    <Compile Include="Bolt\IPortMapping.cs" />
+    <Compile Include="Bolt\IPrefabPool.cs" />
+    <Compile Include="Bolt\IPriorityCalculator.cs" />
+    <Compile Include="Bolt\IProtocolToken.cs" />
+    <Compile Include="Bolt\ISerializerFactory.cs" />
+    <Compile Include="Bolt\IState.cs" />
+    <Compile Include="Bolt\Math.cs" />
+    <Compile Include="Bolt\MecanimDirection.cs" />
+    <Compile Include="Bolt\MecanimMode.cs" />
+    <Compile Include="Bolt\NatPortMappingStatus.cs" />
+    <Compile Include="Bolt\NetworkArray_Entity.cs" />
+    <Compile Include="Bolt\NetworkArray_Float.cs" />
+    <Compile Include="Bolt\NetworkArray_Integer.cs" />
+    <Compile Include="Bolt\NetworkArray_Meta.cs" />
+    <Compile Include="Bolt\NetworkArray_Objects.cs" />
+    <Compile Include="Bolt\NetworkArray_PrefabId.cs" />
+    <Compile Include="Bolt\NetworkArray_ProtocolToken.cs" />
+    <Compile Include="Bolt\NetworkArray_Quaternion.cs" />
+    <Compile Include="Bolt\NetworkArray_String.cs" />
+    <Compile Include="Bolt\NetworkArray_Transform.cs" />
+    <Compile Include="Bolt\NetworkArray_Values.cs" />
+    <Compile Include="Bolt\NetworkArray_Vector.cs" />
+    <Compile Include="Bolt\NetworkCommand_Data.cs" />
+    <Compile Include="Bolt\NetworkId.cs" />
+    <Compile Include="Bolt\NetworkIdAllocator.cs" />
+    <Compile Include="Bolt\NetworkObj.cs" />
+    <Compile Include="Bolt\NetworkObj_Meta.cs" />
+    <Compile Include="Bolt\NetworkObj_Root.cs" />
+    <Compile Include="Bolt\NetworkProperty.cs" />
+    <Compile Include="Bolt\NetworkPropertyInfo.cs" />
+    <Compile Include="Bolt\NetworkProperty_Bool.cs" />
+    <Compile Include="Bolt\NetworkProperty_Color.cs" />
+    <Compile Include="Bolt\NetworkProperty_Color32.cs" />
+    <Compile Include="Bolt\NetworkProperty_Entity.cs" />
+    <Compile Include="Bolt\NetworkProperty_Float.cs" />
+    <Compile Include="Bolt\NetworkProperty_Guid.cs" />
+    <Compile Include="Bolt\NetworkProperty_Integer.cs" />
+    <Compile Include="Bolt\NetworkProperty_Matrix4x4.cs" />
+    <Compile Include="Bolt\NetworkProperty_Mecanim.cs" />
+    <Compile Include="Bolt\NetworkProperty_NetworkId.cs" />
+    <Compile Include="Bolt\NetworkProperty_PrefabId.cs" />
+    <Compile Include="Bolt\NetworkProperty_ProtocolToken.cs" />
+    <Compile Include="Bolt\NetworkProperty_Quaternion.cs" />
+    <Compile Include="Bolt\NetworkProperty_String.cs" />
+    <Compile Include="Bolt\NetworkProperty_Transform.cs" />
+    <Compile Include="Bolt\NetworkProperty_Trigger.cs" />
+    <Compile Include="Bolt\NetworkProperty_Vector.cs" />
+    <Compile Include="Bolt\NetworkState.cs" />
+    <Compile Include="Bolt\NetworkState_Meta.cs" />
+    <Compile Include="Bolt\NetworkStorage.cs" />
+    <Compile Include="Bolt\NetworkTransform.cs" />
+    <Compile Include="Bolt\NetworkTrigger.cs" />
+    <Compile Include="Bolt\NetworkValue.cs" />
+    <Compile Include="Bolt\Packet.cs" />
+    <Compile Include="Bolt\PacketPool.cs" />
+    <Compile Include="Bolt\PrefabDatabase.cs" />
+    <Compile Include="Bolt\PrefabDatabaseMode.cs" />
+    <Compile Include="Bolt\PrefabId.cs" />
+    <Compile Include="Bolt\Priority.cs" />
+    <Compile Include="Bolt\PropertyCallback.cs" />
+    <Compile Include="Bolt\PropertyCallbackSimple.cs" />
+    <Compile Include="Bolt\PropertyCommandSettings.cs" />
+    <Compile Include="Bolt\PropertyExtrapolationSettings.cs" />
+    <Compile Include="Bolt\PropertyFloatCompressionSettings.cs" />
+    <Compile Include="Bolt\PropertyFloatSettings.cs" />
+    <Compile Include="Bolt\PropertyIntCompressionSettings.cs" />
+    <Compile Include="Bolt\PropertyInterpolationSettings.cs" />
+    <Compile Include="Bolt\PropertyMecanimSettings.cs" />
+    <Compile Include="Bolt\PropertyQuaternionCompression.cs" />
+    <Compile Include="Bolt\PropertyStringSettings.cs" />
+    <Compile Include="Bolt\PropertyTransformCompressionSettings.cs" />
+    <Compile Include="Bolt\PropertyVectorCompressionSettings.cs" />
+    <Compile Include="Bolt\ProtocolTokenUtils.cs" />
+    <Compile Include="Bolt\ProxyFlags.cs" />
+    <Compile Include="Bolt\QueryOptions.cs" />
+    <Compile Include="Bolt\RecvBufferAddResult.cs" />
+    <Compile Include="Bolt\ReliabilityModes.cs" />
+    <Compile Include="Bolt\ReplicationMode.cs" />
+    <Compile Include="Bolt\Scene.cs" />
+    <Compile Include="Bolt\SceneLoadChannel.cs" />
+    <Compile Include="Bolt\SceneLoadState.cs" />
+    <Compile Include="Bolt\ScopeMode.cs" />
+    <Compile Include="Bolt\SmoothingAlgorithms.cs" />
+    <Compile Include="Bolt\StringEncodings.cs" />
+    <Compile Include="Bolt\TransformRotationMode.cs" />
+    <Compile Include="Bolt\TransformSpaces.cs" />
+    <Compile Include="Bolt\TypeId.cs" />
+    <Compile Include="Bolt\UniqueId.cs" />
+    <Compile Include="Bolt\UPnP.cs" />
+    <Compile Include="Bolt\Zeus.cs" />
+    <Compile Include="EntityChannel.cs" />
+    <Compile Include="EntityProxy.cs" />
+    <Compile Include="EntityProxyEnvelope.cs" />
+    <Compile Include="EntityProxyEnvelopePool.cs" />
+    <Compile Include="IBoltListNode.cs" />
+    <Compile Include="IdExtensions.cs" />
+    <Compile Include="PacketStats.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="STuple.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DEF}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\udpkit.common\udpkit.common.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DFD}</Project>
+      <Name>udpkit.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\udpkit\udpkit.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DFE}</Project>
+      <Name>udpkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E13}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.IMGUIModule\UnityEngine.IMGUIModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E1B}</Project>
+      <Name>UnityEngine.IMGUIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E22}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EF6C7E-E84D-4C5F-8058-CAC812530D87}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Expanse</RootNamespace>
+    <AssemblyName>Expanse</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AerialPerspectiveRenderSettings.cs" />
+    <Compile Include="AerialPerspectiveSettingsBlock.cs" />
+    <Compile Include="AtmosphereDatatypes.cs" />
+    <Compile Include="AtmosphereLayerBlock.cs" />
+    <Compile Include="AtmosphereLayerRenderSettings.cs" />
+    <Compile Include="AtmosphereRenderer.cs" />
+    <Compile Include="BaseCloudLayerBlock.cs" />
+    <Compile Include="BaseTextureGeneratorBlock.cs" />
+    <Compile Include="BlockControl.cs" />
+    <Compile Include="CameraSettingsBlock.cs" />
+    <Compile Include="CelestialBodyBlock.cs" />
+    <Compile Include="CelestialBodyDatatypes.cs" />
+    <Compile Include="CelestialBodyRenderSettings.cs" />
+    <Compile Include="CelestialBodyUtils.cs" />
+    <Compile Include="CloudCompositor.cs" />
+    <Compile Include="CloudDatatypes.cs" />
+    <Compile Include="CloudGenerator.cs" />
+    <Compile Include="CloudLayerInterpolator.cs" />
+    <Compile Include="CloudLayerRenderSettings.cs" />
+    <Compile Include="CloudLayerSettings.cs" />
+    <Compile Include="CloudNoiseLayerSettings.cs" />
+    <Compile Include="CloudPresetMapper.cs" />
+    <Compile Include="CloudRenderer.cs" />
+    <Compile Include="CreativeAtmosphere.cs" />
+    <Compile Include="CreativeCloudVolume.cs" />
+    <Compile Include="CreativeFog.cs" />
+    <Compile Include="CreativeMoon.cs" />
+    <Compile Include="CreativeStars.cs" />
+    <Compile Include="CreativeSun.cs" />
+    <Compile Include="CustomObjectParameter.cs" />
+    <Compile Include="Datatypes.cs" />
+    <Compile Include="DateTimeBlock.cs" />
+    <Compile Include="DirectLightRenderer.cs" />
+    <Compile Include="EnumParameter.cs" />
+    <Compile Include="ExpanseRenderer.cs" />
+    <Compile Include="ExpanseSettings.cs" />
+    <Compile Include="GameplayQueries.cs" />
+    <Compile Include="IRenderer.cs" />
+    <Compile Include="LightControl.cs" />
+    <Compile Include="LightingRenderSettings.cs" />
+    <Compile Include="MinMaxSliderAttribute.cs" />
+    <Compile Include="NebulaDatatypes.cs" />
+    <Compile Include="NebulaGenerator.cs" />
+    <Compile Include="NebulaRenderSettings.cs" />
+    <Compile Include="NightSkyBlock.cs" />
+    <Compile Include="NightSkyRenderSettings.cs" />
+    <Compile Include="PlanetBlock.cs" />
+    <Compile Include="PlanetRenderSettings.cs" />
+    <Compile Include="ProceduralCloudPlaneBlock.cs" />
+    <Compile Include="ProceduralCloudVolumeBlock.cs" />
+    <Compile Include="ProceduralNebulaeBlock.cs" />
+    <Compile Include="ProceduralNoiseBlock.cs" />
+    <Compile Include="ProceduralStarsBlock.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QualityRenderSettings.cs" />
+    <Compile Include="QualitySettingsBlock.cs" />
+    <Compile Include="SkyCompositor.cs" />
+    <Compile Include="StarGenerator.cs" />
+    <Compile Include="StarRenderSettings.cs" />
+    <Compile Include="SunTime.cs" />
+    <Compile Include="TextureCloudPlaneBlock.cs" />
+    <Compile Include="TextureInterpolationBlock.cs" />
+    <Compile Include="TextureNebulaeBlock.cs" />
+    <Compile Include="TextureStarsBlock.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="UniversalCloudLayer.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Vector2Swizzles.cs" />
+    <Compile Include="Vector3Swizzles.cs" />
+    <Compile Include="Vector4Swizzles.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Il2CppDummyDll\Il2CppDummyDll.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D8B}</Project>
+      <Name>Il2CppDummyDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530D93}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DEF}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530DF1}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.Core.Runtime\Unity.RenderPipelines.Core.Runtime.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E09}</Project>
+      <Name>Unity.RenderPipelines.Core.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.HighDefinition.Runtime\Unity.RenderPipelines.HighDefinition.Runtime.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E0B}</Project>
+      <Name>Unity.RenderPipelines.HighDefinition.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{C4EF6C7E-E84D-4C5F-8058-CAC812530E16}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
